@@ -27,7 +27,7 @@ for string in strings:
 
 print(even + " " + odd)
 
-'''
+
 i = 0
 for string in strings:2
 
