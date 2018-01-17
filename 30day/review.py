@@ -3,33 +3,20 @@ test_cases = int(input())
 strings = []
 for i in range(test_cases):
     strings.append(list(input()))
-    print(strings)
 
-even = ""
-odd = ""
-i = 0
-
-
-for i in range(test_cases):
-    strings[i]
-'''
+resolved = []
 for string in strings:
-    if i % 2 == 0:
-        even += string[i]
-        print(string)
-    else:
-        odd += string[i]
-    i += 1
-'''
+    even = ""
+    odd = ""
+    i = 0
 
-# even_string = " ".join(even_list)
-# odd_string = " ".join(odd_list)
+    for letter in string:
+        if i % 2 == 0:
+            even += letter
+        else:
+            odd += letter
+        i += 1
+    resolved.append(even + " " + odd)
 
-print(even + " " + odd)
-
-
-i = 0
-for string in strings:2
-
-print(even + " " + odd)
-'''
+for results in resolved:
+    print(results)
