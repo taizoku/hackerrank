@@ -1,4 +1,8 @@
 n = int(input())
+
+phone_book = {}
+
 for i in range(n):
-    name = input()
+    phone_book[i] = input()
+
 
