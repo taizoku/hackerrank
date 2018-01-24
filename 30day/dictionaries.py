@@ -19,7 +19,7 @@ while prompt:
         prompt = False
 
     if query in phone_book:
-        print(phone_book.get(query))
+        print(query, "=", phone_book.get(query), sep = '')
 
     else:
         print("Not found")
