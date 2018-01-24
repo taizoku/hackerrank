@@ -12,9 +12,8 @@ while prompt:
     if query == "quit":
         prompt = False
 
-    if phone_book.get(query):
-        print(number)
+    if query in phone_book:
+        print(phone_book.get(query))
 
     else:
-        print(phone_book.get(query))
         print("Not found")
