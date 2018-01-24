@@ -3,7 +3,13 @@ n = int(input())
 phone_book = {}
 
 for i in range(n):
-    name, number = input().split()
+    information = input().split()
+    name = information[0]
+    if len(information) is not 1:
+        number = information[1]
+
+    else:
+        number = None
     phone_book[name] = number
 
 prompt = True
