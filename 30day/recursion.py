@@ -4,9 +4,11 @@ import sys
 
 
 def factorial(n):
+    # Base Case
     if n <= 1:
-        return 1
+        return 1 # multiplicative identity property
 
+    # Recursive Case: Keep Going!
     else:
         return n * factorial(n-1)
 
