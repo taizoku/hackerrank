@@ -8,7 +8,7 @@ binary = []
 while n > 0:
     remainder = n % 2
     n = n / 2
-    binary.push(remainder)
+    binary.append(remainder)
 
 for numbers in binary:
     print(numbers, sep='')
