@@ -14,16 +14,17 @@ while n > 0:
     binary.append(remainder)
 
 check = False
-onlyOne = False
+onlyOne = True
 print(binary)
 
 for a, b in zip(binary, binary[1:]):
-    if onlyOne is False and a == 1:
+    if a == b == 1:
         counter += 1
-        onlyOne = True
+        onlyOne = False
 
-    elif a == b == 1:
+    elif onlyOne is True:
         counter += 1
+        onlyOne = False
 print(counter)
 
 '''
