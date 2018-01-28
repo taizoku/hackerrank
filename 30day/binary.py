@@ -5,27 +5,28 @@ import sys
 
 n = int(input().strip())
 binary = []
-counter = 0
-prev = 0
+counter = max_counter = 0
 
+#Conversion from Decimal to Binary
 while n > 0:
     remainder = n % 2
     n //= 2
     binary.append(remainder)
 
-check = False
-onlyOne = True
-print(binary)
+#print(binary)
 
-for a, b in zip(binary, binary[1:]):
-    if a == b == 1:
+# for a, b in zip(binary, binary[1:]):
+for number in binary:
+    # MAXIMUM NUMBER OF CONSECUTIVE ONES
+    if number == 1:
         counter += 1
-        onlyOne = False
+        if counter > max_counter:
+            max_counter = counter
 
-if onlyOne is True:
-    counter += 1
+    else:
+        counter = 0
 
-print(counter)
+print(max_counter)
 
 '''
 for numbers in binary:
