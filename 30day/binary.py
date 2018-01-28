@@ -22,9 +22,9 @@ for a, b in zip(binary, binary[1:]):
         counter += 1
         onlyOne = False
 
-    elif onlyOne is True:
-        counter += 1
-        onlyOne = False
+if onlyOne is True:
+    counter += 1
+
 print(counter)
 
 '''
