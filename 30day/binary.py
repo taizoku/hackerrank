@@ -18,7 +18,7 @@ onlyOne = False
 print(binary)
 
 for a, b in zip(binary, binary[1:]):
-    if onlyOne is False and a == 1 or onlyOne is False and b == 1:
+    if onlyOne is False and a == 1:
         counter += 1
         onlyOne = True
 
