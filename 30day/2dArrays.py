@@ -56,7 +56,7 @@ for arr_i in range(6):
 # print_array()
 
 down = 0
-calculationSum = maxSum = -1000
+maxSum = -1000
 
 while down < 4:
     across = 0
