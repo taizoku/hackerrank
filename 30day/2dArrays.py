@@ -17,12 +17,13 @@ maxSum = 0
 
 while down < 4:
     across = 0
-    i = down
-    print("Down count is:", down)
     while across < 4:
-        j = across
         iterations = 0
+        i = down
+        print("Down count is:", down)
+        j = across
         print("Across count is:", across)
+
         rowCounter = colCounter = 0
         calculationSum = 0
         while iterations < 7:
