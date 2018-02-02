@@ -7,12 +7,15 @@ class Book(object, metaclass=ABCMeta):
         self.author = author
 
     @abstractmethod
-    def display(): pass
+    def display(self): pass
 
 
 class MyBook(Book):
-    def __init__(self):
-        Book.__init__()
+    def __init__(self, my_title, my_author, my_price):
+        super(MyBook,self).__init__(title, author)
+        self.title = my_title
+        self.author = my_author
+        self.price = my_price
 
     def display(self):
         print("Title:", title)
