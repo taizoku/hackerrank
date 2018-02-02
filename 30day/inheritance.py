@@ -10,27 +10,28 @@ class Person:
 
 
 class Student(Person):
-    super()
-# Class Constructor
-#
-#   Parameters:
-#   firstName - A string denoting the Person's first name.
-#   lastName - A string denoting the Person's last name.
-#   id - An integer denoting the Person's ID number.
-#   scores - An array of integers denoting the Person's test scores.
-#   DEFAULT CONSTRUCTOR
-    scores = []
-    def __init__(self, firstName, lastName, id, scores):
+    # Class Constructor
+    #   Parameters:
+    #   firstName - A string denoting the Person's first name.
+    #   lastName - A string denoting the Person's last name.
+    #   id - An integer denoting the Person's ID number.
+    #   scores - An array of integers denoting the Person's test scores.
+
+    def __init__(self, first_name, last_name, id_num, scores_array):
+        super(Student, self).__init__(first_name, lastName, id_num)
         print("A student has been created!")
+        self.firstName = first_name
+        self.lastName = last_name
+        self.id = id_num
+        self.scores = scores_array
 
 
 #   Function Name: calculate
 #   Return: A character denoting the grade.
 #
-    def calculate(self, scores):
+    def calculate(self):
         average = 0
-        grade = ''
-        for result in scores:
+        for result in self.scores:
             average += result
         average /= len(scores)
 
