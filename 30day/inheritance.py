@@ -19,7 +19,6 @@ class Student(Person):
 
     def __init__(self, first_name, last_name, id_num, scores_array):
         super(Student, self).__init__(first_name, lastName, id_num)
-        print("A student has been created!")
         self.firstName = first_name
         self.lastName = last_name
         self.id = id_num
