@@ -1,12 +1,10 @@
 class Difference:
     def __init__(self, a):
         self.__elements = a
-        
-        #mcode
-
-    def __init__(self, N):
-        self.__elements = N
+        self.elements = []
+        self.elements.append(a)
         self.maximumDifference = 0
+
 
     def computeDifference(self):
         self.maximumDifference = abs(self.__elements[1] - self.__elements[0])
