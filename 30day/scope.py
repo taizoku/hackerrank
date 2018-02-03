@@ -4,8 +4,13 @@ class Difference:
         
         #mcode
 
+    def __init__(self, N):
+        self.__elements =
 
-
+    maximumDifference = 0
+    def computeDifference(self):
+        self.maximumDifference = abs(self.__elements[1] - self.__elements[0])
+        return self.maxmimumDifference
 # End of Difference class
 
 _ = input()
