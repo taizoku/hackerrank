@@ -1,16 +1,14 @@
 class Difference:
-    def __init__(self, a):
-        self.__elements = a
-        self.elements = []
-        self.elements.append(a)
+
+
+    def __init__(self, int_array):
+        self.__elements = int_array
         self.maximumDifference = 0
 
-
     def computeDifference(self):
-        sorted(self.__elements)
+        self.__elements = sorted(self.__elements)
         self.maximumDifference = abs(self.__elements[0] - self.__elements[-1])
-        return self.maxmimumDifference
-# End of Difference class
+        return self.maximumDifference
 
 
 _ = input()
