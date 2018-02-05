@@ -7,7 +7,8 @@ class Difference:
 
 
     def computeDifference(self):
-        self.maximumDifference = abs(self.__elements[1] - self.__elements[0])
+        sorted(self.__elements)
+        self.maximumDifference = abs(self.__elements[0] - self.__elements[-1])
         return self.maxmimumDifference
 # End of Difference class
 
