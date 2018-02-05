@@ -14,7 +14,7 @@ class Solution:
         def insert(self, head, data):
             # use head to get to tail
             # insert to tail end
-        # Complete this method
+
 
 mylist = Solution()
 T = int(input())
