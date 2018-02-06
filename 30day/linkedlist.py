@@ -8,10 +8,14 @@ class Solution:
     def display(self,head):
         current = head
         while current:
-            print(current.data,end=' ')
+            print(current.data, end=' ')
             current = current.next
 
         def insert(self, head, data):
+            new_node = self.__init__(self,data)
+            new_node.data = data
+            new_node.head = None
+
             # use head to get to tail
             # insert to tail end
 
