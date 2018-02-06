@@ -12,12 +12,12 @@ class Solution:
             current = current.next
 
         def insert(self, head, data):
-            new_node = self.__init__(self,data)
-            new_node.data = data
-            new_node.head = None
-
-            # use head to get to tail
-            # insert to tail end
+            new_node = data
+            current = head
+            while current.next is not None:
+                current = current.next
+            current.next = new_node
+            new_node.next = None
 
 
 mylist = Solution()
