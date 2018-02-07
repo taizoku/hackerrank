@@ -19,6 +19,7 @@ class Solution:
                 current = current.next
         current.next = new_node
         new_node.next = None
+        return new_node
 
 
 myList = Solution()
