@@ -12,8 +12,8 @@ class Solution:
             current = current.next
 
     def insert(self, head, data):
-        new_node = data
-        current = head
+        new_node = self.data
+        current = self.head
         if current is not None:
             while current.next is not None:
                 current = current.next
