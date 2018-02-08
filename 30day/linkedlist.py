@@ -14,20 +14,14 @@ class Solution:
     def insert(self, head, data):
         new_node = Node(data)
         if head is None:
-            new_node.next = head
-            head = new_node
-            print(head)
+            return new_node
 
-        # head = new_node
-        else:
-            current = head
-            print(current)
-            while current.next is None:
-                current = current.next
-                print("Current is now", current)
+        current = head
+        while current.next is not None:
+            current = current.next
+        current.next = new_node
 
         return head
-
 
 myList = Solution()
 T = int(input())
@@ -35,4 +29,4 @@ head = None
 for i in range(T):
     data = int(input())
     head = myList.insert(head, data)
-myList.display(head);
+myList.display(head)
