@@ -13,15 +13,18 @@ class Solution:
 
     def insert(self, head, data):
         new_node = Node(data)
-        new_node.next = head
-        head = new_node
+        if head is None:
+            new_node.next = head
+            head = new_node
+            print(head)
 
-        '''
-                if current is not None:
-            while current.next is not None:
+        # head = new_node
+        else:
+            current = head
+            print(current)
+            while current.next is None:
                 current = current.next
-        current.next = new_node
-        '''
+                print("Current is now", current)
 
         return head
 
