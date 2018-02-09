@@ -8,8 +8,9 @@ def revisedRussianRoulette(doors):
     for door in doors:
         if door == 0:
             if previous_door_locked is True:
+                min += 1 # bug for 1 at end
                 previous_door_locked = False
-                
+
         if door == 1:
             if previous_door_locked is True:
                 min += 1
