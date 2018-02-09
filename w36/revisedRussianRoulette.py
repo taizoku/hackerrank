@@ -3,9 +3,15 @@
 import sys
 
 def revisedRussianRoulette(doors):
-    max = 0
+    previous_door_locked = False
+    min = max = 0
     for door in doors:
+        if door == 0 and previous_door_locked is True:
+            min += 1
+            previous_door_locked = False
+
         if door == 1:
+            previous_door_locked = True
             max += 1
     return min, max
 
