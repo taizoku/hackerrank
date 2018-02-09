@@ -6,7 +6,8 @@ def revisedRussianRoulette(doors):
     previous_door_locked = False
     min = max = 0
     for door in doors:
-        if door == 0 and previous_door_locked is True:
+        print(previous_door_locked)
+        if door == 1 and previous_door_locked is True:
             min += 1
             previous_door_locked = False
 
