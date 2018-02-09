@@ -3,7 +3,11 @@
 import sys
 
 def revisedRussianRoulette(doors):
-    # Complete this function
+    max = 0
+    for door in doors:
+        if door == 1:
+            max += 1
+    return min, max
 
 if __name__ == "__main__":
     n = int(input().strip())
