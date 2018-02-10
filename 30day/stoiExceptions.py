@@ -14,4 +14,4 @@ try:
     print(int(S))
 
 except ValueError:
-    print("Bad string")
+    print("Bad String")
