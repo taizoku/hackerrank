@@ -28,7 +28,7 @@ https://www.hackerrank.com/contests/w36/challenges/ways-to-give-a-check
 import sys
 
 def waysToGiveACheck(board):
-    # Complete this function
+    # out put like so
 
 if __name__ == "__main__":
     t = int(input().strip())
