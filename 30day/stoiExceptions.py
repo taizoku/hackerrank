@@ -15,4 +15,3 @@ try:
 
 except ValueError:
     print("Bad string")
-
