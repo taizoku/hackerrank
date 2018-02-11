@@ -1,6 +1,17 @@
 class Solution:
     # class entry
 
+    # Two instance variables: one for your stack, and one for your queue.
+
+    # A void pushCharacter(char ch) method that pushes a character onto a stack.
+
+    # A void enqueueCharacter(char ch) method that enqueues a character in the queue instance variable.
+
+    # A char popCharacter() method that pops and returns the character at the top of the stack instance variable.
+
+    # A char dequeueCharacter() method that dequeues and returns the first character in the queue instance variable.
+
+
     # read the string s
     s = input()
     # Create the Solution class object
