@@ -1,8 +1,8 @@
 class Calculator:
     def power(self, n, p):
-        if n < 0 or p < 0:
-            #throw/raise exception
-            raise ValueError("n and p should be non-negative")
+        # if n < 0 or p < 0:
+            # throw/raise exception
+            # raise ValueError("n and p should be non-negative")
         return pow(n, p)
 
 
