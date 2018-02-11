@@ -2,14 +2,25 @@ class Solution:
     # class entry
 
     # Two instance variables: one for your stack, and one for your queue.
+    def __init__(self, stack, queue):
+        self.stack = stack
+        self.queue = queue
 
     # A void pushCharacter(char ch) method that pushes a character onto a stack.
+    def pushCharacter(self, ch):
+        self.stack.push(ch)
 
     # A void enqueueCharacter(char ch) method that enqueues a character in the queue instance variable.
+    def enqueueCharacter(self, ch):
+        # enqueue etc..
 
     # A char popCharacter() method that pops and returns the character at the top of the stack instance variable.
+    def popCharacter(self):
+        return self.stack.pop()
 
     # A char dequeueCharacter() method that dequeues and returns the first character in the queue instance variable.
+    def dequeueCharacter(self):
+        # dequeue etc...
 
 
     # read the string s
