@@ -7,9 +7,9 @@ class Calculator:
 
 
 class NegativeException(Exception):
-    # def __init__(self):
+    def __init__(self):
         # print("n and p should be non-negative")
-    super().__init__("n and p should be non-negative")
+        super().__init__("n and p should be non-negative")
 
 
 myCalculator = Calculator()
