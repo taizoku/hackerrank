@@ -1,9 +1,16 @@
 class Calculator:
     def power(self, n, p):
-        # if n < 0 or p < 0:
-            # throw/raise exception
-            # raise ValueError("n and p should be non-negative")
+        # raise ValueError("n and p should be non-negative")
+        raise NegativeException
         return pow(n, p)
+
+
+class NegativeException(Exception):
+    def __init__(self):
+        if n < 0 or p < 0:
+            print("n and p should be non-negative")
+        else:
+            print(pow(n, p))
 
 
 myCalculator = Calculator()
