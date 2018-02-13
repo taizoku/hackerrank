@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class Solution:
     # class entry
 
@@ -18,13 +19,11 @@ class Solution:
 
     # A char popCharacter() method that pops and returns the character at the top of the stack instance variable.
     def popCharacter(self):
-        self.stack.pop()
-        return self.stack[0]
+        return self.stack.pop()
 
     # A char dequeueCharacter() method that dequeues and returns the first character in the queue instance variable.
     def dequeueCharacter(self):
-        self.queue.popleft()
-        return self.queue[0]
+        return self.queue.popleft()
 
 
 # read the string s
