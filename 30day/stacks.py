@@ -1,10 +1,12 @@
+from collections import deque
+
 class Solution:
     # class entry
 
     # Two instance variables: one for your stack, and one for your queue.
     def __init__(self):
-        self.queue = self.stack = []
-        self.b = queue.Queue()
+        self.stack = []
+        self.queue = deque([])
 
     # A void pushCharacter(char ch) method that pushes a character onto a stack.
     def pushCharacter(self, ch):
@@ -12,7 +14,7 @@ class Solution:
 
     # A void enqueueCharacter(char ch) method that enqueues a character in the queue instance variable.
     def enqueueCharacter(self, ch):
-        self.queue.put(ch)
+        self.queue.append(ch)
 
     # A char popCharacter() method that pops and returns the character at the top of the stack instance variable.
     def popCharacter(self):
@@ -21,7 +23,7 @@ class Solution:
 
     # A char dequeueCharacter() method that dequeues and returns the first character in the queue instance variable.
     def dequeueCharacter(self):
-        self.queue.remove()
+        self.queue.popleft()
         return self.queue[0]
 
 
