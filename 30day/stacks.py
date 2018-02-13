@@ -2,8 +2,6 @@ from collections import deque
 
 
 class Solution:
-    # class entry
-
     # Two instance variables: one for your stack, and one for your queue.
     def __init__(self):
         self.stack = []
