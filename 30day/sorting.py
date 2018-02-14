@@ -2,16 +2,16 @@ n = int(input().strip())
 a = list(map(int, input().strip().split(' ')))
 
 # bubble sort
-numSwaps = temp = 0
+numSwaps = 0
 print(a)
 
-for i in range(0, n):
-    j = i + 1
-    if a[i] < a[j]:
-        temp = a[i]
-        a[i] = a[j]
-        a[j] = temp
-        numSwaps += 1
+for passNum in range(n - 1, 0, -1):
+    for i in range(passNum):
+        if a[i] < a[i+1]:
+            a[i], a[i+1] = a[i+1], a[i]
+            numSwaps += 1
+
+print(a)
 
 firstElement = a[0]
 lastElement = a[-1]
