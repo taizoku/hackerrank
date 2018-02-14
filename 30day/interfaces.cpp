@@ -16,6 +16,14 @@ class Calculator : public AdvancedArithmetic {
 };
 
 int Calculator::divisorSum(int n) {
+	int result = 0;
+	for(int i = n; i > 0 ; i--) {
+		if (n % i == 0) {
+			result += i;
+		}
+	}
+
+	/*
 	bool two, three, twoThree = false;
 	int i, result, twoParam, threeParam = 0;
 	for(i; i < 100; i++) {
@@ -40,6 +48,7 @@ int Calculator::divisorSum(int n) {
 		threeParam = (pow(3, i))/(3-1);
 		result = twoParam * threeParam;
 	}
+	*/
 	return result;
 }
 
