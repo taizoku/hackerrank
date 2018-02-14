@@ -13,3 +13,5 @@ for a in range(0, n):
         numSwaps += 1
 firstElement = a[0]
 lastElement = a[-1]
+
+print("first", firstElement, "last", lastElement)
