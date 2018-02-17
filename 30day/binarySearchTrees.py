@@ -16,3 +16,13 @@ class Solution:
                 root.right=cur
         return root
 
+# my class
+
+T=int(input())
+myTree=Solution()
+root=None
+for i in range(T):
+    data=int(input())
+    root=myTree.insert(root,data)
+height=myTree.getHeight(root)
+print(height)       
