@@ -18,8 +18,11 @@ class Solution:
         return root
 
     def getHeight(self, root):
-        # return something
-        return root
+        # return height of binary tree
+        height = 0
+        for height in root:
+            height += 1
+        return height
 
 
 T = int(input())
