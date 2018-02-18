@@ -20,7 +20,8 @@ class Solution:
     def getHeight(self, root):
         # return height of binary tree
         height = 0
-        for height in root:
+        while root is not None:
+            root = root.next
             height += 1
         return height
 
