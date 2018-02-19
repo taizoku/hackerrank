@@ -16,11 +16,11 @@ class Solution:
                 root.left = cur
 
             else:
-                cur=self.insert(root.right,data)
-                root.right=cur
+                cur = self.insert(root.right, data)
+                root.right = cur
         return root
 
-    def levelOrder(self,root):
+    def levelOrder(self, root):
         #Write your code here
 
 T=int(input())
