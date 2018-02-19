@@ -21,12 +21,12 @@ class Solution:
         return root
 
     def levelOrder(self, root):
-        #Write your code here
+        # Write your code here
 
-T=int(input())
-myTree=Solution()
-root=None
+T = int(input())
+myTree = Solution()
+root = None
 for i in range(T):
-    data=int(input())
-    root=myTree.insert(root,data)
+    data = int(input())
+    root = myTree.insert(root, data)
 myTree.levelOrder(root)
