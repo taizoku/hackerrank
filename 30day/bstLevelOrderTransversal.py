@@ -11,9 +11,10 @@ class Solution:
             return Node(data)
 
         else:
-            if data<=root.data:
-                cur=self.insert(root.left,data)
-                root.left=cur
+            if data <= root.data:
+                cur = self.insert(root.left, data)
+                root.left = cur
+
             else:
                 cur=self.insert(root.right,data)
                 root.right=cur
