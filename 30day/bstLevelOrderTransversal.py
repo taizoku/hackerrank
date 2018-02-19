@@ -6,9 +6,10 @@ class Node:
         self.data = data
 
 class Solution:
-    def insert(self,root,data):
-        if root==None:
+    def insert(self, root, data):
+        if root is not None:
             return Node(data)
+
         else:
             if data<=root.data:
                 cur=self.insert(root.left,data)
