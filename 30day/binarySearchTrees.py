@@ -18,10 +18,14 @@ class Solution:
         return root
 
     def getHeight(self, root):
-        # return height of binary tree
         height = 0
-        while root is not None:
-            root = root.next
+        if root is not None:
+            height += 1
+
+        if root.left is not None:
+            height += 1
+
+        if root.right is not None:
             height += 1
         return height
 
