@@ -22,11 +22,11 @@ class Solution:
         if root is not None:
             height += 1
 
-        if root.left is not None:
-            height += 1
+        while root.left is not None:
+            print("lol")
+            if root.right is not None:
+                height += 1
 
-        if root.right is not None:
-            height += 1
         return height
 
 
