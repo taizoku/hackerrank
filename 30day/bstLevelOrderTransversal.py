@@ -21,7 +21,15 @@ class Solution:
         return root
 
     def levelOrder(self, root):
-        # Write your code here
+        queue = []
+        # append root
+        queue.append(root)
+
+        # level down left
+        if root.left is not None:
+            queue.append(root.left)
+
+        # level down
 
 T = int(input())
 myTree = Solution()
