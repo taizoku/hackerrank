@@ -18,19 +18,17 @@ class Solution:
         return root
 
     def getHeight(self, root):
-        # print(root.data)
-        leftHeight = rightHeight = 1
+        leftHeight = rightHeight = -1
         if root.left is not None:
             leftHeight = self.getHeight(root.left)
             print("L:", leftHeight)
+
         if root.right is not None:
-            rightHeight = rightHeight + self.getHeight(root.right)
+            rightHeight = self.getHeight(root.right)
             print("R:", rightHeight)
-        # heightLeft = float('-inf') if not root.left
-        # heightRight = float('-inf') if not root.left
-        # print("L:", leftHeight, "R:", rightHeight)
-        height = max(leftHeight, rightHeight)
-        return height
+
+        # height of a tree is the number of edges between the root node and its furthest leaf
+        return 1 + max(leftHeight, rightHeight)
 
 
 T = int(input())
