@@ -18,13 +18,15 @@ class Solution:
         return root
 
     def getHeight(self, root):
-        height = 0
+        leftHeight = rightHeight = 1
         if root is not None:
-            while root is not None:
-                if root.right is not None:
-                    height += 1
-                    self.getHeight(root.right)
-
+            # root = root.right
+            leftHeight = leftHeight + self.getHeight(root.left)
+            rightHeight = rightHeight + self.getHeight(root.right)
+        # heightLeft = float('-inf') if not root.left
+        # heightRight = float('-inf') if not root.left
+        print("L:", leftHeight, "R:", rightHeight)
+        height = max(leftHeight, rightHeight)
         return height
 
 
