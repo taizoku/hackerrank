@@ -29,7 +29,10 @@ class Solution:
         if root.left is not None:
             queue.append(root.left)
 
-        # level down
+        if root.right is not None:
+            queue.append(root.right)
+
+        return queue
 
 T = int(input())
 myTree = Solution()
