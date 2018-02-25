@@ -21,10 +21,17 @@ class Solution:
         return root
 
     def levelOrder(self, root):
+        #level order root transversal algorithm
         queue = []
-        # append root
+        # append root (Level 0)
         queue.append(root)
 
+        while queue is not None:
+            # dequeue next node
+            tree = root
+            tree.dequeue()
+            # process tree root
+        '''
         # level down left
         if root.left is not None:
             queue.append(root.left)
@@ -32,6 +39,8 @@ class Solution:
         if root.right is not None:
             queue.append(root.right)
 
+        if root.left.left.. # use algorithm
+        '''
         return queue
 
 T = int(input())
