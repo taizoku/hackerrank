@@ -27,10 +27,14 @@ class Solution:
         queue.append(root)
 
         while queue is not None:
-            # dequeue next node
+            # de-queue next node
             tree = root
             tree.dequeue()
             # process tree root
+
+            # enqueue child elements from next level in order
+            if tree.left is None:
+                queue.enqueue()
         '''
         # level down left
         if root.left is not None:
