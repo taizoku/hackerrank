@@ -34,7 +34,10 @@ class Solution:
 
             # enqueue child elements from next level in order
             if tree.left is None:
-                queue.enqueue()
+                queue.enqueue(tree.left)
+
+            if tree.right is None:
+                queue.enqueue(tree.right)
         '''
         # level down left
         if root.left is not None:
