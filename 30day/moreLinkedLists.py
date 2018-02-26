@@ -16,3 +16,15 @@ class Solution:
         while current:
             print(current.data,end=' ')
             current = current.next
+
+    def removeDuplicates(self,head):
+        #Write your code here
+
+        mylist = Solution()
+        T = int(input())
+        head = None
+        for i in range(T):
+            data = int(input())
+            head = mylist.insert(head, data)
+        head = mylist.removeDuplicates(head)
+        mylist.display(head)
