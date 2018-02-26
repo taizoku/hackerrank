@@ -23,7 +23,8 @@ class Solution:
             current = current.next
 
     def removeDuplicates(self,head):
-        #Write your code here
+        head.next
+        # yes lawd
 
         mylist = Solution()
         T = int(input())
