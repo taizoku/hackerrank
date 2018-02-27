@@ -27,15 +27,15 @@ class Solution:
         secondList = []
         current = head
         while current:
-            if current is not in secondList:
+            if current not in secondList:
                 secondList.append(current)
         return secondList
 
-        myList = Solution()
-        T = int(input())
-        head = None
-        for i in range(T):
-            data = int(input())
-            head = myList.insert(head, data)
-        head = myList.removeDuplicates(head)
-        myList.display(head)
+myList = Solution()
+T = int(input())
+head = None
+for i in range(T):
+    data = int(input())
+    head = myList.insert(head, data)
+head = myList.removeDuplicates(head)
+myList.display(head)
