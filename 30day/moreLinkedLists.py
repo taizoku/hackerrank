@@ -16,14 +16,15 @@ class Solution:
                     start = start.next
                 start.next = p
             return head
-    
-    def display(self,head):
+
+    def display(self, head):
         current = head
         while current:
-            print(current.data,end=' ')
+            print(current.data, end=' ')
             current = current.next
 
     def removeDuplicates(self, head):
+        current = head
 
         # yes lawd
 
