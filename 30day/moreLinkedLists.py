@@ -34,6 +34,7 @@ class Solution:
         while current:
             if current not in secondList:
                 secondList.append(current)
+            current = current.next
         return secondList
 
 
