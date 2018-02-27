@@ -24,15 +24,18 @@ class Solution:
             current = current.next
 
     def removeDuplicates(self, head):
+        secondList = []
         current = head
+        while current:
+            if current is not in secondList:
+                secondList.append(current)
+        return secondList
 
-        # yes lawd
-
-        mylist = Solution()
+        myList = Solution()
         T = int(input())
         head = None
         for i in range(T):
             data = int(input())
-            head = mylist.insert(head, data)
-        head = mylist.removeDuplicates(head)
-        mylist.display(head)
+            head = myList.insert(head, data)
+        head = myList.removeDuplicates(head)
+        myList.display(head)
