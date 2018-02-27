@@ -4,26 +4,27 @@ class Node:
         self.next = None
 
 class Solution:
-    def insert(self,head,data):
+    def insert(self, head, data):
             p = Node(data)
-            if head==None:
-                head=p
-            elif head.next==None:
-                head.next=p
+            if head is None:
+                head = p
+            elif head.next is None:
+                head.next = p
             else:
-                start=head
-                while(start.next!=None):
-                    start=start.next
-                start.next=p
+                start = head
+                while(start.next is not None):
+                    start = start.next
+                start.next = p
             return head
+    
     def display(self,head):
         current = head
         while current:
             print(current.data,end=' ')
             current = current.next
 
-    def removeDuplicates(self,head):
-        head.next
+    def removeDuplicates(self, head):
+
         # yes lawd
 
         mylist = Solution()
