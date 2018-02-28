@@ -35,11 +35,12 @@ class Solution:
             current = current.next
         return secondList
         '''
-        while head:
-            if head not in secondList:
-                secondList.append(head)
-                head = head.next
-        return head
+        current = head
+        while current is not None:
+            if current not in secondList:
+                secondList.append(current)
+            current = current.next
+        return secondList[0]
 
 myList = Solution()
 T = int(input())
