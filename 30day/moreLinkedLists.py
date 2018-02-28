@@ -27,13 +27,19 @@ class Solution:
 
     def removeDuplicates(self, head):
         secondList = []
+        '''
         current = head
         while current:
             if current not in secondList:
                 secondList.append(current)
             current = current.next
         return secondList
-
+        '''
+        while head:
+            if head not in secondList:
+                secondList.append(head)
+                head = head.next
+        return head
 
 myList = Solution()
 T = int(input())
