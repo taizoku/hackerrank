@@ -37,10 +37,11 @@ class Solution:
         '''
         current = head
         while current is not None:
-            if current not in secondList:
-                secondList.append(current)
+            if current.data not in secondList:
+                secondList.append(current.data)
             current = current.next
-        return secondList[0]
+        print(secondList)
+        return head
 
 myList = Solution()
 T = int(input())
