@@ -39,6 +39,10 @@ class Solution:
         while current is not None:
             if current.data not in secondList:
                 secondList.append(current.data)
+            if current.data in secondList:
+                current = current.next
+                previous.next = current
+            previous = current
             current = current.next
         print(secondList)
         return head
