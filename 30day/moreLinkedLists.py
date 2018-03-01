@@ -35,16 +35,19 @@ class Solution:
             current = current.next
         return secondList
         '''
-        current = head
-        previous = current
+        previous = current = head
         while current is not None:
             if current.data not in secondList:
                 secondList.append(current.data)
-            if current.data in secondList:
+
+                previous = current
+                if current is not None:
+                    current = current.next
+
+            else:
                 current = current.next
                 previous.next = current
-            previous = current
-            current = current.next
+
         print(secondList)
         return head
 
