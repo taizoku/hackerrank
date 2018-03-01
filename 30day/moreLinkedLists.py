@@ -27,14 +27,7 @@ class Solution:
 
     def removeDuplicates(self, head):
         secondList = []
-        '''
-        current = head
-        while current:
-            if current not in secondList:
-                secondList.append(current)
-            current = current.next
-        return secondList
-        '''
+
         previous = current = head
         while current is not None:
             if current.data not in secondList:
