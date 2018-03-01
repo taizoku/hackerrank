@@ -36,6 +36,7 @@ class Solution:
         return secondList
         '''
         current = head
+        previous = current
         while current is not None:
             if current.data not in secondList:
                 secondList.append(current.data)
