@@ -21,15 +21,16 @@ for i in range(testCases):
     n = list(map(int, input().strip().split(' ')))
 
 for number in n:
-    divisor = number
+    divisor = number-1
     while divisor > 1:
-        if divisor % number == 0:
+        print(divisor, "%", number, ":", (number % divisor))
+        if number % divisor == 0:
             prime = False
             break
 
         else:
             prime = True
-            
+
         divisor -= 1
 
 print("Prime") if prime else print("Not prime")
