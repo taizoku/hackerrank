@@ -16,9 +16,11 @@ For each test case, print whether n is Prime or Not prime on a new line.
 '''
 
 # Take in number of test cases and inputs
+n = []
 testCases = int(input())
 for i in range(testCases):
-    n = list(map(int, input().strip().split(' ')))
+    n.append(int(input()))
+    # n = list(map(int, input().strip().split(' ')))
 
 for number in n:
     divisor = number-1
@@ -32,5 +34,5 @@ for number in n:
             prime = True
 
         divisor -= 1
-
-print("Prime") if prime else print("Not prime")
+    print(n)
+    print("Prime") if prime else print("Not prime")
