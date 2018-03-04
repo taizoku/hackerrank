@@ -25,4 +25,7 @@ for number in n:
     if number % (number/2) != 0:
         prime = True
 
+    elif number % number - 1:
+        prime = False
+
 print("Prime") if prime else print("Not prime")
