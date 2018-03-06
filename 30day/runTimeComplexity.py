@@ -34,5 +34,4 @@ for number in n:
             prime = True
 
         divisor -= 1
-    print(n)
     print("Prime") if prime else print("Not prime")
