@@ -17,27 +17,28 @@ for i in range(0, 5):
     input = input().split(' ')
 
 print(input)
-returnDay = input[0]
-returnMonth = input[1]
-returnYear = input [2]
+actualDay = input[0]
+actualMonth = input[1]
+actualYear = input[2]
 
 expectedDay = input[3]
 expectedMonth = input[4]
 expectedYear = input[5]
 
-if (returnYear <= expectedYear) and (returnMonth <= expectedMonth) and (returnDay <= expectedDay):
+if (actualYear <= expectedYear) and (actualMonth <= expectedMonth) and (actualDay <= expectedDay):
     daysLate = 0
 
 else:
-    if (returnMonth == expectedMonth):
-        hackos = 15
-        daysLate = expected - returned
-        fine = hackos * daysLate
+    if expectedYear == actualYear:
+        if expectedMonth == actualMonth:
+            daysLate = expectedDay - actualDay
+            fine = 15*daysLate
 
-    elif(returnYear == expectedYear):
-        hackos = 500
+        else:
+            monthsLate = expectedMonth - actualMonth
+            fine = 500*monthsLate
 
-    elif(returnYear > expectedYear):
+    elif actualYear > expectedYear:
         fine = 10000
 
 print(fine)
