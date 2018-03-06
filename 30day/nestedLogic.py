@@ -12,12 +12,15 @@ Your local library needs your help! Given the expected and actual return dates f
      fine of .
 '''
 
-input = {}
+input = []
 for i in range(0, 5):
-    input = input()
-input[returnDay] = input[0]
-input[returnMonth] = input[1]
-input[returnYear] =
-input[expectedDay] =
-input[expectedMonth] =
-input[expectedYear]
+    input = input().split(' ')
+
+print(input)
+info = {}
+info['returnDay'] = input[0]
+input['returnMonth'] = input[1]
+input['returnYear'] = input [2]
+input['expectedDay'] = input[3]
+input['expectedMonth'] = input[4]
+input['expectedYear'] = input[5]
