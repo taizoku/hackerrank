@@ -31,14 +31,13 @@ if (returnYear <= expectedYear) and (returnMonth <= expectedMonth) and (returnDa
 else:
     if (returnMonth == expectedMonth):
         hackos = 15
+        daysLate = expected - returned
+        fine = hackos * daysLate
 
     elif(returnYear == expectedYear):
         hackos = 500
 
     elif(returnYear > expectedYear):
-        hackos = 10000
-
-    daysLate = expected - returned
-fine = hackos * daysLate
+        fine = 10000
 
 print(fine)
