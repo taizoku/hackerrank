@@ -25,9 +25,20 @@ input['expectedDay'] = input[3]
 input['expectedMonth'] = input[4]
 input['expectedYear'] = input[5]
 
-if (returnYear <= expectedYear) and (returnMonth <= expectedMonth) and (returnDay <= expectedDay)
-daysLate = expected - returned
-hackos = 15
+if (returnYear <= expectedYear) and (returnMonth <= expectedMonth) and (returnDay <= expectedDay):
+    daysLate = 0
+
+else:
+    if (returnMonth == expectedMonth):
+        hackos = 15
+
+    elif(returnYear == expectedYear):
+        hackos = 500
+
+    elif(returnYear > expectedYear):
+        hackos = 10000
+
+    daysLate = expected - returned
 fine = hackos * daysLate
 
 print(fine)
