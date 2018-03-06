@@ -17,13 +17,13 @@ for i in range(0, 5):
     input = input().split(' ')
 
 print(input)
-info = {}
-info['returnDay'] = input[0]
-input['returnMonth'] = input[1]
-input['returnYear'] = input [2]
-input['expectedDay'] = input[3]
-input['expectedMonth'] = input[4]
-input['expectedYear'] = input[5]
+returnDay = input[0]
+returnMonth = input[1]
+returnYear = input [2]
+
+expectedDay = input[3]
+expectedMonth = input[4]
+expectedYear = input[5]
 
 if (returnYear <= expectedYear) and (returnMonth <= expectedMonth) and (returnDay <= expectedDay):
     daysLate = 0
