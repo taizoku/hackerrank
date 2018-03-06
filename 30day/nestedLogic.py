@@ -24,3 +24,10 @@ input['returnYear'] = input [2]
 input['expectedDay'] = input[3]
 input['expectedMonth'] = input[4]
 input['expectedYear'] = input[5]
+
+if (returnYear <= expectedYear) and (returnMonth <= expectedMonth) and (returnDay <= expectedDay)
+daysLate = expected - returned
+hackos = 15
+fine = hackos * daysLate
+
+print(fine)
