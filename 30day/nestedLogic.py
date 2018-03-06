@@ -12,18 +12,18 @@ Your local library needs your help! Given the expected and actual return dates f
      fine of .
 '''
 
-input = []
-for i in range(0, 5):
-    input = input().split(' ')
+for i in range(6):
+    data = input().split()
+    print(data)
 
-print(input)
-actualDay = input[0]
-actualMonth = input[1]
-actualYear = input[2]
+print(data)
+actualDay = data[0]
+actualMonth = data[1]
+actualYear = data[2]
 
-expectedDay = input[3]
-expectedMonth = input[4]
-expectedYear = input[5]
+expectedDay = data[3]
+expectedMonth = data[4]
+expectedYear = data[5]
 
 if (actualYear <= expectedYear) and (actualMonth <= expectedMonth) and (actualDay <= expectedDay):
     daysLate = 0
