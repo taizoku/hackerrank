@@ -12,8 +12,8 @@ Your local library needs your help! Given the expected and actual return dates f
      fine of .
 '''
 
-actualData = input().split()
-expectedData = input().split()
+actualData = list(map(int, input().split(' ')))
+expectedData = list(map(int, input().split(' ')))
 
 print("actualData:", actualData, "| expectedData: ", expectedData)
 actualDay = actualData[0]
