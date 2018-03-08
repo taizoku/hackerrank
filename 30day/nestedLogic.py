@@ -30,11 +30,11 @@ if (actualYear <= expectedYear) and (actualMonth <= expectedMonth) and (actualDa
 else:
     if expectedYear == actualYear:
         if expectedMonth == actualMonth:
-            daysLate = expectedDay - actualDay
+            daysLate = actualDay - expectedDay
             fine = 15*daysLate
 
         else:
-            monthsLate = expectedMonth - actualMonth
+            monthsLate = actualMonth - expectedMonth
             fine = 500*monthsLate
 
     elif actualYear > expectedYear:
