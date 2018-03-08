@@ -15,14 +15,14 @@ Your local library needs your help! Given the expected and actual return dates f
 actualData = input().split()
 expectedData = input().split()
 
-print("actualData", actualData, "expectedData:", expectedData)
+print("actualData:", actualData, "| expectedData: ", expectedData)
 actualDay = actualData[0]
 actualMonth = actualData[1]
 actualYear = actualData[2]
 
-expectedDay = expectedData[3]
-expectedMonth = expectedData[4]
-expectedYear = expectedData[5]
+expectedDay = expectedData[0]
+expectedMonth = expectedData[1]
+expectedYear = expectedData[2]
 
 if (actualYear <= expectedYear) and (actualMonth <= expectedMonth) and (actualDay <= expectedDay):
     fine = 0
