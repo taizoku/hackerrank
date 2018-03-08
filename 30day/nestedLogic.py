@@ -26,7 +26,7 @@ expectedMonth = data[4]
 expectedYear = data[5]
 
 if (actualYear <= expectedYear) and (actualMonth <= expectedMonth) and (actualDay <= expectedDay):
-    daysLate = 0
+    fine = 0
 
 else:
     if expectedYear == actualYear:
