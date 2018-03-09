@@ -15,7 +15,7 @@ Your local library needs your help! Given the expected and actual return dates f
 actualData = list(map(int, input().split(' ')))
 expectedData = list(map(int, input().split(' ')))
 
-print("actualData:", actualData, "| expectedData: ", expectedData)
+# print("actualData:", actualData, "| expectedData:", expectedData)
 actualDay = actualData[0]
 actualMonth = actualData[1]
 actualYear = actualData[2]
@@ -30,8 +30,9 @@ if (actualYear <= expectedYear) and (actualMonth <= expectedMonth) and (actualDa
 else:
     if expectedYear == actualYear:
         if expectedMonth == actualMonth:
-            daysLate = actualDay - expectedDay
-            fine = 15*daysLate
+            if actualDay > expectedDay:
+                daysLate = actualDay - expectedDay
+                fine = 15*daysLate
 
         else:
             monthsLate = actualMonth - expectedMonth
