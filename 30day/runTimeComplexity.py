@@ -47,19 +47,19 @@ for i in range(testCases):
     # n = list(map(int, input().strip().split(' ')))
 
 for number in n:
-        print("Prime") if isPrime(number) else print("Not prime")
+    print("Prime") if isPrime(number) else print("Not prime")
 
-    '''
-    for number in n:
-        divisor = number-1
-    while divisor > 1:
-        print(divisor, "%", number, ":", (number % divisor))
-        if number % divisor == 0:
-            prime = False
-            break
+'''
+for number in n:
+    divisor = number-1
+while divisor > 1:
+    print(divisor, "%", number, ":", (number % divisor))
+    if number % divisor == 0:
+        prime = False
+        break
 
-        else:
-            prime = True
+    else:
+        prime = True
 
-        divisor -= 1
-    '''
+    divisor -= 1
+'''
