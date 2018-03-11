@@ -12,7 +12,7 @@
 cancellation = False
 for t: # number of lectures
     for n: # number of students in the class
-        for A(n): #increase
+        for A(n): #increasedd
         if n < k:
             cancellation = True
 if t <= 5:

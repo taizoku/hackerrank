@@ -15,6 +15,30 @@ Output:
 For each test case, print whether n is Prime or Not prime on a new line.
 '''
 
+def isPrime(number):
+    if number == 2:
+        return True
+
+    if number == 3:
+        return True
+
+    if n % 2 == 0:
+        return False
+
+    if n % 3 == 0:
+        return False
+
+    i = 5
+    w = 2
+    while i * i <= number:
+        if n % 1 == 0:
+            return False
+
+        i += w
+        w = 6 - w
+    return True
+
+
 # Take in number of test cases and inputs
 n = []
 testCases = int(input())
@@ -23,7 +47,11 @@ for i in range(testCases):
     # n = list(map(int, input().strip().split(' ')))
 
 for number in n:
-    divisor = number-1
+        print("Prime") if isPrime(number) else print("Not prime")
+
+    '''
+    for number in n:
+        divisor = number-1
     while divisor > 1:
         print(divisor, "%", number, ":", (number % divisor))
         if number % divisor == 0:
@@ -34,4 +62,4 @@ for number in n:
             prime = True
 
         divisor -= 1
-    print("Prime") if prime else print("Not prime")
+    '''
