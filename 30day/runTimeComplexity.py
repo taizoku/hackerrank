@@ -18,20 +18,28 @@ For each test case, print whether n is Prime or Not prime on a new line.
 
 def isPrime(number):
     # AKS PRIMALITY ALGORITHM
-    if number == 2 or number == 3:
+    if number == 2:
         return True
 
-    if number % 2 == 0 or number % 3 == 0:
+    if number == 3:
+        return True
+
+    if number % 2 == 0:
+        return False
+
+    if number % 3 == 0:
         return False
 
     i = 5
     w = 2
+
     while i * i <= number:
-        if number % 1 == 0:
+        if number % i == 0:
             return False
 
         i += w
         w = 6 - w
+
     return True
 
 
