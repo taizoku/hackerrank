@@ -27,7 +27,7 @@ def isPrime(number):
     i = 5
     w = 2
     while i * i <= number:
-        if n % 1 == 0:
+        if number % 1 == 0:
             return False
 
         i += w
