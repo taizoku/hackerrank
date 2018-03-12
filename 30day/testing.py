@@ -8,13 +8,14 @@
     YES
 '''
 
-
-cancellation = False
-for t: # number of lectures
-    for n: # number of students in the class
-        for A(n): #increased
-            if n < k:
-                cancellation = True
+if A(n) <= 0:
+    cancellation = False
+else:
+    for t: # number of lectures
+        for n: # number of students in the class
+            for A(n): #increased
+                if n < k:
+                    cancellation = True
 '''
 if t <= 5:
     if 3 <= n <= 200:
