@@ -8,6 +8,12 @@ def plusMinus(arr):
             negative += 1
         else:
             zero += 1
+    positive /= size
+    negative /= size
+    zero = 1 - positive - negative
+    print(positive)
+    print(negative)
+    print(zero)
 
 if __name__ == '__main__':
     n = int(input())
