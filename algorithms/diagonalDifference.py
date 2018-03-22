@@ -1,8 +1,13 @@
 import os
 
 def diagonalDifference(a):
-    primary = a[0][0] + a[1][1] + a[2][2]
-    secondary = a[0][2] + a[1][1] + a[2][0]
+    i = primary = secondary = 0
+    j = -1
+    for array in a:
+        primary += array[i]
+        secondary += array[j]
+        i += 1
+        j -= 1
     return abs(primary - secondary)
 
 
