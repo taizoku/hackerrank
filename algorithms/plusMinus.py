@@ -1,7 +1,7 @@
 def plusMinus(arr):
     size = len(arr)
     positive = negative = 0
-    
+
     for number in arr:
         if number > 0:
             positive += 1
