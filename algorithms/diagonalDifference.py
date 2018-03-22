@@ -1,5 +1,4 @@
-import os
-
+# import os
 def diagonalDifference(a):
     i = primary = secondary = 0
     j = -1
