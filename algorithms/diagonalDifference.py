@@ -1,13 +1,15 @@
 import os
 
 def diagonalDifference(a):
-    print("diagonal calculations go here")
-    primary = a[0] + a[4] + a[8]
-    secondary = a[2] + a[4] + a[6]
-    print(abs(primary - secondary))
+    print(a[0][0])
+    #for array in a:
+    primary = a[0][0] + a[1][1] + a[2][2]
+    secondary = a[0][2] + a[1][1] + a[2][0]
+    return abs(primary - secondary)
+
 
 if __name__ == '__main__':
-    f = open(os.environ['OUTPUT_PATH'], 'w')
+    # f = open(os.environ['OUTPUT_PATH'], 'w')
 
     n = int(input())
 
@@ -18,6 +20,7 @@ if __name__ == '__main__':
 
     result = diagonalDifference(a)
 
-    f.write(str(result) + '\n')
+    print(str(result))
+    #f.write(str(result) + '\n')
 
-    f.close()
+    #f.close()
