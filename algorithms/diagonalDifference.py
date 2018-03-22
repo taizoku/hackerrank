@@ -1,8 +1,6 @@
 import os
 
 def diagonalDifference(a):
-    print(a[0][0])
-    #for array in a:
     primary = a[0][0] + a[1][1] + a[2][2]
     secondary = a[0][2] + a[1][1] + a[2][0]
     return abs(primary - secondary)
@@ -21,6 +19,6 @@ if __name__ == '__main__':
     result = diagonalDifference(a)
 
     print(str(result))
-    #f.write(str(result) + '\n')
 
+    #f.write(str(result) + '\n')
     #f.close()
