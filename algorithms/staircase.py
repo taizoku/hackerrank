@@ -1,13 +1,15 @@
 def staircase(n):
     i = 1
     for i in range(n):
-        print()
-        print(" ")
-    print("#")
+        for spaces in range(n-i):
+            print(" ", end="")
 
-    return n
-    #for i in range(n):
-        # if(n-1) > 0:
+        for hashtags in range(i):
+            print("#", end="")
+        print("")
+
+# for i in range(n):
+    # if(n-1) > 0:
 
 
 if __name__ == '__main__':
