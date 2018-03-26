@@ -4,8 +4,9 @@ ar = list(map(int, input().rstrip().split()))
 
 def birthdayCakeCandles(n, ar):
     canReach = 0
+    largest = sorted(ar)[-1]
     for candle in sorted(ar):
-        if candle == n-1:
+        if candle == largest:
             canReach += 1
     return canReach
 
