@@ -1,7 +1,6 @@
 def timeConversion(s):
-    print("time")
-    s + 12
-    return s+12
+    print(s[1])
+    return
 
 if __name__ == '__main__':
     s = input()
