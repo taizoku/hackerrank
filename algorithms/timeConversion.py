@@ -1,5 +1,5 @@
 def timeConversion(s):
-    print(s[1])
+    print(s[:3])
     return
 
 if __name__ == '__main__':
