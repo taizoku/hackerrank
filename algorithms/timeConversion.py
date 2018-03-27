@@ -1,7 +1,8 @@
 def timeConversion(s):
     if s[-2:] == "PM":
-        print("24-Hour Time")
-    print(s[-2:])
+        print("test")
+        # s[:1] += str(12)
+    print(int(str("12"))+2)
     return
 
 if __name__ == '__main__':
