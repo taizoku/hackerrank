@@ -1,11 +1,7 @@
 #!/bin/python3
 
 import os
-import sys
 
-#
-# Complete the gradingStudents function below.
-#
 def gradingStudents(grades):
     #
     # Write your code here.
