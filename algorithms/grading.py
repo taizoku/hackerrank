@@ -7,13 +7,11 @@ def gradingStudents(grades):
         rounded = grade + abs(5 - grade[1])
             # if grade(1) > 2 and grade(1) < 5 or grade(1) > 7 and grade(1) < 10:
         if rounded - grade < 3:
-            grade
-            # round to nearest
+            grade = rounded
     return grades
 
 
 if __name__ == '__main__':
-    f = open(os.environ['OUTPUT_PATH'], 'w')
 
     n = int(input())
 
@@ -25,7 +23,4 @@ if __name__ == '__main__':
 
     result = gradingStudents(grades)
 
-    f.write('\n'.join(map(str, result)))
-    f.write('\n')
-
-    f.close()
+    print(result)
