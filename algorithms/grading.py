@@ -3,16 +3,19 @@
 import os
 
 def gradingStudents(grades):
+    i = 0
     for grade in grades:
-        print(grade + abs(5 - int(str(grade)[1])))
-        if int(str(grade)[1]) < 5:
-            rounded = grade + 5 - int(str(grade)[1])
+        if grade >= 38:
+            if int(str(grade)[1]) < 5:
+                rounded = grade + 5 - int(str(grade)[1])
 
-        elif int(str(grade)[1]) > 5:
-            rounded = grade + 10 - int(str(grade)[1])
-            # if grade(1) > 2 and grade(1) < 5 or grade(1) > 7 and grade(1) < 10:
-        if rounded - grade < 3:
-            grade = rounded
+            elif int(str(grade)[1]) > 5:
+                rounded = grade + 10 - int(str(grade)[1])
+                # if grade(1) > 2 and grade(1) < 5 or grade(1) > 7 and grade(1) < 10:
+            print(rounded)
+            if rounded - grade < 3:
+                grades[i] = rounded
+        i += 1
     return grades
 
 
