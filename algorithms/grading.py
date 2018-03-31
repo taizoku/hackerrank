@@ -3,9 +3,8 @@
 import os
 
 def gradingStudents(grades):
-    #
-    # Write your code here.
-    #
+    for grade in grades:
+        if grade + 5
 
 if __name__ == '__main__':
     f = open(os.environ['OUTPUT_PATH'], 'w')
