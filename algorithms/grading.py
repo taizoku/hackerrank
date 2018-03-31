@@ -4,6 +4,7 @@ import os
 
 def gradingStudents(grades):
     for grade in grades:
+        if grade(1) < 5 
         if grade > 38 and grade + 5:
             # round to nearest
 
