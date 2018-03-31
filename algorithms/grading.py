@@ -4,11 +4,13 @@ import os
 
 def gradingStudents(grades):
     for grade in grades:
-        if grade > 38:
-            if grade(1) < 5
-            if grade + 5:
-                # round to nearest
+        rounded = grade + abs(5 - grade[1])
+            # if grade(1) > 2 and grade(1) < 5 or grade(1) > 7 and grade(1) < 10:
+        if rounded - grade < 3:
+            grade
+            # round to nearest
     return grades
+
 
 if __name__ == '__main__':
     f = open(os.environ['OUTPUT_PATH'], 'w')
