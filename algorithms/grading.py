@@ -4,7 +4,7 @@ import os
 
 def gradingStudents(grades):
     for grade in grades:
-        rounded = grade + abs(5 - grade[1])
+        rounded = grade + abs(5 - int(str(grade)[1]))
             # if grade(1) > 2 and grade(1) < 5 or grade(1) > 7 and grade(1) < 10:
         if rounded - grade < 3:
             grade = rounded
