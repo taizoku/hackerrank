@@ -1,13 +1,15 @@
-import os
-import sys
-
-#
-# Complete the countApplesAndOranges function below.
-#
 def countApplesAndOranges(s, t, a, b, apples, oranges):
-    #
-    # Write your code here.
-    #
+    appleCount = orangeCount = 0
+    house = range(s, t)
+    print(house)
+
+    for apple in apples:
+        if a + apples in house:
+            appleCount += 1
+
+    for orange in oranges:
+        if b + orange in house:
+            orangeCount += 1
 
 if __name__ == '__main__':
     st = input().split()
