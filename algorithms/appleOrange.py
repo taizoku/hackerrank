@@ -1,14 +1,16 @@
 def countApplesAndOranges(s, t, a, b, apples, oranges):
     appleCount = orangeCount = 0
-    house = list(range(s, t))
+    house = list(range(s, t+1))
 
     for apple in apples:
-        if a + apple in house:
-            appleCount += 1
+        if apple > 0:
+            if a + apple in house:
+                appleCount += 1
 
     for orange in oranges:
-        if b + orange in house:
-            orangeCount += 1
+        if orange < 0:
+            if b + orange in house:
+                orangeCount += 1
 
     print(appleCount)
     print(orangeCount)
