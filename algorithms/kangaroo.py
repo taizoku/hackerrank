@@ -1,11 +1,13 @@
 def kangaroo(x1, v1, x2, v2):
     if x1 > x2:
         if isinstance(x1 / v2, int):
-            True
+            return "YES"
 
     else:
-        if isinstance(x2 / v1, int) == 0:
-            True
+        if isinstance(x2 / v1, int):
+            return "YES"
+
+    return "NO"
 
 
 x1, v1, x2, v2 = input().strip().split(' ')
