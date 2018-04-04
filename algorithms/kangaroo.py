@@ -1,10 +1,10 @@
 def kangaroo(x1, v1, x2, v2):
     if x1 > x2:
-       if x1 / v2 == 0:
+        if isinstance(x1 / v2, int):
             True
 
     else:
-        if x2 / v1 == 0:
+        if isinstance(x2 / v1, int) == 0:
             True
 
 
