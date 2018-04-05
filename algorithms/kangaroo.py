@@ -1,12 +1,10 @@
 def kangaroo(x1, v1, x2, v2):
-    if x1 > x2:
-        if isinstance(x1 / v2, int):
+    if x1 > x2 and v2 > v1:
             return "YES"
 
     else:
         if v2 < v1:
-            if isinstance(x2 / v1, int):
-                return "YES"
+            return "YES"
 
     return "NO"
 
