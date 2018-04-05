@@ -4,8 +4,9 @@ def kangaroo(x1, v1, x2, v2):
             return "YES"
 
     else:
-        if isinstance(x2 / v1, int):
-            return "YES"
+        if v2 < v1:
+            if isinstance(x2 / v1, int):
+                return "YES"
 
     return "NO"
 
