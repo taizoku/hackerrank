@@ -1,9 +1,16 @@
 def kangaroo(x1, v1, x2, v2):
     if x1 > x2 and v2 > v1:
+        print((x1 - x2) / (v2 - v1))
+        # should also check if it lies within a multiplicative range
+        if isinstance((x1 - x2) / (v2 - v1), int):
             return "YES"
 
-    else:
-        if v2 < v1:
+    elif x1 < x2 and v1 > v2:
+        # x1 + v1*t = x2 + v2*t
+        print((x2 - x1) % (v1 - v2))
+        if isinstance((x2 - x1) / (v1 - v2), int):
+        
+            print("int case ye boi")
             return "YES"
 
     return "NO"
