@@ -7,13 +7,12 @@ def getTotalX(a, b):
         print(number)
         for first in a:
             if number % first == 0:
-                stuff.append(number)
+                for second in b:
+                    if number % second == 0:
+                        if number == second[-1]:
+                            stuff.append(number)
 
     # the things in stuff should be factors of all elements in b
-    for item in stuff:
-        for second in b:
-            if second % item != 0:
-                item = 1
 
     print(stuff)
     return len(stuff)
