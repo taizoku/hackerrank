@@ -1,11 +1,13 @@
 def getTotalX(a, b):
+    a = sorted(a)
     b = sorted(b)
     # all factors of the integer being considered
     for first in a:
         for second in b:
-
-            if second % stuff != 0:
-                remove element lol
+            for i in range(a[1] ,b[-1]):
+                
+                if second % stuff != 0:
+                    remove element lol
             print("mod func or something")
 
 if __name__ == '__main__':
