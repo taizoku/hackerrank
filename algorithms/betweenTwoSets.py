@@ -3,6 +3,9 @@ def getTotalX(a, b):
     # all factors of the integer being considered
     for first in a:
         for second in b:
+
+            if second % stuff != 0:
+                remove element lol
             print("mod func or something")
 
 if __name__ == '__main__':
