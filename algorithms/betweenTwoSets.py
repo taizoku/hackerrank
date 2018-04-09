@@ -8,8 +8,8 @@ def getTotalX(a, b):
         for first in a:
             if number % first == 0:
                 for second in b:
-                    if number % second == 0:
-                        if number == second[-1]:
+                    if second % number == 0:
+                        if second == b[-1]:
                             stuff.append(number)
 
     # the things in stuff should be factors of all elements in b
