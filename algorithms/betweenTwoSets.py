@@ -2,12 +2,13 @@ def getTotalX(a, b):
     a = sorted(a)
     b = sorted(b)
     stuff = []
-    # all factors of the integer being considered
+
     for first in a:
         for number in range(a[1], b[-1]):
             if number % first:
                 stuff.append(number)
 
+    # the things in stuff should be factors of all elements in b
     for item in stuff:
         for second in b:
             if second % item != 0:
