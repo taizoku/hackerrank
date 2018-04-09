@@ -8,15 +8,14 @@ def getTotalX(a, b):
             if number % first:
                 stuff.append(number)
 
-    for second in b:
-        if second % stuff != 0:
-            bye elem    ent
+    for item in stuff:
+        for second in b:
+            if second % item != 0:
+                stuff.remove(item)
 
     return len(stuff)
 
 if __name__ == '__main__':
-    f = open(os.environ['OUTPUT_PATH'], 'w')
-
     nm = input().split()
 
     n = int(nm[0])
@@ -29,6 +28,4 @@ if __name__ == '__main__':
 
     total = getTotalX(a, b)
 
-    f.write(str(total) + '\n')
-
-    f.close()
+    print(total)
