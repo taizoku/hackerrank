@@ -3,7 +3,8 @@ def getTotalX(a, b):
     b = sorted(b)
     stuff = []
 
-    for number in range(a[1], b[-1]):
+    for number in range(a[1], b[0]):
+        print(number)
         for first in a:
             if number % first == 0:
                 stuff.append(number)
