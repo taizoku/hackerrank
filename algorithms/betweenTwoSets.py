@@ -1,10 +1,9 @@
 def getTotalX(a, b):
+    b = sorted(b)
     # all factors of the integer being considered
-    for elements in a:
-        print("mod func or something")
-
-    for elements in b:
-        print("same dealio")
+    for first in a:
+        for second in b:
+            print("mod func or something")
 
 if __name__ == '__main__':
     f = open(os.environ['OUTPUT_PATH'], 'w')
