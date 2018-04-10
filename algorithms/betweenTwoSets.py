@@ -5,16 +5,12 @@ def getTotalX(a, b):
 
     for number in range(a[1], b[0]):
         for first in a:
-
             if number % first == 0:
-                print("second stage:", number)
-
+                # should be factor of all in b
                 for second in b:
                     if second % number == 0:
                         if first == a[-1] and second == b[-1]:
                             satisfied.append(number)
-
-    # the things in stuff should be factors of all elements in b
 
     print(satisfied)
     return len(satisfied)
