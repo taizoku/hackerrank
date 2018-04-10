@@ -1,21 +1,23 @@
 def getTotalX(a, b):
     a = sorted(a)
     b = sorted(b)
-    stuff = []
+    satisfied = []
 
     for number in range(a[1], b[0]):
-        print(number)
         for first in a:
+
             if number % first == 0:
+                print("second stage:", number)
+
                 for second in b:
                     if second % number == 0:
-                        if second == b[-1]:
-                            stuff.append(number)
+                        if first == a[-1] and second == b[-1]:
+                            satisfied.append(number)
 
     # the things in stuff should be factors of all elements in b
 
-    print(stuff)
-    return len(stuff)
+    print(satisfied)
+    return len(satisfied)
 
 if __name__ == '__main__':
     nm = input().split()
