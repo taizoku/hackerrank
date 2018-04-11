@@ -1,9 +1,9 @@
 def breakingRecords(score):
-    highest = lowest = countHigh = countLow = 0
+    countHigh = countLow = 0
     firstEntry = True
 
     for game in score:
-        if game > 0:
+        if game >= 0:
             if firstEntry:
                 firstEntry = False
                 highest = lowest = game
