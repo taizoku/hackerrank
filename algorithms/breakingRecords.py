@@ -1,16 +1,20 @@
 def breakingRecords(score):
     highest = lowest = countHigh = countLow = 0
+    firstEntry = True
+
     for game in score:
-        if game == score[0]:
-            highest = lowest = game
+        if game > 0:
+            if firstEntry:
+                firstEntry = False
+                highest = lowest = game
 
-        if game > highest:
-           highest = game
-           countHigh += 1
+            if game > highest:
+                highest = game
+                countHigh += 1
 
-        if game < lowest:
-            lowest = game
-            countLow += 1
+            elif game < lowest:
+                lowest = game
+                countLow += 1
 
     return countHigh, countLow
 
@@ -22,4 +26,4 @@ if __name__ == '__main__':
 
     result = breakingRecords(score)
 
-    print(result)
+    print(result[0], result[1])
