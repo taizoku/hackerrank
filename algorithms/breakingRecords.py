@@ -1,7 +1,16 @@
 def breakingRecords(score):
-    #
-    # Write your code here.
-    #
+    highest = lowest = countHigh = countLow = 0
+    for game in score:
+        if game == score[0]:
+            highest = lowest = game
+
+        if game > highest:
+           highest = game
+           countHigh += 1
+
+        if game < lowest:
+            lowest = game
+            countLow += 1
 
 if __name__ == '__main__':
     f = open(os.environ['OUTPUT_PATH'], 'w')
