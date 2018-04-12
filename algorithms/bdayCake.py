@@ -1,9 +1,11 @@
 def solve(n, s, d, m):
-    sum = 0
+    validCombination = sum = 0
     for i in range(n):
         sum += s[i]
         if len(sum) == d:
             if sum == m:
+                validCombination += 1
+    return validCombination
 
 
 n = int(input().strip())
