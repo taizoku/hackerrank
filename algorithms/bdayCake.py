@@ -1,8 +1,9 @@
 def solve(n, s, d, m):
-    for n:
-        s is the array
-    if len(sum) == d:
-        if sum == m:
+    sum = 0
+    for i in range(n):
+        sum += s[i]
+        if len(sum) == d:
+            if sum == m:
 
 
 n = int(input().strip())
