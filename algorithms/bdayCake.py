@@ -22,23 +22,18 @@ def solve(n, s, d, m):
             if element == check:
                 continue
     print(onlyTwo)
-    # check if sum elements (2) == 4
-    # add to counter
 
     validCombination = 0
 
+    # m is how many numbers we are adding
     for i in range(len(onlyTwo)):
-        for j in range(1, onlyTwo+1):
-            for j in range(m):
-                sum += onlyTwo[j]
-
-                print(sum)
-                if sum == d:
-                    validCombination += 1
-
-        # m is how many numbers we are adding
-
-        # d is the unique sum we want to reach using unique combinations
+        for j in range(1, len(onlyTwo)):
+            sum = 0
+            sum = onlyTwo[i] + onlyTwo[j]
+            print(sum)
+            # d is the unique sum we want to reach using unique combinations
+            if sum == d:
+                validCombination += 1
 
     return validCombination
 
