@@ -8,13 +8,18 @@ def solve(n, s, d, m):
     new = True
     onlyTwo = []
     for element in s:
-        if element !in onlyTwo:
+        if element not in onlyTwo:
+            new = False
             check = element
             onlyTwo.append(element)
+
         else:
+            if new is False:
+                new = True
+                onlyTwo.append((element))
+
             if element == check:
                 continue
-            onlyTwo.append((element))
 
     # s = [1 2 2 3]
 
