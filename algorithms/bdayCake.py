@@ -30,7 +30,7 @@ def solve(n, s, d, m):
         for j in range(1, len(onlyTwo)):
             sum = 0
             sum = onlyTwo[i] + onlyTwo[j]
-            print(sum)
+            print(onlyTwo[i], "+", onlyTwo[j], "=", sum)
             # d is the unique sum we want to reach using unique combinations
             if sum == d:
                 validCombination += 1
