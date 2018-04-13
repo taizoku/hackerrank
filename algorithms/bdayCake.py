@@ -26,14 +26,15 @@ def solve(n, s, d, m):
     # add to counter
 
     validCombination = 0
-    
-    for i in range(m*m):
-        for j in range(m):
-            sum += onlyTwo[j]
 
-            print(sum)
-            if sum == d:
-                validCombination += 1
+    for i in range(len(onlyTwo)):
+        for j in range(1, onlyTwo+1):
+            for j in range(m):
+                sum += onlyTwo[j]
+
+                print(sum)
+                if sum == d:
+                    validCombination += 1
 
         # m is how many numbers we are adding
 
