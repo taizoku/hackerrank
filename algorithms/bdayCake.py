@@ -5,6 +5,16 @@ def solve(n, s, d, m):
 
     # s = [1 2 2 2 3]
     # remove counts of same number twice
+    new = True
+    onlyTwo = []
+    for element in s:
+        if element !in onlyTwo:
+            check = element
+            onlyTwo.append(element)
+        else:
+            if element == check:
+                continue
+            onlyTwo.append((element))
 
     # s = [1 2 2 3]
 
