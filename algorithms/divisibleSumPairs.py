@@ -4,7 +4,7 @@
 #
 # task:
 #   find and print number of (i,j) pairs where
-#   i < j and a[i] + a[j] is divisble by k
+#   i < j and a[i] + a[j] is divisible by k
 
 
 def divisibleSumPairs(n, k, ar):
