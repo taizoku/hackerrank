@@ -9,8 +9,11 @@
 
 def divisibleSumPairs(n, k, ar):
     for i in range(n):
-        for j in range(1, n):
-            print(i,j)
+        j = i+1
+        while j < len(ar):
+            print(i, j)
+            j += 1
+        # for j in range(1, n):
         # if i < j and ar[i] + ar[j] % k == 0:
         # add to counter
 
