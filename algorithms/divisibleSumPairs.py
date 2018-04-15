@@ -7,7 +7,9 @@
 #   i < j and a[i] + a[j] is divisble by k
 
 def divisibleSumPairs(n, k, ar):
-    # Complete this function
+    for i in ar:
+        if i < j and ar[i] + ar[j] % k == 0:
+            add to counter
 
 
 n, k = input().strip().split(' ')
