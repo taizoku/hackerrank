@@ -1,11 +1,15 @@
-def migratoryBirds(n, ar):
-    collection = dict()
+from collections import Counter
 
-    for bird in ar:
-        if str(bird) not in collection:
-            collection[str(bird)] = collection.get(bird, 0)
-        collection[str(bird)] = collection[str(bird)] + 1
-    return collection
+def migratoryBirds(n, ar):
+    counter = Counter(ar)
+    for i in counter:
+        for j in range(1, n):
+            
+            if counter[i] == counter[j]:
+                lowest = i
+
+    print(counter)
+    return lowest
 
 
 n = int(input().strip())
