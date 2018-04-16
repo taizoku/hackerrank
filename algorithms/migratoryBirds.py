@@ -1,7 +1,11 @@
 def migratoryBirds(n, ar):
     collection = dict()
+
     for bird in ar:
-        collection[str(bird)] = collection.get(bird, 1) + 1
+        if bird not in collection:
+            collection[str(bird)] = collection.get(bird, 0)
+
+
     print(collection)
     return collection
 
