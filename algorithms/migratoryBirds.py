@@ -13,6 +13,7 @@ def migratoryBirds(n, ar):
 
     print(counter)
     print(mostFreq)
+    print(1)
     return mostFreq
 
 
