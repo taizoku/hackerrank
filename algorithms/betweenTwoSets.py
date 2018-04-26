@@ -2,6 +2,7 @@ def getTotalX(a, b):
     a = sorted(a)
     b = sorted(b)
 
+    half = []
     satisfied = []
 
     for number in range(a[-1], b[0] + 1):
@@ -9,11 +10,21 @@ def getTotalX(a, b):
             if number % first == 0:
                 print(first, number)
                 if first == a[-1]:
-                    # for second in b:
-                    satisfied.append(number)
+                    half.append(number)
+
             else:
                 break
+    print(half)
 
+    for check in half:
+        for second in b:
+            print(check, second)
+            if second % check == 0:
+                if second == b[-1]:
+                    satisfied.append(check)
+
+            else:
+                break
 
 
 
