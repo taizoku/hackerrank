@@ -3,7 +3,7 @@ def getTotalX(a, b):
     b = sorted(b)
     satisfied = []
 
-    for number in range(a[1], b[0]):
+    for number in range(a[-1], b[0]):
         for first in a:
             if number % first == 0:
                 # should be factor of all in b
