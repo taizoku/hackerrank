@@ -5,10 +5,10 @@ def getTotalX(a, b):
     half = []
     satisfied = []
 
+    # find common multiples for first array
     for number in range(a[-1], b[0] + 1):
         for first in a:
             if number % first == 0:
-                print(first, number)
                 if first == a[-1]:
                     half.append(number)
 
@@ -16,9 +16,9 @@ def getTotalX(a, b):
                 break
     print(half)
 
+    # check if factor of all in second array
     for check in half:
         for second in b:
-            print(check, second)
             if second % check == 0:
                 if second == b[-1]:
                     satisfied.append(check)
@@ -26,21 +26,9 @@ def getTotalX(a, b):
             else:
                 break
 
-
-
-        #for first in a:
-           # if number % first == 0:
-
-                # should be factor of all in b
-                #for second in b:
-                   # print(second, number)
-                   # print(second, "%", number, "is", second % number)
-                    #if second % number == 0:
-                      #  if first == a[-1] and second == b[-1]:
-                           # satisfied.append(number)
-
     print(satisfied)
     return len(satisfied)
+
 
 if __name__ == '__main__':
     nm = input().split()
