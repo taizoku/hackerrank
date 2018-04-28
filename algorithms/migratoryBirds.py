@@ -1,11 +1,18 @@
 #from collections import Counter
 
 def migratoryBirds(n, ar):
-    mostFreq = -1
-    final = [0, 1, 2, 3, 4, 5]
-    counter = 0
+    frequencies = [0, 0, 0, 0, 0, 0]
     for bird in ar:
-        counter += 1
+        frequencies[bird] += 1
+
+    highestValue = 0
+    mostFreq = -1
+    for i in range(1, 5):
+        if frequencies[i] > highestValue:
+            highestValue = frequencies[i]
+            mostFreq = i
+        # elif frequencies[i] == highestValue:
+
     # counter = Counter(ar)
     #for i in counter(1, n):
      #   for j in range(2, n):
@@ -14,6 +21,7 @@ def migratoryBirds(n, ar):
         #        if counter[i] == counter[j]:
          #           mostFreq = i
 
+    print(frequencies)
     return mostFreq
 
 
