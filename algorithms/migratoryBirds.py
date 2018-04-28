@@ -5,21 +5,12 @@ def migratoryBirds(n, ar):
     for bird in ar:
         frequencies[bird] += 1
 
-    highestValue = 0
+    highestValue = -1
     mostFreq = -1
-    for i in range(1, 5):
+    for i in range(1, 5+1):
         if frequencies[i] > highestValue:
             highestValue = frequencies[i]
             mostFreq = i
-        # elif frequencies[i] == highestValue:
-
-    # counter = Counter(ar)
-    #for i in counter(1, n):
-     #   for j in range(2, n):
-      #      if counter[i] > mostFreq:
-       #         mostFreq = i
-        #        if counter[i] == counter[j]:
-         #           mostFreq = i
 
     print(frequencies)
     return mostFreq
