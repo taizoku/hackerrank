@@ -11,9 +11,11 @@ def solve(n, s, d, m):
     tracking = 0
     # should be in range 0 to (n-(m-1)); m being length equal to birth month
     for i in range(n-(m-1)):
+        # range from 0 to m (length we adding)
+        for limit in range(m):
 
         # check if segment not already checked
-        if (s) not in usedSegment:
+        if (s[i], to s[i+m]) not in usedSegment:
             if tracking < n:
                 while i < m:
                     if s[i] == d:
