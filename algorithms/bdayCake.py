@@ -6,9 +6,13 @@ def solve(n, s, d, m):
     print(s)
     # remove counts of same number twice
     # s = [1 2 2 3]
+    tracking = 0
     for i in range(n):
-        for j in range(1, n):
-            
+        if tracking < n:
+            while i < m:
+                if == d:
+                    usedSegment.append(,)
+
 
 
     new = True
@@ -24,7 +28,7 @@ def solve(n, s, d, m):
                 new = True
                 onlyTwo.append((element))
 
-            if element == check:x`
+            if element == check:
                 continue
     print(onlyTwo)
 
