@@ -10,4 +10,5 @@ def birthdayCakeCandles(n, ar):
             canReach += 1
     return canReach
 
+
 print(birthdayCakeCandles(n, ar))
