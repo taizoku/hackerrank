@@ -8,10 +8,11 @@ def solve(n, s, d, m):
     # s = [1 2 2 3]
     tracking = 0
     for i in range(n):
-        if tracking < n:
-            while i < m:
-                if == d:
-                    usedSegment.append(,)
+        if (s) not in usedSegment:
+            if tracking < n:
+                while i < m:
+                    if s[i] == d:
+                        usedSegment.append(,)
 
 
 
