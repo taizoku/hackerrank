@@ -6,8 +6,13 @@ def solve(n, s, d, m):
     print(s)
     # remove counts of same number twice
     # s = [1 2 2 3]
+
+    # variable keeps track of where we are in the maybe??
     tracking = 0
-    for i in range(n):
+    # should be in range 0 to (n-(m-1)); m being length equal to birth month
+    for i in range(n-(m-1)):
+
+        # check if segment not already checked
         if (s) not in usedSegment:
             if tracking < n:
                 while i < m:
