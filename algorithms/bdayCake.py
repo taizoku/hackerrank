@@ -1,11 +1,16 @@
 def solve(n, s, d, m):
     # s = [2 2 1 3 2]
-
-    s = sorted(s)
+    usedSegment = []
+    #s = sorted(s)
     # s = [1 2 2 2 3]
     print(s)
     # remove counts of same number twice
     # s = [1 2 2 3]
+    for i in range(n):
+        for j in range(1, n):
+            
+
+
     new = True
     onlyTwo = []
     for element in s:
@@ -19,7 +24,7 @@ def solve(n, s, d, m):
                 new = True
                 onlyTwo.append((element))
 
-            if element == check:
+            if element == check:x`
                 continue
     print(onlyTwo)
 
