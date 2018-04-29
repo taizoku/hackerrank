@@ -8,14 +8,22 @@ def solve(n, s, d, m):
     # s = [1 2 2 3]
 
     # variable keeps track of where we are in the maybe??
-    tracking = 0
+
     # should be in range 0 to (n-(m-1)); m being length equal to birth month
     for i in range(n-(m-1)):
+        segmentValue = 0
         # range from 0 to m (length we adding)
         for limit in range(m):
 
+        if segmentValue == d:
+            usedSegment.append(...)
+            result += 1
+
+        return result
+
         # check if segment not already checked
         if (s[i], to s[i+m]) not in usedSegment:
+
             if tracking < n:
                 while i < m:
                     if s[i] == d:
