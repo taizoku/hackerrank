@@ -1,3 +1,5 @@
+import itertools
+
 def solve(numofSquares, array, desiredValue, addLength):
     usedSegment = []
 
@@ -13,14 +15,15 @@ def solve(numofSquares, array, desiredValue, addLength):
         # range from 0 to m (length we adding)
         for limit in range(addLength):
             segmentValue += array[i + limit]
-            currentSegment[i].append(array[i + limit])
+            currentSegment.append(array[i + limit])
 
-        if (segmentValue == desiredValue) and currentSegment[i] not in usedSegment:
-            usedSegment.append(currentSegment[i])
-            #usedSegment.append([array[i], array[i + 1], array[i + 2]])
+        if (segmentValue == desiredValue) and currentSegment not in usedSegment:
+            usedSegment.append(currentSegment)
+            # usedSegment.append([array[i], array[i + 1], array[i + 2]])
             validCombination += 1
 
     print(usedSegment)
+    print(list(itertools.permutations(array)))
 
     return validCombination
 
