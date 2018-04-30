@@ -1,5 +1,3 @@
-import itertools
-
 def solve(numofSquares, array, desiredValue, addLength):
     usedSegment = []
     validCombination = 0
@@ -25,7 +23,7 @@ def solve(numofSquares, array, desiredValue, addLength):
             usedSegment.append(currentSegment)
             # and count it as a validCombination
             validCombination += 1
-            
+
     print(usedSegment)
 
     return validCombination
