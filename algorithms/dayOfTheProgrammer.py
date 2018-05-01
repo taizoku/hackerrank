@@ -33,6 +33,7 @@ def solve(year):
     #   - 4 (April)
     #   - 6 (June)
     #   - 9 (September)
+
     # 31 days:
     #   - 3 (March)
     #   - 5 (May)
@@ -44,21 +45,44 @@ def solve(year):
     #   print format dd.mm.yyyy
 
     if year < 1918:
-
-    elif year == 1918:
-        # if it's a leap year
         if isLeapYear(year):
-            # 29 days in feb
-            # feb 14 is 32
-            # feb 29 is 47th day
-        month = 3
-        for i in range(48, 256):
-            month == 3:
-            month += 1
-
-        (day, month, year)
+            grandTotal = 31+29
 
         else:
+            grandTotal = 31+28
+
+
+    elif year == 1918:
+        # if it's a leap year - 29 days
+        if isLeapYear(year):
+            # feb 14 is 32
+            # feb 29 is 47th day
+            month = 3
+            day = 1
+            for i in range(48, 256 + 1):
+                if month == 3 or month == 5 or month == 7 or month == 8:
+                    if day == 31:
+                        month += 1
+                        day = 1
+
+                else:
+                    if day == 30:
+                        month += 1
+                        day = 1
+
+        else:
+            if month == 3 or month == 5 or month == 7 or month == 8:
+                if day == 31:
+                    month += 1
+                    day = 1
+
+            else:
+                if day == 30:
+                    month += 1
+                    day = 1
+
+        date = str(day) + "." + str(month) + "." + str(year)
+    return date
 
 
 year = int(input().strip())
