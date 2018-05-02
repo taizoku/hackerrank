@@ -18,12 +18,12 @@ def isLeapYear(year):
     leapYear = False
     if year < 1918:
         if year % 4:
-            print("issa leap year according to julian")
+            # print("issa leap year according to julian")
             leapYear = True
 
     else:
-        if year % 400 == 0 or year % 4 == 0 and year % 100 != 0:
-            print("issa leap year according to greg")
+        if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+            # print("issa leap year according to greg")
             leapYear = True
 
     return leapYear
