@@ -51,7 +51,6 @@ def solve(year):
         else:
             grandTotal = 31+28
 
-
     elif year == 1918:
         # if it's a leap year - 29 days
         if isLeapYear(year):
@@ -59,18 +58,14 @@ def solve(year):
             # feb 29 is 47th day
             month = 3
             day = 1
-            for i in range(48, 256 + 1):
-                if month == 3 or month == 5 or month == 7 or month == 8:
-                    if day == 31:
-                        month += 1
-                        day = 1
-
-                else:
-                    if day == 30:
-                        month += 1
-                        day = 1
+            marchFirst = 48
 
         else:
+            # not a leap year - 28 days
+            # feb 29 is 
+            marchFirst
+
+        for i in range(marchFirst, 256 + 1):
             if month == 3 or month == 5 or month == 7 or month == 8:
                 if day == 31:
                     month += 1
@@ -80,6 +75,7 @@ def solve(year):
                 if day == 30:
                     month += 1
                     day = 1
+
 
         date = str(day) + "." + str(month) + "." + str(year)
     return date
