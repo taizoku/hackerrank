@@ -44,27 +44,24 @@ def solve(year):
     # Given a year find the date of the 256th day
     #   print format dd.mm.yyyy
 
-    if year < 1918:
-        if isLeapYear(year):
-            grandTotal = 31+29
-
-        else:
-            grandTotal = 31+28
-
-    elif year == 1918:
+    if year == 1918:
         # 1918 is NOT a leap year so
             # not a leap year - 28 days
             # feb 14 is 32
             # feb 28 is 46th day -> march 1 is 47th
         marchFirst = 47
 
-    # year > 1918
+    # else year is either < 1918 or > 1918
+        # (uses the same logic)
     else:
-        # if it's a leap year - 29 days
         if isLeapYear(year):
             # feb 29 is 29+31 = 60th day
             # march 1st is 61st day
-            marchFirst = 48
+            marchFirst = 31 + 29 + 1
+
+        else:
+            # feb 28 is 59th day
+            marchFirst = 31 + 28 + 1
 
     month = 3
     day = 1
@@ -79,6 +76,7 @@ def solve(year):
                 month += 1
                 day = 1
 
+        day += 1
 
     date = str(day) + "." + str(month) + "." + str(year)
     return date
