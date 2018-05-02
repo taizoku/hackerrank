@@ -33,6 +33,15 @@ def isLeapYear(year):
 #   print format dd.mm.yyyy
 
 def solve(year):
+    jan = 1
+    feb = 2
+    mar = 3
+    apr = 4
+    may = 5
+    jun = 6
+    jul = 7
+    aug = 8
+    sep = 9
     if year == 1918:
         # 1918 is NOT a leap year so
             # not a leap year - 28 days
@@ -68,22 +77,26 @@ def solve(year):
     # month = 3
     # day = 1
     totalDays = 0
-    for month in range(9):
-        if month == 4 or month == 6:
+    for month in range(jan, sep):
+        if month == apr or month == jun:
             totalDays += 30
+            print(month, "added 30")
 
-        if month == 2:
+        elif month == feb:
             if year == 1918:
                 totalDays += 15
 
             else:
                 if isLeapYear(year):
                     totalDays += 29
+                    print(month, "ly: added 29")
 
                 else:
                     totalDays += 28
+                    print(month, "not ly: added 28")
 
         else:
+            print(month, "added 31")
             totalDays += 31
 
     # for i in range(marchFirst, 250):
@@ -104,10 +117,10 @@ def solve(year):
 
     day = 256 - totalDays
 
-    if month < 10:
-        month = "0" + str(month)
+    # if month < 10:
+    #     month = "0" + str(month)
 
-    date = str(day) + "." + month + "." + str(year)
+    date = str(day) + "." + "0" + str(month + 1) + "." + str(year)
     return date
 
 
