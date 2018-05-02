@@ -17,13 +17,14 @@
 
 def isLeapYear(year):
     leapYear = False
+    # Before 1918 we use the Julian Calendar Leap Year Rule
     if year < 1918:
         if year % 4 == 0:
             leapYear = True
 
+    # Based on Gregorian Calendar Leap Year Rules
     else:
         if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
-            # print("issa leap year according to greg")
             leapYear = True
     return leapYear
 
@@ -39,18 +40,7 @@ def solve(year):
     jun = 6
     sep = 9
 
-    # NOTE
-    # CAN'T BE October, November or December > 256 days
-    # 30 days:
-    #   - 4 (April)
-    #   - 6 (June)
-    #   - 9 (September)
-
-    # 31 days:
-    #   - 3 (March)
-    #   - 5 (May)
-    #   - 7 (July)
-    #   - 8 (August)
+    # CAN'T BE October, November or December as they come to be > 256 days
 
     totalDays = 0
     for month in range(jan, sep):
