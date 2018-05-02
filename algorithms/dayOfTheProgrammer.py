@@ -65,23 +65,44 @@ def solve(year):
     #   - 7 (July)
     #   - 8 (August)
 
-    month = 3
-    day = 1
-    for i in range(marchFirst, 250):
-        # if month is april, june or september
-        if month == 4 or month == 6 or month == 9:
-            # when day reaches end of month
-            if day == 30:
-                # enter new month, reset day
-                month += 1
-                day = 1
+    # month = 3
+    # day = 1
+    totalDays = 0
+    for month in range(9):
+        if month == 4 or month == 6:
+            totalDays += 30
+
+        if month == 2:
+            if year == 1918:
+                totalDays += 15
+
+            else:
+                if isLeapYear(year):
+                    totalDays += 29
+
+                else:
+                    totalDays += 28
 
         else:
-            if day == 31:
-                month += 1
-                day = 1
+            totalDays += 31
 
-        day += 1
+    # for i in range(marchFirst, 250):
+    #     # if month is april, june or september
+    #     if month == 4 or month == 6 or month == 9:
+    #         # when day reaches end of month
+    #         if day == 30:
+    #             # enter new month, reset day
+    #             month += 1
+    #             day = 1
+    #
+    #     else:
+    #         if day == 31:
+    #             month += 1
+    #             day = 1
+    #
+    #     day += 1
+
+    day = 256 - totalDays
 
     if month < 10:
         month = "0" + str(month)
