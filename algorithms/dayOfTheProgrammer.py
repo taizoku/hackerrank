@@ -14,52 +14,30 @@
 #       - divisible by 400
 #       - divisible by 4 NOT divisible by 100
 
+
 def isLeapYear(year):
     leapYear = False
     if year < 1918:
-        if year % 4:
-            # print("issa leap year according to julian")
+        if year % 4 == 0:
             leapYear = True
 
     else:
         if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
             # print("issa leap year according to greg")
             leapYear = True
-
     return leapYear
 
 # TASK
 # Given a year find the date of the 256th day
 #   print format dd.mm.yyyy
 
+
 def solve(year):
     jan = 1
     feb = 2
-    mar = 3
     apr = 4
-    may = 5
     jun = 6
-    jul = 7
-    aug = 8
     sep = 9
-    if year == 1918:
-        # 1918 is NOT a leap year so
-            # not a leap year - 28 days
-            # feb 14 is 32
-            # feb 28 is 46th day -> march 1 is 47th
-        marchFirst = 47
-
-    # else year is either < 1918 or > 1918
-        # (uses the same logic)
-    else:
-        if isLeapYear(year):
-            # feb 29 is 29+31 = 60th day
-            # march 1st is 61st day
-            marchFirst = 31 + 29 + 1
-
-        else:
-            # feb 28 is 59th day
-            marchFirst = 31 + 28 + 1
 
     # NOTE
     # CAN'T BE October, November or December > 256 days
@@ -74,13 +52,10 @@ def solve(year):
     #   - 7 (July)
     #   - 8 (August)
 
-    # month = 3
-    # day = 1
     totalDays = 0
     for month in range(jan, sep):
         if month == apr or month == jun:
             totalDays += 30
-            print(month, "added 30")
 
         elif month == feb:
             if year == 1918:
@@ -89,36 +64,14 @@ def solve(year):
             else:
                 if isLeapYear(year):
                     totalDays += 29
-                    print(month, "ly: added 29")
 
                 else:
                     totalDays += 28
-                    print(month, "not ly: added 28")
 
         else:
-            print(month, "added 31")
             totalDays += 31
 
-    # for i in range(marchFirst, 250):
-    #     # if month is april, june or september
-    #     if month == 4 or month == 6 or month == 9:
-    #         # when day reaches end of month
-    #         if day == 30:
-    #             # enter new month, reset day
-    #             month += 1
-    #             day = 1
-    #
-    #     else:
-    #         if day == 31:
-    #             month += 1
-    #             day = 1
-    #
-    #     day += 1
-
     day = 256 - totalDays
-
-    # if month < 10:
-    #     month = "0" + str(month)
 
     date = str(day) + "." + "0" + str(month + 1) + "." + str(year)
     return date
