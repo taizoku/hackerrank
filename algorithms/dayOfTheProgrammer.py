@@ -1,49 +1,38 @@
+# BACKGROUND
+# 1700 to 1917 - Julian Calendar
+# 1918 - Julian -> Gregorian
+# Feb 14 was the 32nd day of the year (comes after Jan 31)
+# 1919 onwards - Gregorian Calendar
+
+# FEBRUARY is the variable month
+#   LEAP year = 29 days
+#   NOT LEAP year = 28 days
+
+# LEAP YEAR RULES
+#   Julian Calendar: leap years divisible by 4
+#   Gregorian Calendar: leap years:
+#       - divisible by 400
+#       - divisible by 4 NOT divisible by 100
+
 def isLeapYear(year):
     leapYear = False
     if year < 1918:
         if year % 4:
+            print("issa leap year according to julian")
             leapYear = True
 
     else:
-        if year % 400 == 0 and year % 4 == 0 and year % 100 != 0:
+        if year % 400 == 0 or year % 4 == 0 and year % 100 != 0:
+            print("issa leap year according to greg")
             leapYear = True
 
     return leapYear
 
+# TASK
+# Given a year find the date of the 256th day
+#   print format dd.mm.yyyy
+
 def solve(year):
-    # BACKGROUND
-    # 1700 to 1917 - Julian Calendar
-    # 1918 - Julian -> Gregorian
-    # Feb 14 was the 32nd day of the year (comes after Jan 31)
-    # 1919 onwards - Gregorian Calendar
-
-    # FEBRUARY is the variable month
-    #   LEAP year = 29 days
-    #   NOT LEAP year = 28 days
-
-    # LEAP YEAR RULES
-    #   Julian Calendar: leap years divisible by 4
-    #   Gregorian Calendar: leap years:
-    #       - divisible by 400
-    #       - divisible by 4 NOT divisible by 100
-
-    # NOTE
-    # CAN'T BE October, November or December > 256 days
-    # 30 days:
-    #   - 4 (April)
-    #   - 6 (June)
-    #   - 9 (September)
-
-    # 31 days:
-    #   - 3 (March)
-    #   - 5 (May)
-    #   - 7 (July)
-    #   - 8 (August)
-
-    # TASK
-    # Given a year find the date of the 256th day
-    #   print format dd.mm.yyyy
-
     if year == 1918:
         # 1918 is NOT a leap year so
             # not a leap year - 28 days
@@ -63,22 +52,41 @@ def solve(year):
             # feb 28 is 59th day
             marchFirst = 31 + 28 + 1
 
+    # NOTE
+    # CAN'T BE October, November or December > 256 days
+    # 30 days:
+    #   - 4 (April)
+    #   - 6 (June)
+    #   - 9 (September)
+
+    # 31 days:
+    #   - 3 (March)
+    #   - 5 (May)
+    #   - 7 (July)
+    #   - 8 (August)
+
     month = 3
     day = 1
-    for i in range(marchFirst, 256 + 1):
-        if month == 3 or month == 5 or month == 7 or month == 8:
-            if day == 31:
+    for i in range(marchFirst, 250):
+        # if month is april, june or september
+        if month == 4 or month == 6 or month == 9:
+            # when day reaches end of month
+            if day == 30:
+                # enter new month, reset day
                 month += 1
                 day = 1
 
         else:
-            if day == 30:
+            if day == 31:
                 month += 1
                 day = 1
 
         day += 1
 
-    date = str(day) + "." + str(month) + "." + str(year)
+    if month < 10:
+        month = "0" + str(month)
+
+    date = str(day) + "." + month + "." + str(year)
     return date
 
 
