@@ -14,9 +14,16 @@
 #   - n: num of items ordered
 #   - k: index of item anna didn't eat
 
+n, k = input()
+bill = []
+for i in range(n):
+    bill[i] = input()
+
 # bill[i] array
 
 # integer b - amount of money brian charged Anna for share of bill
+
+b = int(input())
 
 # output:
 # if fair print "Bon Appetit"
