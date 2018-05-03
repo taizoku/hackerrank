@@ -14,21 +14,20 @@
 # else print amount needed to refund
 
 
-def checkAppetit(numOfItems, notEatenIndex, bill, amountCharged):
-    print(bill)
-    shouldBeCharged = 0
-    bill.remove(bill[notEatenIndex])
+def check_bill(num_of_items, uneaten_index, bill, amount_charged):
+    should_be_charged = 0
+    bill.remove(bill[uneaten_index])
 
-    for i in range(numOfItems - 1):
-        shouldBeCharged += bill[i]
+    for i in range(num_of_items - 1):
+        should_be_charged += bill[i]
 
-    shouldBeCharged //= 2
+    should_be_charged //= 2
 
-    if amountCharged == shouldBeCharged:
+    if amount_charged == should_be_charged:
         result = "Bon Appetit"
 
     else:
-        result = amountCharged - shouldBeCharged
+        result = amount_charged - should_be_charged
 
     return result
 
@@ -45,4 +44,4 @@ bill = list(map(int, input().strip().split(' ')))
 # integer b - amount of money brian charged Anna for share of bill
 b = int(input())
 
-print(checkAppetit(n, k, bill, b))
+print(check_bill(n, k, bill, b))
