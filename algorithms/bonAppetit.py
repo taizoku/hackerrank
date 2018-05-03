@@ -22,7 +22,7 @@ def checkAppetit(numOfItems, notEatenIndex, bill, amountCharged):
     for i in range(numOfItems - 1):
         shouldBeCharged += bill[i]
 
-    shouldBeCharged /= 2
+    shouldBeCharged //= 2
 
     if amountCharged == shouldBeCharged:
         result = "Bon Appetit"
