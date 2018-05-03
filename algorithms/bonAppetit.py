@@ -9,21 +9,28 @@
 # including cost of bill[2] it is (2 + 4 + 6)/2 = 6
 #   in case 2 he should refund 3 to Anna
 
+def checkAppetit():
+    result = charged - actual
+
+    result = "Bon Appetit"
+
+    return result
+
 # input format:
 # space separated integers
 #   - n: num of items ordered
 #   - k: index of item anna didn't eat
-
 n, k = input()
+
+# bill[i] array
 bill = []
 for i in range(n):
     bill[i] = input()
 
-# bill[i] array
-
 # integer b - amount of money brian charged Anna for share of bill
-
 b = int(input())
+
+print(checkAppetit())
 
 # output:
 # if fair print "Bon Appetit"
