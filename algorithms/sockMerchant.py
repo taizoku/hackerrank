@@ -11,7 +11,7 @@ def sock_merchant(num_of_socks, sock_pile):
     sock_pile = sorted(sock_pile)
 
     i = num_of_pairs = 0
-    while i < num_of_socks:
+    while i < num_of_socks - 1:
         print("i", i)
         if sock_pile[i] == sock_pile[i+1]:
             num_of_pairs += 1
