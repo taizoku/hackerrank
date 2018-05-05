@@ -11,3 +11,7 @@ def sock_merchant():
     num_of_pairs = 0
     return num_of_pairs
 
+n = int(input())
+arr = map(int, input().strip().split(' '))
+
+print(sock_merchant())
