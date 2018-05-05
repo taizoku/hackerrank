@@ -7,3 +7,7 @@
 # task:
 # determine how many pairs of socks with matching colours there are
 
+def sock_merchant():
+    num_of_pairs = 0
+    return num_of_pairs
+
