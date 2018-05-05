@@ -12,10 +12,20 @@ def sock_merchant(num_of_socks, sock_pile):
 
     num_of_pairs = 0
     for i in range(num_of_socks):
-        if sock_pile[i] == sock_pile[i+1]:
-            sock_pile.pop(i, i+1)
-            num_of_pairs += 1
-            i += 1
+        print("i", i)
+        if sock_pile[i+1] is not None:
+            if sock_pile[i] == sock_pile[i+1]:
+                num_of_pairs += 1
+                i += 2
+                print(i)
+
+            else:
+                i += 1
+        # if sock_pile[i] == sock_pile[i+1]:
+        #     sock_pile.pop(i)
+        #     sock_pile.pop(i + 1)
+        #     num_of_pairs += 1
+        #     i += 1
 
     return num_of_pairs
 
