@@ -7,5 +7,8 @@
 # of the book. If the book is n pages long, and she wants to turn to page p, what is the
 # minimum number of pages she will turn? She can start at the beginning or the end of the book.
 #
-# The first line contains an integer , the number of pages in the book.
-# The second line contains an integer, , the page that Brie's teacher wants her to turn to.
+# The first line contains an integer n, the number of pages in the book.
+# The second line contains an integer, p, the page that Brie's teacher wants her to turn to.
+
+numOfPages = int(input())
+pageWanted = int(input())
