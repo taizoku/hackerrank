@@ -10,5 +10,11 @@
 # The first line contains an integer n, the number of pages in the book.
 # The second line contains an integer, p, the page that Brie's teacher wants her to turn to.
 
+def pageCount(numOfPages, pageWanted):
+    print("Entered function")
+    return pageWanted
+
 numOfPages = int(input())
 pageWanted = int(input())
+
+print(pageCount(numOfPages, pageWanted))
