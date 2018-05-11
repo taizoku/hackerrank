@@ -10,13 +10,20 @@
 # The first line contains an integer n, the number of pages in the book.
 # The second line contains an integer, p, the page that Brie's teacher wants her to turn to.
 
+
 def pageCount(numOfPages, pageWanted):
     frontTurns = backTurns = 0
     # pages conventional way
-    for i in range(1, numOfPages):
+    i = j = 1
+    while i <= numOfPages:
         if (i + 2) <= numOfPages:
             i += 2
             frontTurns += 1
+
+    while j <= numOfPages:
+        if j == 2:
+            j -= 1
+        print(j)
 
         # else its the last page
         # else:
