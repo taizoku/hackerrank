@@ -19,8 +19,8 @@ def pageCount(numOfPages, pageWanted):
         if (currentPage + 2) <= numOfPages:
             currentPage += 2
         frontTurns += 1
-
-        if pageWanted in range(currentPage, -1, currentPage - 2):
+        print(pageWanted in reversed(range(1, 5)))
+        if pageWanted in reversed(range(currentPage, -1, currentPage - 2)):
             break
     print("front", frontTurns)
 
