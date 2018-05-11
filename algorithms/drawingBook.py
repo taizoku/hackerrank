@@ -14,16 +14,17 @@
 def pageCount(numOfPages, pageWanted):
     frontTurns = backTurns = 0
     # pages conventional way
-    i = j = 1
-    while i <= numOfPages:
-        if (i + 2) <= numOfPages:
-            i += 2
+    currentPage = 1
+    while currentPage <= numOfPages:
+        if (currentPage + 2) <= numOfPages:
+            currentPage += 2
             frontTurns += 1
 
-    while j <= numOfPages:
-        if j == 2:
-            j -= 1
-        print(j)
+    currentPage = numOfPages
+    while currentPage >= 1:
+        if (currentPage - 2) <= numOfPages:
+            currentPage -= 2
+            backTurns += 1
 
         # else its the last page
         # else:
