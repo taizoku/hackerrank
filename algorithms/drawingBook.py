@@ -13,8 +13,8 @@
 def pageCount(numOfPages, pageWanted):
     frontTurns = backTurns = 0
     # pages conventional way
-    while i in range(1, numOfPages):
-        if i += 2 <= numOfPages:
+    for i in range(1, numOfPages):
+        if (i + 2) <= numOfPages:
             i += 2
             frontTurns += 1
 
