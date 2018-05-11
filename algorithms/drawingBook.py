@@ -19,10 +19,10 @@ def pageCount(numOfPages, pageWanted):
             frontTurns += 1
 
         # else its the last page
-        else:
-            i += 1
+        # else:
+        #     i += 1
 
-    return pageWanted
+    return min(frontTurns, backTurns)
 
 
 numOfPages = int(input())
