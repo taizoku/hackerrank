@@ -11,8 +11,19 @@
 # The second line contains an integer, p, the page that Brie's teacher wants her to turn to.
 
 def pageCount(numOfPages, pageWanted):
-    print("Entered function")
+    frontTurns = backTurns = 0
+    # pages conventional way
+    while i in range(1, numOfPages):
+        if i += 2 <= numOfPages:
+            i += 2
+            frontTurns += 1
+
+        # else its the last page
+        else:
+            i += 1
+
     return pageWanted
+
 
 numOfPages = int(input())
 pageWanted = int(input())
