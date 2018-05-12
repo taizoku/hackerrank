@@ -17,12 +17,23 @@ def pageCount(numOfPages, pageWanted):
     currentPage = 1
     pages = [currentPage]
     while pageWanted not in pages:
-        if numOfPages not in pages:
-            pages = currentPage + 1, currentPage + 2
-            frontTurns += 1
-            currentPage += 2
+        #if numOfPages not in pages:
+        pages = currentPage + 1, currentPage + 2
+        frontTurns += 1
+        currentPage += 2
 
-    while 
+    currentPage = numOfPages
+    if numOfPages % 2 == 0:
+        pages = [currentPage]
+
+    else:
+        pages = [currentPage-1, currentPage]
+
+    while pageWanted not in pages:
+        if 1 not in pages:
+            pages = currentPage - 1, currentPage - 2
+            backTurns += 1
+            currentPage -= 2
     # while currentPage <= numOfPages:
     #     if (currentPage + 2) <= pageWanted:
     #         currentPage += 2
@@ -32,14 +43,14 @@ def pageCount(numOfPages, pageWanted):
     #         break
     print("front", frontTurns)
 
-    currentPage = numOfPages
-    while currentPage >= 1:
-        if (currentPage - 2) >= pageWanted:
-            currentPage -= 2
-            backTurns += 1
-
-        if pageWanted in range(currentPage, currentPage + 2):
-            break
+    # currentPage = numOfPages
+    # while currentPage >= 1:
+    #     if (currentPage - 2) >= pageWanted:
+    #         currentPage -= 2
+    #         backTurns += 1
+    #
+    #     if pageWanted in range(currentPage, currentPage + 2):
+    #         break
     print(backTurns)
 
     return min(frontTurns, backTurns)
