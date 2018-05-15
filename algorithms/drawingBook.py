@@ -33,9 +33,9 @@ def pageCount(numOfPages, pageWanted):
         backTurns += 1
         currentPage -= 2
 
-    print("front", frontTurns)
+    print("Turns from front:", frontTurns)
 
-    print(backTurns)
+    print("Turns from back:", backTurns)
     return min(frontTurns, backTurns)
 
 
