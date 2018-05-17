@@ -26,11 +26,19 @@ def countingValleys(n, s):
 
             if step == 'D':
                 currentLevel -= 1
+                numberOfValleys += 1
 
             isSeaLevel = False
 
         else:
-            
+            if step == 'U':
+                currentLevel += 1
+
+            if step == 'D':
+                currentLevel -= 1
+
+            if currentLevel == 0:
+                isSeaLevel = True
 
     return numberOfValleys
 
