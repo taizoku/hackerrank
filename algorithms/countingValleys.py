@@ -13,6 +13,11 @@
 # find number of valleys walked through
 # e.g. s = [D D U U U U D D] first enters valley 2 units deep then climbs mountain 2 units high
 
+def countingValleys(n, s):
+    numberOfValleys = 0
+
+    return numberOfValleys
+
 n = int(input())
 
 s = list(input().strip().split(''))
