@@ -14,8 +14,24 @@
 # e.g. s = [D D U U U U D D] first enters valley 2 units deep then climbs mountain 2 units high
 
 def countingValleys(n, s):
-    numberOfValleys = 0
+    isSeaLevel = True
+    currentLevel = seaLevel = numberOfValleys = 0
+
     print(s)
+
+    for step in s:
+        if isSeaLevel:
+            if step == 'U':
+                currentLevel += 1
+
+            if step == 'D':
+                currentLevel -= 1
+
+            isSeaLevel = False
+
+        else:
+            
+
     return numberOfValleys
 
 
