@@ -15,9 +15,12 @@
 
 def countingValleys(n, s):
     numberOfValleys = 0
-
+    print(s)
     return numberOfValleys
+
 
 n = int(input())
 
-s = list(input().strip().split(''))
+s = list(input())
+
+countingValleys(n, s)
