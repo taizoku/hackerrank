@@ -7,6 +7,15 @@
 # possible to purchase 40k + 12usb = 52
 # or higher is then 50k + 8usb = 58
 
+def getMoneySpent(keyboardPrices, usbPrices, budget):
+    # if under budget
+    moneySpent = 0
+    print(keyboardPrices)
+    print(usbPrices)
+    print(budget)
+
+    return max(budget)
+
 # input:
 # FIRST LINE (3 space sep integers)
 #   - budget
@@ -23,3 +32,5 @@ keyboardPrices = list(map(int, input().strip().split()))
 #   m space separated integers keyboard[i]
 #   - prices of each USB drive
 usbPrices = list(map(int, input().strip().split()))
+
+print(getMoneySpent(keyboardPrices, usbPrices, budget))
