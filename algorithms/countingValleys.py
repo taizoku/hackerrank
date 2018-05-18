@@ -47,4 +47,4 @@ n = int(input())
 
 s = list(input())
 
-countingValleys(n, s)
+print(countingValleys(n, s))
