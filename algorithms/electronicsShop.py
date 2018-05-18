@@ -17,8 +17,9 @@ budget, numKeyboards, numUSB = map(int, input().strip().split(' '))
 # SECOND LINE
 #   n space separated integers keyboard[i]
 #   - prices of each keyboard model
-
+keyboardPrices = list(map(int, input().strip().split()))
 
 # THIRD LINE
 #   m space separated integers keyboard[i]
 #   - prices of each USB drive
+usbPrices = list(map(int, input().strip().split()))
