@@ -7,16 +7,14 @@
 # possible to purchase 40k + 12usb = 52
 # or higher is then 50k + 8usb = 58
 
+
 def getMoneySpent(keyboardPrices, usbPrices, budget):
     # if under budget
     currentMax = -1
     for keyboard in keyboardPrices:
-        currentPrice = 0
-        currentPrice += keyboard
-        print("keyboard adds:", currentPrice)
         for usb in usbPrices:
+            currentPrice = keyboard
             currentPrice += usb
-            print("usb adds:", currentPrice)
             if (currentPrice <= budget) and (currentPrice > currentMax):
                 currentMax = currentPrice
 
