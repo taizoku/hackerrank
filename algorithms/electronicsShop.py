@@ -7,3 +7,18 @@
 # possible to purchase 40k + 12usb = 52
 # or higher is then 50k + 8usb = 58
 
+# input:
+# FIRST LINE (3 space sep integers)
+#   - budget
+#   - num of keyboards
+#   - num of usb models
+budget, numKeyboards, numUSB = map(int, input().strip().split(' '))
+
+# SECOND LINE
+#   n space separated integers keyboard[i]
+#   - prices of each keyboard model
+
+
+# THIRD LINE
+#   m space separated integers keyboard[i]
+#   - prices of each USB drive
