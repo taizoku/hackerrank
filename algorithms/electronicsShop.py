@@ -9,12 +9,19 @@
 
 def getMoneySpent(keyboardPrices, usbPrices, budget):
     # if under budget
-    moneySpent = 0
-    print(keyboardPrices)
-    print(usbPrices)
-    print(budget)
+    currentMax = -1
+    for keyboard in keyboardPrices:
+        currentPrice = 0
+        currentPrice += keyboard
+        print("keyboard adds:", currentPrice)
+        for usb in usbPrices:
+            currentPrice += usb
+            print("usb adds:", currentPrice)
+            if (currentPrice <= budget) and (currentPrice > currentMax):
+                currentMax = currentPrice
 
-    return max(budget)
+    return currentMax
+
 
 # input:
 # FIRST LINE (3 space sep integers)
