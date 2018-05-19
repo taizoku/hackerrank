@@ -15,13 +15,16 @@
 # if both same: print "Mouse C"
 
 
-def catAndMouse(catAPos, catBPos, numOfQueries):
+def catAndMouse(catAPos, catBPos, mousePos):
+    print(catAPos, catBPos)
     # for i in range(numOfQueries):
     state = "Mouse C"
+    print(catAPos < catBPos)
     if catAPos > catBPos:
+        print("go here")
         state = "Cat A"
 
-    elif catBPos > catBPos:
+    elif catBPos > catAPos:
         state = "Cat B"
 
     return state
@@ -34,7 +37,7 @@ numOfQueries = int(input())
 # catAPos = catBPos = []
 for i in range(numOfQueries):
     catAPos, catBPos, mousePos = map(int, input().strip().split(' '))
-    print(catAndMouse(catAPos, catBPos, numOfQueries))
+    print(catAndMouse(catAPos, catBPos, mousePos))
 # catAPos.append()
 # catBPos
 
