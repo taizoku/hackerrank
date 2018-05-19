@@ -13,6 +13,9 @@
 # if cat a wins: print "Cat A"
 # if cat b wins: print "Cat B"
 # if both same: print "Mouse C"
+def catAndMouse(catAPos, catBPos, mousePos):
+    state = "Mouse C"
+    return state
 
 # input
 # FIRST LINE: integer denoting number of queries
@@ -20,3 +23,5 @@ numOfQueries = int(input())
 
 # SECOND LINE: 3 space separated ints - describing x, y, z (see above)
 catAPos,catBPos, mousePos = map(int, input().strip().split())
+
+print(catAndMouse(catAPos, catBPos, mousePos))
