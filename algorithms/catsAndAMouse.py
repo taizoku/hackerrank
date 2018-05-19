@@ -16,15 +16,16 @@
 
 
 def catAndMouse(catAPos, catBPos, mousePos):
-    print(catAPos, catBPos)
     # for i in range(numOfQueries):
+    distCatA = abs(mousePos - catAPos)
+    distCatB = abs(mousePos - catBPos)
+
     state = "Mouse C"
-    print(catAPos < catBPos)
-    if catAPos > catBPos:
+    if distCatA < distCatB:
         print("go here")
         state = "Cat A"
 
-    elif catBPos > catAPos:
+    elif distCatB < distCatA:
         state = "Cat B"
 
     return state
