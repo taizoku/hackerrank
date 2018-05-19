@@ -31,8 +31,10 @@ def catAndMouse(catAPos, catBPos, numOfQueries):
 # FIRST LINE: integer denoting number of queries
 numOfQueries = int(input())
 # SECOND LINE: 3 space separated ints - describing x, y, z (see above)
-catAPos = catBPos = []
+# catAPos = catBPos = []
 for i in range(numOfQueries):
-    catAPos[i], catBPos[i], mousePos = map(int, input().strip().split())
+    catAPos, catBPos, mousePos = map(int, input().strip().split())
+    print(catAndMouse(catAPos, catBPos, numOfQueries))
+# catAPos.append()
+# catBPos
 
-print(catAndMouse(catAPos, catBPos, numOfQueries))
