@@ -16,13 +16,13 @@
 
 
 def catAndMouse(catAPos, catBPos, numOfQueries):
-    for i in range(numOfQueries):
-        state = "Mouse C"
-        if catAPos[i] > catBPos[i]:
-            state = "Cat A"
+    # for i in range(numOfQueries):
+    state = "Mouse C"
+    if catAPos > catBPos:
+        state = "Cat A"
 
-        elif catBPos[i] > catBPos[i]:
-            state = "Cat B"
+    elif catBPos > catBPos:
+        state = "Cat B"
 
     return state
 
@@ -33,7 +33,7 @@ numOfQueries = int(input())
 # SECOND LINE: 3 space separated ints - describing x, y, z (see above)
 # catAPos = catBPos = []
 for i in range(numOfQueries):
-    catAPos, catBPos, mousePos = map(int, input().strip().split())
+    catAPos, catBPos, mousePos = map(int, input().strip().split(' '))
     print(catAndMouse(catAPos, catBPos, numOfQueries))
 # catAPos.append()
 # catBPos
