@@ -15,7 +15,8 @@ def formingMagicSquare(square):
             print(square[i][j])
             # rules
             # check row, col, diagonal is 15
-    square[0][0]
+    square[0][0] + square[0][1] + square[0][2] == 15
+
 
     return square
 
