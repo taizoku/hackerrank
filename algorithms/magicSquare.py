@@ -27,11 +27,16 @@ def formingMagicSquare(square):
     square[2][0] + square[2][1] + square[2][2] == 15
 
     # first vertical
-    square[0][0] + square[1][0] + square[1][2] == 15
+    square[0][0] + square[1][0] + square[2][0] == 15
     # second vertical
+    square[0][1] + square[1][1] + square[2][1] == 15
+    # third vertical
+    square[0][2] + square[1][2] + square[1][3] == 15
 
-    # first diagonal down
+    # first diagonal \
     square[0][0] + square[1][1] + square[2][2] == 15
+    # second diagonal /
+    square[1][2] + square[1][1] + square[2][0] == 15
 
     return square
 
