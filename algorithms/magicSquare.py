@@ -19,10 +19,17 @@ def formingMagicSquare(square):
             print(square[i][j])
 
 
-    # first horizontal
+    # first row
     square[0][0] + square[0][1] + square[0][2] == 15
+    # second row
+    square[1][0] + square[1][1] + square[1][2] == 15
+    # third row
+    square[2][0] + square[2][1] + square[2][2] == 15
+
     # first vertical
     square[0][0] + square[1][0] + square[1][2] == 15
+    # second vertical
+
     # first diagonal down
     square[0][0] + square[1][1] + square[2][2] == 15
 
