@@ -13,30 +13,35 @@ def formingMagicSquare(square):
     # [2,0][2,1][2,2]
     print(square)
 
+    magicNumber = 15
+
     # loop goes through row, col
     for i in range(3):
         for j in range(3):
             print(square[i][j])
 
-
+    total = 0
+    lowestSum = 1000
     # first row
-    square[0][0] + square[0][1] + square[0][2] == 15
+    if square[0][0] + square[0][1] + square[0][2] != magicNumber:
+        # try [0][0]
+        total += ()
     # second row
-    square[1][0] + square[1][1] + square[1][2] == 15
+    if square[1][0] + square[1][1] + square[1][2] != magicNumber
     # third row
-    square[2][0] + square[2][1] + square[2][2] == 15
+    if square[2][0] + square[2][1] + square[2][2] != magicNumber
 
     # first vertical
-    square[0][0] + square[1][0] + square[2][0] == 15
+    if square[0][0] + square[1][0] + square[2][0] != magicNumber
     # second vertical
-    square[0][1] + square[1][1] + square[2][1] == 15
+    if square[0][1] + square[1][1] + square[2][1] != magicNumber
     # third vertical
-    square[0][2] + square[1][2] + square[1][3] == 15
+    if square[0][2] + square[1][2] + square[1][3] != magicNumber
 
     # first diagonal \
-    square[0][0] + square[1][1] + square[2][2] == 15
+    if square[0][0] + square[1][1] + square[2][2] != magicNumber
     # second diagonal /
-    square[1][2] + square[1][1] + square[2][0] == 15
+    if square[1][2] + square[1][1] + square[2][0] != magicNumber
 
     return square
 
