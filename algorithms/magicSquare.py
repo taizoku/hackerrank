@@ -22,28 +22,30 @@ def formingMagicSquare(square):
 
     total = 0
     lowestSum = 1000
+    copy = square
     # first row
-    if square[0][0] + square[0][1] + square[0][2] != magicNumber:
+    if copy[0][0] + copy[0][1] + copy[0][2] != magicNumber:
         # try [0][0]
         total += ()
     # second row
-    if square[1][0] + square[1][1] + square[1][2] != magicNumber
+    if copy[1][0] + copy[1][1] + copy[1][2] != magicNumber:
     # third row
-    if square[2][0] + square[2][1] + square[2][2] != magicNumber
+    if copy[2][0] + copy[2][1] + copy[2][2] != magicNumber:
 
     # first vertical
-    if square[0][0] + square[1][0] + square[2][0] != magicNumber
+    if copy[0][0] + copy[1][0] + copy[2][0] != magicNumber:
     # second vertical
-    if square[0][1] + square[1][1] + square[2][1] != magicNumber
+    if copy[0][1] + copy[1][1] + copy[2][1] != magicNumber:
     # third vertical
-    if square[0][2] + square[1][2] + square[1][3] != magicNumber
+    if copy[0][2] + copy[1][2] + copy[1][3] != magicNumber:
 
     # first diagonal \
-    if square[0][0] + square[1][1] + square[2][2] != magicNumber
+    if copy[0][0] + copy[1][1] + copy[2][2] != magicNumber:
     # second diagonal /
-    if square[1][2] + square[1][1] + square[2][0] != magicNumber
+    if copy[1][2] + copy[1][1] + copy[2][0] != magicNumber:
 
-    return square
+
+    return copy
 
 
 s = []
