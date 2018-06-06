@@ -27,13 +27,19 @@ def formingMagicSquare(square):
     if copy[0][0] + copy[0][1] + copy[0][2] != magicNumber:
         # try [0][0]
         total += ()
+
     # second row
     if copy[1][0] + copy[1][1] + copy[1][2] != magicNumber:
+        total += ()
+
     # third row
     if copy[2][0] + copy[2][1] + copy[2][2] != magicNumber:
+        total += ()
 
     # first vertical
     if copy[0][0] + copy[1][0] + copy[2][0] != magicNumber:
+        total += ()
+
     # second vertical
     if copy[0][1] + copy[1][1] + copy[2][1] != magicNumber:
     # third vertical
