@@ -7,6 +7,9 @@
 # - can create TWO sub-arrays
 # 1. [1, 1, 2, 2] length = 4
 # 2. [4, 4, 5, 5, 5] length = 5
+def pickingNumbers(array):
+
+    return len(array)
 
 # INPUT
 # 1. single integer n (size of array)
@@ -17,3 +20,4 @@ array = list(map(int, input().strip().split(' ')))
 
 # OUTPUT
 # max num of integers we can choose from array
+print(pickingNumbers(array))
