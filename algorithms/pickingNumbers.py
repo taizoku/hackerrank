@@ -11,3 +11,6 @@
 # INPUT
 # 1. single integer n (size of array)
 # 2. n space separated integers a[i]
+
+# OUTPUT
+# max num of integers we can choose from array
