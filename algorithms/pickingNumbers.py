@@ -8,8 +8,12 @@
 # 1. [1, 1, 2, 2] length = 4
 # 2. [4, 4, 5, 5, 5] length = 5
 def pickingNumbers(array):
-
+    subArrays = []
+    for i in range(len(array)):
+        subArrays[i].append(array[i])
+        
     return len(array)
+
 
 # INPUT
 # 1. single integer n (size of array)
