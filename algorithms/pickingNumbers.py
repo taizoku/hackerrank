@@ -10,7 +10,10 @@
 
 # INPUT
 # 1. single integer n (size of array)
+n = int(input())
+
 # 2. n space separated integers a[i]
+array = list(map(int, input().strip().split(' ')))
 
 # OUTPUT
 # max num of integers we can choose from array
