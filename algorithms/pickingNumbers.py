@@ -10,8 +10,8 @@
 def pickingNumbers(array):
     subArrays = []
     for i in range(len(array)):
-        subArrays[i].append(array[i])
-        
+        subArrays.append(array[i])
+    print(subArrays)
     return len(array)
 
 
