@@ -8,12 +8,15 @@
 # 1. [1, 1, 2, 2] length = 4
 # 2. [4, 4, 5, 5, 5] length = 5
 def pickingNumbers(array):
+    usedNumbers = []
+
     print("array:", array)
     subArrays = []
     for i in range(len(array)):
         for j in range(1, len(array)):
-            if array[i] not in subArrays:
+            if array[i] not in usedNumbers:
                 subArrays.append([array[i]])
+                usedNumbers.append(array[i])
 
     print("subarray:", subArrays)
     return len(array)
