@@ -18,8 +18,8 @@ def pickingNumbers(array):
                 subArrays.append([array[i]])
                 usedNumbers.append(array[i])
 
-            if abs(array[i] - array[j]) <= 1:
-                subArrays.append(array[j])
+                if abs(array[i] - array[j]) <= 1:
+                    subArrays[i].append(array[j])
 
     print("subarray:", subArrays)
     return len(array)
