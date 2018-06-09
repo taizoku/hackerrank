@@ -13,7 +13,7 @@ def pickingNumbers(array):
     for i in range(len(array)):
         for j in range(1, len(array)):
             if array[i] not in subArrays:
-                subArrays.append(array[i])
+                subArrays.append([array[i]])
 
     print("subarray:", subArrays)
     return len(array)
