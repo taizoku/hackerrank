@@ -16,7 +16,6 @@ def pickingNumbers(array):
         if array[i] not in usedNumbers:
             subArrays.append([array[i]])
             usedNumbers.append(array[i])
-            print("subarray:", subArrays)
 
             for j in range(1, len(array)):
                 print(array[i])
