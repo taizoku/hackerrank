@@ -16,17 +16,19 @@ def pickingNumbers(array):
 
     for i in range(len(array)):
         if array[i] not in usedNumbers:
+            print("used", usedNumbers, "vs", array[i])
             currentArray = list()
             currentArray.append(array[i])
             usedNumbers.append(array[i])
 
-            for j in range(1, len(array)):
+            for j in range(i+1, len(array)):
                 if abs(array[i] - array[j]) <= 1:
                     currentArray.append(array[j])
                     #print(currentArray)
 
         if len(currentArray) > 1:
             filledArrays.append(currentArray)
+
         print(filledArrays)
 
         maxArrayLen = 0
