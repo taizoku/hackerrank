@@ -11,11 +11,13 @@ def pickingNumbers(array):
     usedNumbers = []
 
     print("array:", array)
-    currentArray = []
-    filledArrays = []
+
+    filledArrays = list()
+    
     for i in range(len(array)):
         if array[i] not in usedNumbers:
-            currentArray.append([array[i]])
+            currentArray = list()
+            currentArray.append(array[i])
             usedNumbers.append(array[i])
 
             for j in range(1, len(array)):
@@ -26,7 +28,7 @@ def pickingNumbers(array):
 
         if len(currentArray) > 1:
             filledArrays.append(currentArray)
-            
+
     return len(array)
 
 
