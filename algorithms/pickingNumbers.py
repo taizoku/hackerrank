@@ -18,7 +18,7 @@ def pickingNumbers(array):
             usedNumbers.append(array[i])
 
             for j in range(1, len(array)):
-                print(array[i])
+                print(array[i], "-", array[j], "=", array[i]-array[j])
                 if abs(array[i] - array[j]) <= 1:
                     subArrays[i].append(array[j])
 
