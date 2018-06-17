@@ -13,7 +13,7 @@ def pickingNumbers(array):
     print("array:", array)
 
     filledArrays = list()
-    
+
     for i in range(len(array)):
         if array[i] not in usedNumbers:
             currentArray = list()
@@ -23,7 +23,7 @@ def pickingNumbers(array):
             for j in range(1, len(array)):
                 print(array[i], "-", array[j], "=", array[i]-array[j])
                 if abs(array[i] - array[j]) <= 1:
-                    currentArray[i].append(array[j])
+                    currentArray.append(array[j])
                     print(currentArray)
 
         if len(currentArray) > 1:
