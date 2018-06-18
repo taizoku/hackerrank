@@ -8,7 +8,7 @@
 # 1. [1, 1, 2, 2] length = 4
 # 2. [4, 4, 5, 5, 5] length = 5
 def pickingNumbers(array):
-    usedNumbers = []
+    usedNumbers = list()
 
     print("array:", array)
 
