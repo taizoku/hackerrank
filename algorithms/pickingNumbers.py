@@ -23,7 +23,10 @@ def pickingNumbers(array):
 
             for j in range(i+1, len(array)):
                 if abs(array[i] - array[j]) <= 1:
-                    currentArray.append(array[j])
+                    if len(currentArray) > 1:
+                        for k in range(1, len(currentArray)):
+                            
+                        currentArray.append(array[j])
                     #print(currentArray)
 
         if len(currentArray) > 1:
