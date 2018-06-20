@@ -25,7 +25,7 @@ def pickingNumbers(array):
                 if abs(array[i] - array[j]) <= 1:
                     if len(currentArray) > 1:
                         for k in range(1, len(currentArray)):
-                            
+
                         currentArray.append(array[j])
                     #print(currentArray)
 
