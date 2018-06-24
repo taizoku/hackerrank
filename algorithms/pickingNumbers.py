@@ -23,11 +23,10 @@ def pickingNumbers(array):
             for element in currentArray:
                 while j < len(array):
 
-                    print(currentArray)
+                    print(element, "-", array[j])
                     if abs(element - array[j]) <= 1:
-                        print("appended")
                         currentArray.append(array[j])
-                        j += 1
+
                     j += 1
         else:
             continue
@@ -35,12 +34,12 @@ def pickingNumbers(array):
         if len(currentArray) > 1:
             filledArrays.append(currentArray)
 
-        print(filledArrays)
+    print("full", filledArrays)
 
-        maxArrayLen = 0
-        for current in filledArrays:
-            if len(current) > maxArrayLen:
-                maxArrayLen = len(current)
+    maxArrayLen = 0
+    for current in filledArrays:
+        if len(current) > maxArrayLen:
+            maxArrayLen = len(current)
 
     return maxArrayLen
 
