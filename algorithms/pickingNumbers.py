@@ -19,10 +19,16 @@ def pickingNumbers(array):
             currentArray = list()
             currentArray.append(array[i])
 
-        for j in range(1, len(array)):
             for element in currentArray:
-                if abs(element - array[j]) <= 1:
-                    currentArray.append(array[j])
+                for j in range(i+1, len(array)):
+
+                    print(currentArray)
+                    if abs(element - array[j]) <= 1:
+                        print("appended")
+                        currentArray.append(array[j])
+
+        else:
+            continue
 
         if len(currentArray) > 1:
             filledArrays.append(currentArray)
