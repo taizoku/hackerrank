@@ -28,15 +28,13 @@ def pickingNumbers(array):
                         currentArray.append(array[j])
 
                     j += 1
-        else:
-            continue
 
         if len(currentArray) > 1:
             filledArrays.append(currentArray)
 
     print("full", filledArrays)
 
-    maxArrayLen = 0
+    maxArrayLen = 0 
     for current in filledArrays:
         if len(current) > maxArrayLen:
             maxArrayLen = len(current)
