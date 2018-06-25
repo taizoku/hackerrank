@@ -20,6 +20,9 @@ def pickingNumbers(array):
             currentArray.append(array[i])
 
             j = i+1
+            for j in range(i, length(array)):
+                # iterate for and check rest!
+
             for element in currentArray:
                 while j < len(array):
 
@@ -34,7 +37,7 @@ def pickingNumbers(array):
 
     print("full", filledArrays)
 
-    maxArrayLen = 0 
+    maxArrayLen = 0
     for current in filledArrays:
         if len(current) > maxArrayLen:
             maxArrayLen = len(current)
