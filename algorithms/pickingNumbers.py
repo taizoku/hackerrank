@@ -19,9 +19,11 @@ def pickingNumbers(array):
             currentArray = list()
             currentArray.append(array[i])
 
-            j = i+1
-            for j in range(i, length(array)):
+            check = i
+            for j in range(i, len(array)):
                 # iterate for and check rest!
+                if abs(array[i] - array[j]) <= 1:
+                    currentArray.append(array[j])
 
             for element in currentArray:
                 while j < len(array):
