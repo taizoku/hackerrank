@@ -22,8 +22,9 @@ def pickingNumbers(array):
             # iterate for and check rest!
             if j != i:
                 if abs(array[i] - array[j]) <= 1:
-                    for currentArray[ check
-                        currentArray.append(array[j])
+                    for checked in currentArray:
+                        if abs(checked - array[j]) <= 1:
+                            currentArray.append(array[j])
 
 
         if len(currentArray) > 1:
