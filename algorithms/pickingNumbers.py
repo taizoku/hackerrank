@@ -20,9 +20,10 @@ def pickingNumbers(array):
 
         for j in range(len(array)):
             # iterate for and check rest!
-            i
-            if abs(array[i] - array[j]) <= 1:
-                currentArray.append(array[j])
+            if j != i:
+                if abs(array[i] - array[j]) <= 1:
+                    for currentArray[ check
+                        currentArray.append(array[j])
 
 
         if len(currentArray) > 1:
