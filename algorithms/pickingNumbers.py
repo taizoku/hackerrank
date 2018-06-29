@@ -15,24 +15,15 @@ def pickingNumbers(array):
     filledArrays = list()
 
     for i in range(len(array)):
-        if array[i] not in usedNumbers:
-            currentArray = list()
-            currentArray.append(array[i])
+        currentArray = list()
+        currentArray.append(array[i])
 
-            check = i
-            for j in range(i, len(array)):
-                # iterate for and check rest!
-                if abs(array[i] - array[j]) <= 1:
-                    currentArray.append(array[j])
+        for j in range(len(array)):
+            # iterate for and check rest!
+            i
+            if abs(array[i] - array[j]) <= 1:
+                currentArray.append(array[j])
 
-            for element in currentArray:
-                while j < len(array):
-
-                    print(element, "-", array[j])
-                    if abs(element - array[j]) <= 1:
-                        currentArray.append(array[j])
-
-                    j += 1
 
         if len(currentArray) > 1:
             filledArrays.append(currentArray)
