@@ -32,7 +32,9 @@ def pickingNumbers(array):
         if len(currentArray) > 1:
             filledArrays.append(currentArray)
 
-    print("full", filledArrays)
+    # recursively - pick number check does it work try another number
+
+    print("full ", filledArrays)
 
     maxArrayLen = 0
     for current in filledArrays:
