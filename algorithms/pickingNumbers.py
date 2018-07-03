@@ -26,7 +26,7 @@ def pickingNumbers(array):
                     for checked in currentArray:
                         if abs(checked - array[j]) > 1:
                             passed = False
-                    if passed == True:
+                    if passed is True:
                         currentArray.append(array[j])
 
         if len(currentArray) > 1:
