@@ -3,7 +3,7 @@
 # > difference between the any two of the chosen are less than or equal to 1
 
 # Example
-# - array = [1, 1, 2, 2, 4, 4, 5, 5, 5]
+# - array = [1, 1, 2, 2, 4, 4, 5, 5, 5] 1 1 2 2 4 4 5 5 5
 # - can create TWO sub-arrays
 # 1. [1, 1, 2, 2] length = 4
 # 2. [4, 4, 5, 5, 5] length = 5
