@@ -6,6 +6,8 @@
 # input format
 # 1. 26 space separated integers
 #   - describes heights of each letter [a-z]
+alphaHeights = {}
+print(chr(97))
 
 # 2. single word made of lowercase english alphabetic letters
 
