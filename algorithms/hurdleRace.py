@@ -10,8 +10,9 @@
 # he must take 3-1=2 doses of potion to be able to jump all of the hurdles
 
 # first line two integers n and k
+numHurdles, maxJump = map(int, input().strip().split(' '))
 
 # eg
 # 5 4
-# 1 6 3 5 2w
+# 1 6 3 5 2
 # sample output 2
