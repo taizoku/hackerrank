@@ -7,34 +7,38 @@
 # 1. 26 space separated integers
 #   - describes heights of each letter [a-z]
 
-def designerPdfViewer(alphaHeights, word):
-    area = 0
+
+def designerPdfViewer(heights, word):
     width = len(word)
-
+    maxHeight = 0
     # height is highest letter height
-    for i in range(len(word)+1):
-        word[0] = alphaHeights[[0]]
+    for i in range(len(word)):
+        print(heights[ord(word[i]) - chr('a')])
+        maxHeight = max(maxHeight, heights[ord(word[i]) - chr('a')])
+        # print(heights[word[i]])
+        # maxHeight = max(maxHeight, heights[word[i]])
 
-    height = word[0]
+    return width*maxHeight
 
-    return width*height
 
-noLabel = list(map(int, input().strip().split(' ')))
+# method 1
+heights = list(map(int, input().strip().split(' ')))
 
-alphaHeights = {}
-i = 0
-for letter in range(ord('a'), ord('z')+1):
-    alphaHeights[chr(letter)] = noLabel[i]
-    i += 1
+# method 2
+# noLabel = list(map(int, input().strip().split(' ')))
+#
+# heights = {}
+# i = 0
+# for letter in range(ord('a'), ord('z')+1):
+#     heights[chr(letter)] = noLabel[i]
+#     i += 1
 
-# or no storing required ord(letter) - ord('a')
-
-print(alphaHeights)
+print(heights)
 
 # 2. single word made of lowercase english alphabetic letters
 word = input()
 
-print(designerPdfViewer(alphaHeights, word))
+print(designerPdfViewer(heights, word))
 
 # output format
 # single integer denoting area in mm^2
