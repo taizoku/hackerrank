@@ -13,8 +13,8 @@ def designerPdfViewer(heights, word):
     maxHeight = 0
     # height is highest letter height
     for i in range(len(word)):
-        print(heights[ord(word[i]) - chr('a')])
-        maxHeight = max(maxHeight, heights[ord(word[i]) - chr('a')])
+        print(heights[ord(word[i]) - ord('a')])
+        maxHeight = max(maxHeight, heights[ord(word[i]) - ord('a')])
         # print(heights[word[i]])
         # maxHeight = max(maxHeight, heights[word[i]])
 
