@@ -9,15 +9,17 @@
 def utopianTree(numCycles):
     height = 1
     for i in range(numCycles):
-        # spring is every odd n
-        if i % 2 != 0:
+        # spring is every even
+        if i % 2 == 0:
             # height doubles
-            height *= height
+            height *= 2
+            print(i, "Spring:", height)
 
         # summer for every even
         else:
             # height increases by 1
             height += 1
+            print(i, "Summer:", height)
 
     return height
 
@@ -30,4 +32,3 @@ numTestCases = int(input())
 
 for i in range(numTestCases):
     print(utopianTree(int(input())))
-    
