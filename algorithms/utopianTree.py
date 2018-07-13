@@ -7,4 +7,9 @@
 
 # INPUT:
 # The first line contains an integer, t, the number of test cases.
+# - subsequent t lines contain integer n denoting num of cycles for that test cases
 
+numTestCases = int(input())
+
+for i in range(numTestCases):
+    utopianTree(int(input()))
