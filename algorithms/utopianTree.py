@@ -29,4 +29,5 @@ def utopianTree(numCycles):
 numTestCases = int(input())
 
 for i in range(numTestCases):
-    utopianTree(int(input()))
+    print(utopianTree(int(input())))
+    
