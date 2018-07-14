@@ -15,8 +15,8 @@ numTestCases = int(input())
 # - n, number of students in class
 # - k, cancellation threshold
 for i in range(numTestCases):
-    numStudents = int(input())
-    cancelCondition = int(input())
+    numStudents, cancelCondition = map(int, input().strip().split(' '))
 
 # Second line contains n space-separated integers (a_1, ... a_n)
 # - describes arrival times for each student
+    arrivalTimes = list(map(int, input().strip().split(' ')))
