@@ -6,7 +6,8 @@
 # OUTPUT
 # For each test case, print the word YES if the class is canceled or NO if it is not.
 
-def angryProfessor(numStudents, cancelCondition, arrivalTimes):
+
+def angryProfessor(cancelCondition, arrivalTimes):
     outcome = "YES"
     goodStudents = 0
     for present in arrivalTimes:
@@ -15,8 +16,9 @@ def angryProfessor(numStudents, cancelCondition, arrivalTimes):
 
     if goodStudents >= cancelCondition:
         outcome = "NO"
-        
+
     return outcome
+
 
 # INPUT FORMAT
 # 1. t - number of test cases
@@ -33,4 +35,4 @@ for i in range(numTestCases):
 # - describes arrival times for each student
     arrivalTimes = list(map(int, input().strip().split(' ')))
 
-    print(angryProfessor(numStudents, cancelCondition, arrivalTimes))
+    print(angryProfessor(cancelCondition, arrivalTimes))
