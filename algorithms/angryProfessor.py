@@ -9,10 +9,14 @@
 # INPUT FORMAT
 # 1. t - number of test cases
 # * Each test case consists of TWO lines
+numTestCases = int(input())
 
 # First line has two SPACE-SEPARATED INTEGERS:
 # - n, number of students in class
 # - k, cancellation threshold
+for i in range(numTestCases):
+    numStudents = int(input())
+    cancelCondition = int(input())
 
 # Second line contains n space-separated integers (a_1, ... a_n)
 # - describes arrival times for each student
