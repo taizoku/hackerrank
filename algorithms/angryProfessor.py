@@ -3,6 +3,9 @@
 # he decides to cancel class if fewer than some number of students are present when class starts.
 # Arrival times go from on time (arrivalTime <= 0) to arrived late (arrivalTime > 0).
 
+# OUTPUT
+# For each test case, print the word YES if the class is canceled or NO if it is not.
+
 # INPUT FORMAT
 # 1. t - number of test cases
 # * Each test case consists of TWO lines
