@@ -18,10 +18,8 @@
 # Print the number of beautiful days in the range.
 
 def beautifulDays(startDay, endDay, divCriteria):
-    testNumber = 90
-    testString = str(testNumber)
-    print(testString)
-
+    for i in range(startDay, endDay+1):
+        print("y", i)
     return divCriteria
 
 # INPUT
