@@ -18,10 +18,13 @@
 # Print the number of beautiful days in the range.
 
 def beautifulDays(startDay, endDay, divCriteria):
-    hey = int("".join(list(reversed(str(90)))))
-    print(10-hey)
+    goodDays = 0
+    for day in range(startDay, endDay+1):
+        # reverseDay = int("".join(list(reversed(str(day)))))
+        if abs(day - int("".join(list(reversed(str(day)))))) % divCriteria == 0:
+            goodDays += 1
 
-    return divCriteria
+    return goodDays
 
 # INPUT
 # A single line of three space-separated integers describing the respective values of i, j, k
