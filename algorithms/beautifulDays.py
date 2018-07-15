@@ -1,3 +1,6 @@
+# HACKER RANK CHALLENGE: https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem
+# CLOSED: working solution :)
+
 # Lily likes to play games with integers.
 # She has created a new game where she determines the difference between a number and its reverse.
 
@@ -17,6 +20,7 @@
 # If a day's value is a beautiful number, it is a beautiful day.
 # Print the number of beautiful days in the range.
 
+
 def beautifulDays(startDay, endDay, divCriteria):
     goodDays = 0
     for day in range(startDay, endDay+1):
@@ -25,6 +29,7 @@ def beautifulDays(startDay, endDay, divCriteria):
             goodDays += 1
 
     return goodDays
+
 
 # INPUT
 # A single line of three space-separated integers describing the respective values of i, j, k
