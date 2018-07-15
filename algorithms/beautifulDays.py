@@ -18,7 +18,8 @@
 # Print the number of beautiful days in the range.
 
 def beautifulDays(startDay, endDay, divCriteria):
-    print(int(reversed("90")))
+    print("".join(list(reversed(str(90)))))
+
 
     return divCriteria
 
