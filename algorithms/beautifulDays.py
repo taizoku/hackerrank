@@ -17,3 +17,9 @@
 # If a day's value is a beautiful number, it is a beautiful day.
 # Print the number of beautiful days in the range.
 
+# INPUT
+# A single line of three space-separated integers describing the respective values of i, j, k
+i, j, k = map(int, input().strip().split(' '))
+
+# OUTPUT
+# Print the number of beautiful days in the inclusive range between i and j.
