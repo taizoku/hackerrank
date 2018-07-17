@@ -30,3 +30,7 @@
 # INPUT
 # 1. A single integer, n, denoting a number of days.
 numDays = int(input())
+
+# OUTPUT
+# Print the number of people who liked the advertisement during the first n days.
+print(viralAdvertising(numDays))
