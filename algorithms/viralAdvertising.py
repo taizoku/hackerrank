@@ -27,6 +27,16 @@
 
 # The cumulative number of likes is 24.
 
+
+def viralAdvertising(numDays):
+    numLikes = 0
+    for day in range(1, numDays+1)
+        print(day)
+        receipients = 5
+        numLikes += receipients // 2
+    return numLikes
+
+
 # INPUT
 # 1. A single integer, n, denoting a number of days.
 numDays = int(input())
