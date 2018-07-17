@@ -1,3 +1,6 @@
+# HACKER RANK CHALLENGE: https://www.hackerrank.com/challenges/strange-advertising/problem
+# SOLVED: WORKING SOLUTION by ryotokuro
+
 # HackerLand Enterprise is adopting a new viral advertising strategy.
 # When they launch a new product, they advertise it to exactly 5 people on social media.
 
@@ -28,14 +31,14 @@
 # The cumulative number of likes is 24.
 
 
-def viralAdvertising(numDays):
-    numLikes = 0
-    sharedAd = 5
-    for day in range(1, numDays+1):
-        likedAd = sharedAd // 2
-        sharedAd = likedAd * 3
-        numLikes += likedAd
-    return numLikes
+    def viralAdvertising(numDays):
+        numLikes = 0
+        sharedAd = 5
+        for day in range(1, numDays+1):
+            likedAd = sharedAd // 2
+            sharedAd = likedAd * 3
+            numLikes += likedAd
+        return numLikes
 
 
 # INPUT
