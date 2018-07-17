@@ -26,3 +26,7 @@
 # 5     18     9      24
 
 # The cumulative number of likes is 24.
+
+# INPUT
+# 1. A single integer, n, denoting a number of days.
+numDays = int(input())
