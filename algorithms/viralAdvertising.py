@@ -16,3 +16,13 @@
 # Determine how many people have liked the ad by the end of a given day, beginning with launch day as day 1.
 
 # ----------------------------------------------------------------------------------------------------------------------
+
+# EXAMPLE: how many have liked the ad by the end of the 5th day
+# Day Shared Liked Cumulative
+# 1      5     2       2
+# 2      6     3       5
+# 3      9     4       9
+# 4     12     6      15
+# 5     18     9      24
+
+# The cumulative number of likes is 24.
