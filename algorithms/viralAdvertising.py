@@ -30,10 +30,12 @@
 
 def viralAdvertising(numDays):
     numLikes = 0
-    for day in range(1, numDays+1)
+    recipients = 5
+    for day in range(1, numDays+1):
         print(day)
-        receipients = 5
-        numLikes += receipients // 2
+        likedAd = recipients // 2
+        sharedAd = likedAd * 3
+        numLikes += likedAd
     return numLikes
 
 
