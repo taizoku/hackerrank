@@ -16,6 +16,10 @@
 # Let's suppose two is drawn from the hat.
 # Prisoners receive candy at positions 2, 3, 4, 1, 2, 3.
 # The prisoner to be warned sits in chair number 3.
+def saveThePrisoner(numPrisoners, numSweets, startChair):
+    endChair = startChair
+
+    return endChair
 
 # INPUT
 # 1. The FIRST LINE contains an INTEGER, t, denoting the number of test cases.
