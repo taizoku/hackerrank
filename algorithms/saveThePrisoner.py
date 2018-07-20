@@ -10,6 +10,7 @@
 # The last piece of candy looks like all the others, but it tastes awful.
 # Determine the chair number occupied by the prisoner who will receive that candy.
 
+
 # EXAMPLE
 # For example, there are 4 prisoners and 6 pieces of candy.
 # The prisoners arrange themselves in seats numbered 1 to 4.
@@ -19,21 +20,22 @@
 def saveThePrisoner(numPrisoners, numSweets, startChair):
     currentChair = startChair
     # last one is the BAD SWEET!
+    print(list(range(1, numPrisoners+1)))
     while numSweets > 1:
-        if currentChair+1 in range(1, numPrisoners):
+        if currentChair+1 in range(1, numPrisoners+1):
             currentChair += 1
         else:
             currentChair -= 1
 
         numSweets -= 1
-        
+
     return currentChair
 
 # INPUT
 # 1. The FIRST LINE contains an INTEGER, t, denoting the number of test cases.
 numTestCases = int(input())
 
-for test in range(numTestCases+1):
+for test in range(numTestCases):
     # 2. The next t lines each contain 3 SPACE-SEPARATED INTEGERS:
     #   - n: the number of prisoners
     #   - m: the number of sweets
