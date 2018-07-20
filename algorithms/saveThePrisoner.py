@@ -21,8 +21,13 @@
 # 1. The FIRST LINE contains an INTEGER, t, denoting the number of test cases.
 numTestCases = int(input())
 
-# 2. The next t lines each contain 3 SPACE-SEPARATED INTEGERS:
-#   - n: the number of prisoners
-#   - m: the number of sweets
-#   - s: the chair number to start passing out treats at
-numPrisoners, numSweets, startChair = map(int, input().strip().split(' '))
+for test in range(numTestCases+1):
+    # 2. The next t lines each contain 3 SPACE-SEPARATED INTEGERS:
+    #   - n: the number of prisoners
+    #   - m: the number of sweets
+    #   - s: the chair number to start passing out treats at
+    numPrisoners, numSweets, startChair = map(int, input().strip().split(' '))
+
+    # OUTPUT
+    # For each test case, print the chair number of the prisoner who receives the awful treat on a new line.
+    print(saveThePrisoner(numPrisoners, numSweets, startChair))
