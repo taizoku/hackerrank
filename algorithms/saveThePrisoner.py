@@ -9,3 +9,10 @@
 # The jailer is playing a little joke, though.
 # The last piece of candy looks like all the others, but it tastes awful.
 # Determine the chair number occupied by the prisoner who will receive that candy.
+
+# EXAMPLE
+# For example, there are 4 prisoners and 6 pieces of candy.
+# The prisoners arrange themselves in seats numbered 1 to 4.
+# Let's suppose two is drawn from the hat.
+# Prisoners receive candy at positions 2, 3, 4, 1, 2, 3.
+# The prisoner to be warned sits in chair number 3.
