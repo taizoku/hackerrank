@@ -17,9 +17,17 @@
 # Prisoners receive candy at positions 2, 3, 4, 1, 2, 3.
 # The prisoner to be warned sits in chair number 3.
 def saveThePrisoner(numPrisoners, numSweets, startChair):
-    endChair = startChair
+    currentChair = startChair
+    # last one is the BAD SWEET!
+    while numSweets > 1:
+        if currentChair+1 in range(1, numPrisoners):
+            currentChair += 1
+        else:
+            currentChair -= 1
 
-    return endChair
+        numSweets -= 1
+        
+    return currentChair
 
 # INPUT
 # 1. The FIRST LINE contains an INTEGER, t, denoting the number of test cases.
