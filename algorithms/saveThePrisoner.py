@@ -16,3 +16,11 @@
 # Let's suppose two is drawn from the hat.
 # Prisoners receive candy at positions 2, 3, 4, 1, 2, 3.
 # The prisoner to be warned sits in chair number 3.
+
+# INPUT
+# 1. The FIRST LINE contains an INTEGER, t, denoting the number of test cases.
+
+# 2. The next t lines each contain 3 SPACE-SEPARATED INTEGERS:
+#   - n: the number of prisoners
+#   - m: the number of sweets
+#   - s: the chair number to start passing out treats at
