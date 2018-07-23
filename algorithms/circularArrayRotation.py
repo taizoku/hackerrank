@@ -16,3 +16,12 @@
 # Now return the values from the zero-based indices 1 and 2 as indicated in the m array.
 # a[1] = 5
 # a[2] = 3
+
+# FUNCTION DESCRIPTION
+# Complete the circularArrayRotation function in the editor below.
+# It should return an array of integers representing the values at the specified indices.
+
+# circularArrayRotation has the following parameter(s):
+# - a: an array of integers to rotate
+# - k: an integer, the rotation count
+# - queries: an array of integers, the indices to report
