@@ -25,3 +25,13 @@
 # - a: an array of integers to rotate
 # - k: an integer, the rotation count
 # - queries: an array of integers, the indices to report
+
+# INPUT FORMAT
+# 1. FIRST line contains THREE SPACE-SEPARATED INTEGERS:
+# - n: the number of elements in the integer array
+# - k: the rotation count
+# - q: the number of queries
+
+# 2. SECOND line contains n SPACE-SEPARATED INTEGERS,
+#    where each integer, i describes array element a[i] (where 0 <= i <= n).
+#    Each of the q subsequent lines contains a single integer denoting m, the index of the element to return from a.
