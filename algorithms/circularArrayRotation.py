@@ -35,3 +35,6 @@
 # 2. SECOND line contains n SPACE-SEPARATED INTEGERS,
 #    where each integer, i describes array element a[i] (where 0 <= i <= n).
 #    Each of the q subsequent lines contains a single integer denoting m, the index of the element to return from a.
+
+# OUTPUT FORMAT
+# For each query, print the value of the element at index m of the rotated array on a new line.
