@@ -41,5 +41,6 @@ arrayElement = map(int, input().strip().split(' '))
 for query in range(numQueries):
     returnIndex = int(input())
 
-# OUTPUT FORMAT
-# For each query, print the value of the element at index m of the rotated array on a new line.
+    # OUTPUT FORMAT
+    # For each query, print the value of the element at index m of the rotated array on a new line.
+    print(circularArrayRotation(returnIndex))
