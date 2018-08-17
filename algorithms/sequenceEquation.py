@@ -21,4 +21,4 @@
 numElements = int(input())
 
 # The second line contains N space-separated integers p[i] where 1 <= i <= n.
-input()
+p = list(map(int, input().strip().split(' ')))
