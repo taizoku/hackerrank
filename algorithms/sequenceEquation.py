@@ -16,9 +16,16 @@
 #
 # Therefore, we find the values [4 2 5 1 3] for y
 
-def permutationEquation(pList):
+x = 1
 
-    return pList
+def permutationEquation(pList):
+    for yAddress in pList:
+        for numberWanted in pList:
+            if numberWanted == x:
+                break
+
+    x += 1
+    return yAddress
 
 # INPUT
 # The first line contains an integer N, the number of elements in the sequence.
