@@ -16,3 +16,7 @@
 #
 # Therefore, we find the values [4 2 5 1 3] for y
 
+# INPUT
+# The first line contains an integer N, the number of elements in the sequence.
+
+# The second line contains N space-separated integers p[i] where 1 <= i <= n.
