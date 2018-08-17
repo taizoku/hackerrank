@@ -16,9 +16,16 @@
 #
 # Therefore, we find the values [4 2 5 1 3] for y
 
+
+
 # INPUT
 # The first line contains an integer N, the number of elements in the sequence.
 numElements = int(input())
 
 # The second line contains N space-separated integers p[i] where 1 <= i <= n.
 p = list(map(int, input().strip().split(' ')))
+
+# OUTPUT
+# For each x from 1 to n, print an integer denoting any valid y satisfying the equation p(p(y)) === x on a new line.
+for i in range(numElements):
+    print(permutationEquation(p))
