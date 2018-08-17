@@ -16,13 +16,18 @@
 #
 # Therefore, we find the values [4 2 5 1 3] for y
 
-x = 1
+global x = 1
+
 
 def permutationEquation(pList):
-    for yAddress in pList:
+    for i in range(len(pList)):
         for numberWanted in pList:
             if numberWanted == x:
                 break
+        if pList[i] == numberWanted:
+            yAddress = numberWanted
+            break
+        i += 1
 
     x += 1
     return yAddress
