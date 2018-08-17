@@ -16,7 +16,9 @@
 #
 # Therefore, we find the values [4 2 5 1 3] for y
 
+def permutationEquation(pList):
 
+    return pList
 
 # INPUT
 # The first line contains an integer N, the number of elements in the sequence.
