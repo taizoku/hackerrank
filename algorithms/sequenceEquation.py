@@ -18,5 +18,7 @@
 
 # INPUT
 # The first line contains an integer N, the number of elements in the sequence.
+numElements = int(input())
 
 # The second line contains N space-separated integers p[i] where 1 <= i <= n.
+input()
