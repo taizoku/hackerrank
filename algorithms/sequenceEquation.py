@@ -22,15 +22,18 @@ x = 1
 
 def permutationEquation(pList):
     global x
-    yAddress = 0
-    for i in range(1, len(pList)):
+
+    for i in range(len(pList)):
+        print('iteration', i, 'number', pList[i])
         if pList[i] == x:
-            yAddress = i+1
-            break
+            yAddress = 1
+            for j in range (len(pList)):
+                    # where is x = ..?
         i += 1
 
     x += 1
     return yAddress
+
 
 # INPUT
 # The first line contains an integer N, the number of elements in the sequence.
