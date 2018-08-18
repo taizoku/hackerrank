@@ -28,7 +28,10 @@ def permutationEquation(pList):
         if pList[i] == x:
             yAddress = 1
             for j in range (len(pList)):
-                    # where is x = ..?
+                # where is x = ..?
+                if j == i:
+                    yAddress = j+1
+                    break
         i += 1
 
     x += 1
