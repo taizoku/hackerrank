@@ -23,16 +23,19 @@ x = 1
 def permutationEquation(pList):
     global x
 
-    for i in range(len(pList)):
-        print('iteration', i, 'number', pList[i])
-        if pList[i] == x:
-            yAddress = 1
-            for j in range (len(pList)):
-                # where is x = ..?
-                if j == i:
-                    yAddress = j+1
-                    break
-        i += 1
+    i = pList.index(x)
+    yAddress = pList.index(i+1)
+    # for i in range(len(pList)):
+    #     print('iteration', i, 'number', pList[i])
+    #     if pList[i] == x:
+    #         yAddress = 1
+    #         break
+    #     i += 1
+    #
+    # for j in range(len(pList)):
+    #     # where is x = ..?
+    #     if j == i:
+    #         yAddress = j + 1
 
     x += 1
     return yAddress
