@@ -25,7 +25,8 @@ def permutationEquation(pList):
 
     i = pList.index(x)
     yAddress = pList.index(i+1)
-    # for i in range(len(pList)):
+
+    for i in range(len(pList)):
     #     print('iteration', i, 'number', pList[i])
     #     if pList[i] == x:
     #         yAddress = 1
