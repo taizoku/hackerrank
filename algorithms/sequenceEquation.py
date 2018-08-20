@@ -1,3 +1,6 @@
+# import os
+# SOLVED: https://www.hackerrank.com/challenges/permutation-equation/problem
+
 # You are given a sequence of  integers:
 # p(1), p(2), ..., p(n)
 # Each element in the sequence is distinct and satisfies 1 <= p(x) <= n
@@ -53,3 +56,18 @@ p = list(map(int, input().strip().split(' ')))
 # For each x from 1 to n, print an integer denoting any valid y satisfying the equation p(p(y)) === x on a new line.
 for i in range(numElements):
     print(permutationEquation(p))
+
+# if __name__ == '__main__':
+#     fptr = open(os.environ['OUTPUT_PATH'], 'w')
+#
+#     numElements = int(input())
+#
+#     p = list(map(int, input().rstrip().split()))
+#
+#     for i in range(numElements):
+#         result = permutationEquation(p)
+#
+#         fptr.write(str(result))
+#         fptr.write('\n')
+#
+#     fptr.close()
