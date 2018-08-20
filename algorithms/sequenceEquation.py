@@ -27,6 +27,14 @@ def permutationEquation(pList):
     yAddress = pList.index(i+1)
 
     for i in range(len(pList)):
+        # find where is x = 1?
+        if pList[i] == x:
+            yAddress = i+1
+            break
+
+    # now find where that yaddress is
+    for j in range(len(pList)):
+        
     #     print('iteration', i, 'number', pList[i])
     #     if pList[i] == x:
     #         yAddress = 1
