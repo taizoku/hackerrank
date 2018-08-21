@@ -16,3 +16,12 @@
 # For example, give c = [0, 0, 1, 0] and k = 2, the indices of her path are 0 -> 2 -> 0.
 # Her energy level reduces by 1 for each jump to 98. She landed on one thunderhead
 # at an additional cost of 2 energy units. Her final energy level is 96.
+
+# NOTE: Note: Recall that % refers to the modulo operation. In this case, it serves
+# to make the route circular. If Aerith is at c[n-1] and jumps 1, she will arrive at 0.
+
+# FUNCTION DESCRIPTION
+# It should return an integer representing the energy level remaining after the game.
+# jumpingOnClouds has the following parameter(s):
+#   - c: an array of integers representing cloud types
+#   - k: an integer representing the length of one jump
