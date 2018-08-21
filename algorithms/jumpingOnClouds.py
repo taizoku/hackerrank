@@ -20,11 +20,16 @@
 # NOTE: Note: Recall that % refers to the modulo operation. In this case, it serves
 # to make the route circular. If Aerith is at c[n-1] and jumps 1, she will arrive at 0.
 
+
 # FUNCTION DESCRIPTION
-# It should return an integer representing the energy level remaining after the game.
 # jumpingOnClouds has the following parameter(s):
 #   - c: an array of integers representing cloud types
 #   - k: an integer representing the length of one jump
+def jumpingOnClouds(numClouds, jumpDistance):
+    energyLevel = 100 # initial energy level
+
+    return energyLevel
+
 
 # INPUT FORMAT
 # The first line contains two space-separated integers, n and k; (num of clouds and jump distance)
@@ -36,3 +41,7 @@ cloudArray = list(map(int, input().strip().split(' ')))
 # Each cloud is described as follows:
 #   - If c[i] = 0 then cloud i is a cumulus cloud
 #   - If c[i] = 1 then cloud i is a thunderhead
+
+# FUNCTION
+# # It should return an integer representing the energy level remaining after the game.
+print('Energy Level: ', jumpingOnClouds(numClouds, jumpDistance))
