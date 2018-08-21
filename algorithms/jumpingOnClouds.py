@@ -25,8 +25,18 @@
 # jumpingOnClouds has the following parameter(s):
 #   - c: an array of integers representing cloud types
 #   - k: an integer representing the length of one jump
-def jumpingOnClouds(numClouds, jumpDistance):
+def jumpingOnClouds(cloudArray, jumpDistance):
     energyLevel = 100 # initial energy level
+    currentPosition = 0
+    for i in range(len(cloudArray)):
+        currentPosition += ((i + jumpDistance) % len(cloudArray)) # add jump length
+        energyLevel -= 1  # uses 1 unit of energy to make a jump
+        if cloudArray[currentPosition] == 1:  # lands on a thundercloud,
+            energyLevel -= 2  # energy decreases by 2
+
+        if currentPosition == 0:  # The game ends when she lands back on cloud 0
+            break
+        i += 1
 
     return energyLevel
 
@@ -44,4 +54,4 @@ cloudArray = list(map(int, input().strip().split(' ')))
 
 # FUNCTION
 # # It should return an integer representing the energy level remaining after the game.
-print('Energy Level: ', jumpingOnClouds(numClouds, jumpDistance))
+print('Energy Level: ', jumpingOnClouds(cloudArray, jumpDistance))
