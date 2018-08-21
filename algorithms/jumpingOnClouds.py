@@ -28,8 +28,10 @@
 
 # INPUT FORMAT
 # The first line contains two space-separated integers, n and k; (num of clouds and jump distance)
+numClouds, jumpDistance = map(int, input().strip().split(' '))
 
 # The second line contains n space-separated integers c[i]
+cloudArray = list(map(int, input().strip().split(' ')))
 
 # Each cloud is described as follows:
 #   - If c[i] = 0 then cloud i is a cumulus cloud
