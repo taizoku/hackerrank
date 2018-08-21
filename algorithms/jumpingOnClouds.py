@@ -30,7 +30,7 @@ def jumpingOnClouds(cloudArray, jumpDistance):
     currentPosition = 0
 
     for i in range(len(cloudArray)):
-        currentPosition = ((i + jumpDistance) % len(cloudArray)) # add jump length
+        currentPosition = ((currentPosition + jumpDistance) % len(cloudArray)) # add jump length
         print(currentPosition)
         energyLevel -= 1  # uses 1 unit of energy to make a jump
         if cloudArray[currentPosition] == 1:  # lands on a thundercloud,
