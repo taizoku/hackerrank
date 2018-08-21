@@ -25,3 +25,12 @@
 # jumpingOnClouds has the following parameter(s):
 #   - c: an array of integers representing cloud types
 #   - k: an integer representing the length of one jump
+
+# INPUT FORMAT
+# The first line contains two space-separated integers, n and k; (num of clouds and jump distance)
+
+# The second line contains n space-separated integers c[i]
+
+# Each cloud is described as follows:
+#   - If c[i] = 0 then cloud i is a cumulus cloud
+#   - If c[i] = 1 then cloud i is a thunderhead
