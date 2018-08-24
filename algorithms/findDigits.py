@@ -13,3 +13,11 @@
 # It should return an integer representing the number of digits of d that are divisors of d.
 # findDigits has the following parameter(s):
 #   - n: an integer to analyze
+
+# INPUT FORMAT
+# The first line is an integer, t, indicating the number of test cases.
+numTestCases = int(input())
+
+# The t subsequent lines each contain an integer, n.
+for test in numTestCases:
+    findDigits(int(input()))
