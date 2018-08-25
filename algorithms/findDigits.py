@@ -13,6 +13,9 @@
 # It should return an integer representing the number of digits of d that are divisors of d.
 # findDigits has the following parameter(s):
 #   - n: an integer to analyze
+def findDigits(integer):
+
+    return integer
 
 # INPUT FORMAT
 # The first line is an integer, t, indicating the number of test cases.
