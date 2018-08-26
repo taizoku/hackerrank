@@ -19,9 +19,11 @@ def findDigits(integer):
     digit = str(integer)
     for i in range(len(digit)):
         potentialDivisor = int(digit[i])
-        # if n / d == 0
-        if integer % potentialDivisor == 0:
-            numDivisors += 1  # then it is a divisor
+        print(potentialDivisor)
+        if potentialDivisor != 0:
+            # if n / d == 0
+            if integer % potentialDivisor == 0:
+                numDivisors += 1  # then it is a divisor
     return numDivisors
 
 
