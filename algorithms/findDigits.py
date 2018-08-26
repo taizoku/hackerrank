@@ -9,6 +9,7 @@
 # Each digit is considered to be unique, so each occurrence of the same digit should be counted
 # (e.g. for n = 111, 1 is a divisor of 111 each time it occurs so the answer is 3).
 
+
 # FUNCTION DESCRIPTION
 # It should return an integer representing the number of digits of d that are divisors of d.
 # findDigits has the following parameter(s):
@@ -17,11 +18,12 @@ def findDigits(integer):
     numDivisors = 0
     digit = str(integer)
     for i in range(len(integer)):
-        potentialDivisor = digit[i]
+        potentialDivisor = int(digit[i])
         # if n / d == 0
         if integer % potentialDivisor == 0:
-            numDivisors += 1 # then it is a divisor
+            numDivisors += 1  # then it is a divisor
     return numDivisors
+
 
 # INPUT FORMAT
 # The first line is an integer, t, indicating the number of test cases.
