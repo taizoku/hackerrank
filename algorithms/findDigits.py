@@ -14,8 +14,12 @@
 # findDigits has the following parameter(s):
 #   - n: an integer to analyze
 def findDigits(integer):
-
-    return integer
+    numDivisors = 0
+    digit = str(integer)
+    for i in range(len(integer)):
+        potentialDivisor = str[i]
+    numDivisors += 1
+    return numDivisors
 
 # INPUT FORMAT
 # The first line is an integer, t, indicating the number of test cases.
