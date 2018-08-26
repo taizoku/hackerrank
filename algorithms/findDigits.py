@@ -1,3 +1,6 @@
+# SOLVED: ryotokuro 26/08/18
+# LINK (HackerRank): https://www.hackerrank.com/challenges/find-digits/problem
+
 # BACKGROUND
 # An integer d is a divisor of an integer n if the remainder of n / d = 0.
 
