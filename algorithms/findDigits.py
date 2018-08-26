@@ -17,8 +17,10 @@ def findDigits(integer):
     numDivisors = 0
     digit = str(integer)
     for i in range(len(integer)):
-        potentialDivisor = str[i]
-    numDivisors += 1
+        potentialDivisor = digit[i]
+        # if n / d == 0
+        if integer % potentialDivisor == 0:
+            numDivisors += 1 # then it is a divisor
     return numDivisors
 
 # INPUT FORMAT
