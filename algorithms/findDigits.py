@@ -17,7 +17,7 @@
 def findDigits(integer):
     numDivisors = 0
     digit = str(integer)
-    for i in range(len(integer)):
+    for i in range(len(digit)):
         potentialDivisor = int(digit[i])
         # if n / d == 0
         if integer % potentialDivisor == 0:
@@ -30,5 +30,5 @@ def findDigits(integer):
 numTestCases = int(input())
 
 # The t subsequent lines each contain an integer, n.
-for test in numTestCases:
+for tests in range(numTestCases):
     findDigits(int(input()))
