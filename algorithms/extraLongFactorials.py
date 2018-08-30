@@ -18,6 +18,7 @@ def extraLongFactorials():
 
 # extraLongFactorials has the following parameter(s):
 #   - n: an integer
+integer = int(input())
 
 # NOTE
 # Factorials of  can't be stored even in a  long long variable.
