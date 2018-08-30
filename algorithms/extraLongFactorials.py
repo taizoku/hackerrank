@@ -12,6 +12,9 @@
 
 # FUNCTION DESCRIPTION
 # Complete the extraLongFactorials function in the editor below. It should print the result and return.
+def extraLongFactorials():
+
+    return 1
 
 # extraLongFactorials has the following parameter(s):
 #   - n: an integer
