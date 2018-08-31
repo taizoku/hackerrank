@@ -13,8 +13,10 @@
 # FUNCTION DESCRIPTION
 # Complete the extraLongFactorials function in the editor below. It should print the result and return.
 def extraLongFactorials(integer):
-
-    return 1
+    # python handles big integers already so no need to specify a long or anything
+    if integer == 1:
+            return 1
+    return integer * extraLongFactorials(integer-1)
 
 
 # extraLongFactorials has the following parameter(s):
