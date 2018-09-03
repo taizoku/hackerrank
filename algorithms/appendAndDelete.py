@@ -22,12 +22,16 @@ def appendAndDelete(initialString, finalString, numOperations):
     string = "No"
     # plan is to iterate through the string and compare each letter
     # if equal, return "Yes"
-    if initialString != finalString:
-        counter = 0 # have a counter which resets each trial
-        while numOperations:
+    while i in range(initialString):
+        if numOperations != 0:  # decrement the numOperations until 0
+            if initialString != finalString:
+
+            numOperations += 1
+        i += 1
+
     # 2 options:
-    pop() # - delete char at end of string
-    append() # - append any char
+    # pop() # - delete char at end of string
+    # append() # - append any char
     return string
 
 
