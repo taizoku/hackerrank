@@ -20,15 +20,16 @@
 # Function should return a string, either Yes or No.
 def appendAndDelete():
     string = "No"
+
     return string
 
 
 # INPUT FORMAT (lines)
 # 1. string s, the initial string.
-initialString = int(input())
+initialString = str(input())
 
 # 2. string t, the desired final string.
-finalString = int(input())
+finalString = str(input())
 
 # 3. integer k, the number of operations.
 numOperations = int(input())
