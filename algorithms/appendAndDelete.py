@@ -15,12 +15,13 @@
 # had been more moves available, they could have been eliminated by performing multiple deletions on an empty string.
 # If there were fewer than 6 moves, we would not have succeeded in creating the new string.
 
+
 # FUNCTION DESCRIPTION
 # Function should return a string, either Yes or No.
-# appendAndDelete has the following parameter(s):
-#   - s: the initial string
-#   - t: the desired string
-#   - k: an integer that represents the number of operations
+def appendAndDelete():
+    string = "No"
+    return string
+
 
 # INPUT FORMAT (lines)
 # 1. string s, the initial string.
@@ -31,3 +32,9 @@ finalString = int(input())
 
 # 3. integer k, the number of operations.
 numOperations = int(input())
+
+# appendAndDelete has the following parameter(s):
+#   - s: the initial string
+#   - t: the desired string
+#   - k: an integer that represents the number of operations
+appendAndDelete(initialString, finalString, numOperations)
