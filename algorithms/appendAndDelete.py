@@ -18,18 +18,24 @@
 
 # FUNCTION DESCRIPTION
 # Function should return a string, either Yes or No.
-def appendAndDelete():
+def appendAndDelete(initialString, finalString, numOperations):
     string = "No"
+    # plan is to iterate through the string and compare each letter
+    # if equal, return "Yes"
 
+    # have a counter which resets each trial
+    # 2 options:
+    # - delete char at end of string
+    # - append any char
     return string
 
 
 # INPUT FORMAT (lines)
 # 1. string s, the initial string.
-initialString = str(input())
+initialString = list(str(input()))
 
 # 2. string t, the desired final string.
-finalString = str(input())
+finalString = list(str(input()))
 
 # 3. integer k, the number of operations.
 numOperations = int(input())
@@ -38,4 +44,4 @@ numOperations = int(input())
 #   - s: the initial string
 #   - t: the desired string
 #   - k: an integer that represents the number of operations
-appendAndDelete(initialString, finalString, numOperations)
+print(appendAndDelete(initialString, finalString, numOperations))
