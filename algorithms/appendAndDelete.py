@@ -22,7 +22,12 @@
 #   - t: the desired string
 #   - k: an integer that represents the number of operations
 
-# INPUT FORMAT
+# INPUT FORMAT (lines)
 # 1. string s, the initial string.
+initialString = int(input())
+
 # 2. string t, the desired final string.
+finalString = int(input())
+
 # 3. integer k, the number of operations.
+numOperations = int(input())
