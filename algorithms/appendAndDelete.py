@@ -24,6 +24,7 @@ def appendAndDelete(initialString, finalString, numOperations):
     # if equal, return "Yes"
     i = 0
     while i < len(initialString):
+        print("going loop")
         if numOperations != 0:  # decrement the numOperations until 0
             if initialString[i] == finalString[i]:
                 i += 1
@@ -36,6 +37,7 @@ def appendAndDelete(initialString, finalString, numOperations):
                 else:
                     initialString.pop()
                 numOperations += 1
+        i += 1
 
     if initialString == finalString:
         string = "True"
