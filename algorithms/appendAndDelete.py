@@ -33,12 +33,14 @@ def appendAndDelete(initialString, finalString, numOperations):
             else:
                 if len(finalString) > len(initialString):
                     initialString.append(-(len(finalString) - len(initialString)))
-
+                    print(len(finalString)-len(initialString))
                 else:
                     initialString.pop()
                 numOperations += 1
-        i += 1
+        else:
+            break
 
+    print(initialString, finalString)
     if initialString == finalString:
         string = "True"
     # 2 options:
