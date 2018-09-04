@@ -23,7 +23,7 @@ def appendAndDelete(initialString, finalString, numOperations):
     # plan is to iterate through the string and compare each letter
     # if equal, return "Yes"
     i = 0
-    while i in range(len(initialString)):
+    while i < len(initialString):
         if numOperations != 0:  # decrement the numOperations until 0
             if initialString[i] == finalString[i]:
                 i += 1
