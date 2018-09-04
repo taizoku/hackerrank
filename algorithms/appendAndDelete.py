@@ -36,7 +36,9 @@ def appendAndDelete(initialString, finalString, numOperations):
                 else:
                     initialString.pop()
                 numOperations += 1
-
+                
+    if initialString == finalString:
+        string = "True"
     # 2 options:
     # pop() # - delete char at end of string
     # append() # - append any char
