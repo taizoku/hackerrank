@@ -37,8 +37,6 @@ def appendAndDelete(initialString, finalString, numOperations):
                 else:
                     initialString.pop()
                 numOperations += 1
-        else:
-            break
 
     print(initialString, finalString)
     if initialString == finalString:
