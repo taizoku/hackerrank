@@ -1,3 +1,5 @@
+import math
+
 # BACKGROUND
 # Watson likes to challenge Sherlock's math ability.
 # He will provide a starting and ending value describing a range of integers.
@@ -10,15 +12,21 @@
 # The range is a = 24 and b = 49, inclusive.
 # There are three square integers in the range: 25, 36 and 49.
 
+
 # FUNCTION DESCRIPTION
 # Return an integer representing the number of square integers in the inclusive range from a to b.
 # squares() has parameters:
 #   - a: an integer, the lower range boundary
 #   - b: an integer, the upper range boundary
 def squares(lower, upper):
-    numSquares = 0
+    numSq = 0
+    # The way I'm going to tackle this is to get the higher square and subtract the lower square
+    # from that then add 1 to give me the number of squares in that range
+    #if lower
+    print(isinstance(math.sqrt(5), int))
+    #if upper
 
-    return numSquares
+    return numSq
 
 
 # INPUT FORMAT
@@ -28,4 +36,4 @@ numTestCases = int(input())
 # Next q lines contain TWO SPACE-SEPARATED INTEGERS a and b; starting and ending integers in the ranges.
 for i in range(numTestCases):
     start, end = map(int, input().strip().split(' '))
-    squares(start, end)
+    print(squares(start, end))
