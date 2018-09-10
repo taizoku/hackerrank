@@ -15,6 +15,11 @@
 # squares() has parameters:
 #   - a: an integer, the lower range boundary
 #   - b: an integer, the upper range boundary
+def squares(lower, upper):
+    numSquares = 0
+
+    return numSquares
+
 
 # INPUT FORMAT
 # The first contains q; number of test cases
@@ -23,4 +28,4 @@ numTestCases = int(input())
 # Next q lines contain TWO SPACE-SEPARATED INTEGERS a and b; starting and ending integers in the ranges.
 for i in range(numTestCases):
     start, end = map(int, input().strip().split(' '))
-    
+    squares(start, end)
