@@ -15,3 +15,8 @@
 # squares() has parameters:
 #   - a: an integer, the lower range boundary
 #   - b: an integer, the upper range boundary
+
+# INPUT FORMAT
+# The first contains q; number of test cases
+
+# Next q lines contain TWO SPACE-SEPARATED INTEGERS a and b; starting and ending integers in the ranges.
