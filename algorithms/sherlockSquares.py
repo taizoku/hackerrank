@@ -31,8 +31,8 @@ def squares(lower, upper):
         if not((math.sqrt(upper)).is_integer()):  # if upper is NOT a perfect square
             upper -= 1  # move backwards
 
-    print(lower, upper)
-    numSq = (upper - lower) + 1
+    if upper > lower:
+        numSq = int(math.sqrt(upper) - math.sqrt(lower)) + 1
     return numSq
 
 
