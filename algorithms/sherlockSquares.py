@@ -6,4 +6,12 @@
 # NOTE
 # A square integer is an integer which is the square of an integer, e.g. 1, 4, 9, 16, 25
 
-# EXAMPLE, the range is a =24 and , inclusive. There are three square integers in the range:  and .
+# EXAMPLE
+# The range is a = 24 and b = 49, inclusive.
+# There are three square integers in the range: 25, 36 and 49.
+
+# FUNCTION DESCRIPTION
+# Return an integer representing the number of square integers in the inclusive range from a to b.
+# squares() has parameters:
+#   - a: an integer, the lower range boundary
+#   - b: an integer, the upper range boundary
