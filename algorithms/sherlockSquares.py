@@ -18,5 +18,9 @@
 
 # INPUT FORMAT
 # The first contains q; number of test cases
+numTestCases = int(input())
 
 # Next q lines contain TWO SPACE-SEPARATED INTEGERS a and b; starting and ending integers in the ranges.
+for i in range(numTestCases):
+    start, end = map(int, input().strip().split(' '))
+    
