@@ -22,12 +22,12 @@ def squares(lower, upper):
     numSq = 0
     # The way I'm going to tackle this is to get the higher square and subtract the lower square
     # from that then add 1 to give me the number of squares in that range
-
+    print((math.sqrt(lower)).is_integer())
     while upper >= lower and (not(math.sqrt(lower).is_integer()) or not((math.sqrt(upper)).is_integer())):
-        # print((math.sqrt(lower)).is_integer())
-        if not((math.sqrt(lower)).is_integer()):  # if lower is NOT a perfect square
+        print((math.sqrt(lower)).is_integer())
+        if lower == 0 or not((math.sqrt(lower)).is_integer()):  # if lower is NOT a perfect square
             lower += 1  # move forwards
-
+        print("low", lower)
         if not((math.sqrt(upper)).is_integer()):  # if upper is NOT a perfect square
             upper -= 1  # move backwards
 
