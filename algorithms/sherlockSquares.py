@@ -24,8 +24,7 @@ def squares(lower, upper):
     # from that then add 1 to give me the number of squares in that range
     if lower <= 1:
         lower += 2
-    if lower == 0:
-        lower += 1
+
     while upper >= lower and (not(math.sqrt(lower).is_integer()) or not((math.sqrt(upper)).is_integer())):
         print((math.sqrt(lower)).is_integer())
 
@@ -41,6 +40,9 @@ def squares(lower, upper):
 
     if lower != 0 and upper > lower:
         numSq = int(math.sqrt(upper) - math.sqrt(lower)) + 1
+
+    elif lower != 0 and upper != 1 and lower == upper and math.sqrt(upper).is_integer():
+        numSq = 1
     return numSq
 
 
