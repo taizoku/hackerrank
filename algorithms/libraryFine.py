@@ -19,3 +19,12 @@
 # EXAMPLE
 # Whether a book is due January 1, 2017 or December 31, 2017, if it is returned January 1, 2018,
 # that is a year late and the fine would be 10, 000 Hackos
+
+# FUNCTION DESCRIPTION
+# Return an integer representing the fine due.
+
+# libraryFine has the following parameter(s):
+#   - d1, m1, y1: returned date day, month and year
+#   - d2, m2, y2: due date day, month and year
+
+# INPUT FORMAT
