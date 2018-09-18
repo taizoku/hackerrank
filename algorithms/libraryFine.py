@@ -28,3 +28,7 @@
 #   - d2, m2, y2: due date day, month and year
 
 # INPUT FORMAT
+# 1. Contains 3 space-separated integers, d1, m1, y1
+#       denoting the respective day, month and year on which the book was returned.
+# 2. The second line contains 3 space-separated integers, d2, m2, y2
+#       denoting the respective day, month and year on which the book was due to be returned.
