@@ -11,29 +11,26 @@
 # The second line contains an integer, p, the page that Brie's teacher wants her to turn to.
 
 
-def pageCount(numOfPages, pageWanted):
+def pageCount(numPages, desiredPage):
     frontTurns = backTurns = 0
 
     currentPage = 1
     pages = [currentPage]
-    while pageWanted not in pages:
+    while desiredPage not in pages:
         pages = currentPage + 1, currentPage + 2
+        print(pages)
         frontTurns += 1
         currentPage += 2
 
-    currentPage = numOfPages
-    if numOfPages % 2 == 0:
-        pages = [currentPage]
+    currentPage = numPages
+    pages = [currentPage-1, currentPage]
 
-    else:
-        pages = [currentPage-1, currentPage]
-
-    while pageWanted not in pages:
-        pages = currentPage - 1, currentPage - 2
+    while desiredPage not in pages:
+        pages = currentPage-1, currentPage-2
         backTurns += 1
         currentPage -= 2
 
-    print("Turns from front:",   frontTurns)
+    print("Turns from front:", frontTurns)
 
     print("Turns from back:", backTurns)
     return min(frontTurns, backTurns)
