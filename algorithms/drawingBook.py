@@ -17,13 +17,13 @@ def pageCount(numPages, desiredPage):
     currentPage = 1
     pages = [currentPage]
     while desiredPage not in pages:
-        pages = currentPage + 1, currentPage + 2
+        pages = currentPage+1, currentPage+2
         print(pages)
         frontTurns += 1
         currentPage += 2
 
-    currentPage = numPages
-    pages = [currentPage-1, currentPage]
+    currentPage = numPages-1
+    pages = [currentPage, numPages]
 
     while desiredPage not in pages:
         pages = currentPage-1, currentPage-2
