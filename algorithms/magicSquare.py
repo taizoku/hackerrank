@@ -13,50 +13,33 @@ def formingMagicSquare(square):
     # [2,0][2,1][2,2]
     print(square)
 
-    magicNumber = 15
+    magicNumber = 15 # every permutation should equal this
+    permutations = 8 # there are 8 possible magic squares in a 3x3 matrix
 
     # loop goes through row, col
     for i in range(3):
         for j in range(3):
             print(square[i][j])
 
-    total = 0
-    lowestSum = 1000
-    copy = square
-    # first row
-    if copy[0][0] + copy[0][1] + copy[0][2] != magicNumber:
-        # try [0][0]
-        total += ()
+    combinatrics = dict()
+    id = list()
+    threeSum = 0
+    for i in range(3):
+        for j in range(3):
+            threeSum += square[i][j]
+            id.append([i, j])
+            print(id)
 
-    # second row
-    if copy[1][0] + copy[1][1] + copy[1][2] != magicNumber:
-        total += ()
-
-    # third row
-    if copy[2][0] + copy[2][1] + copy[2][2] != magicNumber:
-        total += ()
-
-    # first vertical
-    if copy[0][0] + copy[1][0] + copy[2][0] != magicNumber:
-        total += ()
-
-    # second vertical
-    if copy[0][1] + copy[1][1] + copy[2][1] != magicNumber:
-    # third vertical
-    if copy[0][2] + copy[1][2] + copy[1][3] != magicNumber:
-
-    # first diagonal \
-    if copy[0][0] + copy[1][1] + copy[2][2] != magicNumber:
-    # second diagonal /
-    if copy[1][2] + copy[1][1] + copy[2][0] != magicNumber:
-
+            if j == 2:
+                combinatrics[id[0]] = threeSum
+                print("yeS", combinatrics[id[0]])
+                threeSum = 0 # reset sum of line
 
     return copy
 
+if __name__ == '__main__':
+    s = []
+    for _ in range(3):
+        s.append(list(map(int, input().rstrip().split())))
 
-s = []
-
-for _ in range(3):
-    s.append(list(map(int, input().strip().split())))
-
-print(formingMagicSquare(s))
+    print(formingMagicSquare(s))
