@@ -14,16 +14,22 @@
 def pageCount(numPages, desiredPage):
     frontTurns = backTurns = 0
 
+    # counting forwards
     currentPage = 1
     pages = [currentPage]
     while desiredPage not in pages:
         pages = currentPage+1, currentPage+2
-        print(pages)
         frontTurns += 1
         currentPage += 2
 
-    currentPage = numPages-1
-    pages = [currentPage, numPages]
+    # counting backwards
+    if numPages % 2 == 0:
+        currentPage = numPages
+        pages = [numPages]
+
+    else:
+        currentPage = numPages-1
+        pages = [currentPage, numPages]
 
     while desiredPage not in pages:
         pages = currentPage-1, currentPage-2
@@ -31,7 +37,6 @@ def pageCount(numPages, desiredPage):
         currentPage -= 2
 
     print("Turns from front:", frontTurns)
-
     print("Turns from back:", backTurns)
     return min(frontTurns, backTurns)
 
