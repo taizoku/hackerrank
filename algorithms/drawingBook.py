@@ -18,18 +18,18 @@ def pageCount(numPages, desiredPage):
     currentPage = 1
     pages = [currentPage]
     while desiredPage not in pages:
-        pages = currentPage+1, currentPage+2
         frontTurns += 1
         currentPage += 2
+        pages = [currentPage+1, currentPage+2]  # currently the spread of pages that we've turned to
 
     # counting backwards
-    if numPages % 2 == 0:
-        currentPage = numPages
-        pages = [numPages]
+    if numPages % 2 == 0:  # if there are an even number of pages
+        currentPage = numPages  # the last page should be on the LEFT side alone
+        pages = [numPages]  # counting backwards, it starts from the last page
 
-    else:
-        currentPage = numPages-1
-        pages = [currentPage, numPages]
+    else:  # odd number of pages
+        currentPage = numPages-1  # set page tracker to the second last page
+        pages = [currentPage, numPages]  # there is a double spread of pages with the last and second last page
 
     while desiredPage not in pages:
         pages = currentPage-1, currentPage-2
