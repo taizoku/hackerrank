@@ -19,10 +19,13 @@
 # The prisoner to be warned sits in chair number 3.
 def saveThePrisoner(numPrisoners, numSweets, currentChair):
     # last one is the BAD SWEET!
+
+    # currentChair is the STARTING position
+
     print(list(range(1, numPrisoners+1)))
-    # for i in range(numSweets, 0, -1):
+
     while numSweets > 1:
-        if currentChair+1 <= numPrisoners:
+        if currentChair+1 < numPrisoners:
             currentChair += 1
         else:
             currentChair -= 1
@@ -33,8 +36,8 @@ def saveThePrisoner(numPrisoners, numSweets, currentChair):
 
 
 # INPUT
-# 1. The FIRST LINE contains an INTEGER, t, denoting the number of test cases.
 numTestCases = int(input())
+# 1. The FIRST LINE contains an INTEGER, t, denoting the number of test cases.
 
 for test in range(numTestCases):
     # 2. The next t lines each contain 3 SPACE-SEPARATED INTEGERS:
