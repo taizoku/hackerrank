@@ -22,7 +22,7 @@ def saveThePrisoner(numPrisoners, numSweets, currentChair):
 
     # currentChair is the STARTING position
 
-    print(list(range(1, numPrisoners+1)))
+    print("Test case:", list(range(1, numPrisoners+1)))
 
     while numSweets > 1:
         if currentChair+1 < numPrisoners:
