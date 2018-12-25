@@ -17,20 +17,28 @@
 # Let's suppose two is drawn from the hat.
 # Prisoners receive candy at positions 2, 3, 4, 1, 2, 3.
 # The prisoner to be warned sits in chair number 3.
-def saveThePrisoner(numPrisoners, numSweets, currentChair):
-    # last one is the BAD SWEET!
 
-    # currentChair is the STARTING position
+def saveThePrisoner(numPrisoners, numSweets, currentChair):
+    # NOTE:
+    # - The last one is the BAD SWEET!
+    # - 'currentChair' begins at the STARTING position
 
     print("Test case:", list(range(1, numPrisoners+1)))
 
-    while numSweets > 1:
-        if currentChair+1 < numPrisoners:
-            currentChair += 1
-        else:
-            currentChair -= 1
 
-        numSweets -= 1
+    numSweets %= numPrisoners  # mod numSweets to get the remainder
+
+    currentChair += numSweets
+
+    while numSweets > 1:
+        print("current chair:", currentChair)
+        if currentChair+1 <= numPrisoners:  # if the next chair is valid
+            currentChair += 1  # move to the next chair
+
+        else:
+            currentChair = 1  # reset and go back around to first chair
+
+        numSweets -= 1  # take away number of sweets
 
     return currentChair
 
