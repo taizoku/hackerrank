@@ -28,6 +28,11 @@
 # Therefore, her final energy level is 96
 
 # FUNCTION
+def jumpingOnClouds(numClouds, jumpDistance):
+    energyLevel = 100
+
+    return energyLevel
+
 
 # INPUT
 # 1. Two space-separated integers:
@@ -42,3 +47,4 @@ numClouds, jumpDistance = map(int, input().strip().split(' '))
 clouds = list(map(int, input().strip().split(' ')))
 
 # OUTPUT (e)
+print(jumpingOnClouds(numClouds, jumpDistance))
