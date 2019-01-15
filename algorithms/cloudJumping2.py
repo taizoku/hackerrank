@@ -30,5 +30,15 @@
 # FUNCTION
 
 # INPUT
+# 1. Two space-separated integers:
+# - n, the number of clouds
+# - k, the jump distance.
+numClouds, jumpDistance = map(int, input().strip().split(' '))
+
+# 2. n space-separated integers c[i]
+# *Each cloud is described as follows:
+# - c[i] = 0: cumulus cloud
+# - c[i] = 1: thunderhead
+clouds = list(map(int, input().strip().split(' ')))
 
 # OUTPUT (e)
