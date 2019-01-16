@@ -28,8 +28,12 @@
 # Therefore, her final energy level is 96
 
 # FUNCTION
-def jumpingOnClouds(numClouds, jumpDistance):
+def jumpingOnClouds(clouds, jumpDistance):
     energyLevel = 100
+
+    for cloud in clouds:
+        if cloud != 0:
+            energyLevel -= 2  # extra tax
 
     return energyLevel
 
@@ -47,4 +51,4 @@ numClouds, jumpDistance = map(int, input().strip().split(' '))
 clouds = list(map(int, input().strip().split(' ')))
 
 # OUTPUT (e)
-print(jumpingOnClouds(numClouds, jumpDistance))
+print(jumpingOnClouds(clouds, jumpDistance))
