@@ -31,9 +31,16 @@
 def jumpingOnClouds(clouds, jumpDistance):
     energyLevel = 100
 
-    for i in len(clouds):
+    for i in range(0, len(clouds), jumpDistance):
+        print(i)
+        if clouds[i] == 0:
+            energyLevel -= 1
+
         if clouds[i] == 1:
-            energyLevel -= 2  # extra tax
+            energyLevel -= 3  # extra tax
+
+#        if i == 0:  # if it loops back, then break?
+            break
 
     return energyLevel
 
