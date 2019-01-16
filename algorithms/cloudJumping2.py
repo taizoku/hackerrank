@@ -31,8 +31,8 @@
 def jumpingOnClouds(clouds, jumpDistance):
     energyLevel = 100
 
-    for cloud in clouds:
-        if cloud != 0:
+    for i in len(clouds):
+        if clouds[i] == 1:
             energyLevel -= 2  # extra tax
 
     return energyLevel
