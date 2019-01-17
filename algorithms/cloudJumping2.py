@@ -27,20 +27,17 @@
 # She landed on ONE thunderhead = additional cost of 2 energy units
 # Therefore, her final energy level is 96
 
+
 # FUNCTION
 def jumpingOnClouds(clouds, jumpDistance):
-    energyLevel = 100
+    energyLevel = 100 # initially at 100
 
     for i in range(0, len(clouds), jumpDistance):
-        print(i)
         if clouds[i] == 0:
             energyLevel -= 1
 
-        if clouds[i] == 1:
+        else:  # clouds[i] == 1
             energyLevel -= 3  # extra tax
-
-#        if i == 0:  # if it loops back, then break?
-            break
 
     return energyLevel
 
