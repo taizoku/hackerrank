@@ -27,10 +27,10 @@
 def appendAndDelete(initString, finalString, numOperations):
     same = "No"
 
-    while finalString != initString and numOperations > 1:
-
-        if len(initString) > finalString:  # reduce first string to the same length as the second
+    while numOperations > 0:
+        if len(initString) > len(finalString):  # reduce first string to the same length as the second
             initString.pop()  # delete the last character until they are the same length
+            numOperations -= 1
             continue  # should count as an operation, so it skips to the next count of the loop
 
     # once they're the same length, now we want to check up to what letters are the same
