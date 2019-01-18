@@ -40,7 +40,7 @@ def appendAndDelete(initString, finalString, numOperations):
 
         # once they're the same length, now we want to check up to what letters are the same
         if i is not None:
-            for i in len(initString):
+            for i in range(len(initString)):
                 if initString[i] != finalString[i]:
                     break  # loop until you reach the mismatching letter
 
@@ -56,7 +56,7 @@ def appendAndDelete(initString, finalString, numOperations):
             i += 1
 
     if initString == finalString:
-        string = "Yes"
+        same = "Yes"
 
     return same
 
