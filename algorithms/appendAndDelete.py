@@ -26,25 +26,17 @@
 # Function should return a string, either Yes or No.
 def appendAndDelete(initString, finalString, numOperations):
     same = "No"
-    i = None
 
-    while numOperations > 0:
-        if finalString == initString:
-            same = "Yes"
-            break
+    while finalString != initString and numOperations > 1:
 
         if len(initString) > finalString:  # reduce first string to the same length as the second
             initString.pop()  # delete the last character until they are the same length
-            numOperations -= 1
             continue  # should count as an operation, so it skips to the next count of the loop
 
-        # once they're the same length, now we want to check up to what letters are the same
-        if i is None:
-            for i in range(0, len(initString)):
-                if initString[i] != finalString[i]:
-                    break  # loop until you reach the mismatching letter
-
-            break
+    # once they're the same length, now we want to check up to what letters are the same
+    for i in range(0, len(initString)):
+        if initString[i] != finalString[i]:
+            break  # loop until you reach the mismatching letter
 
     # now we need to continue to pop off characters until they are the same
     # should only be done once procedurally
