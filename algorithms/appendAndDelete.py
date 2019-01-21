@@ -25,6 +25,8 @@
 # FUNCTION DESCRIPTION
 # Function should return a string, either Yes or No.
 def appendAndDelete(initString, finalString, numOperations):
+    initString = list(initString)
+    finalString = list(finalString)
     same = "No"
 
     while numOperations > 0:
@@ -62,10 +64,10 @@ def appendAndDelete(initString, finalString, numOperations):
 
 # INPUT FORMAT (lines)
 # 1. string s, the initial string.
-initialString = list(str(input()))
+initialString = str(input())
 
 # 2. string t, the desired final string.
-finalString = list(str(input()))
+finalString = str(input())
 
 # 3. integer k, the number of operations.
 numOperations = int(input())
