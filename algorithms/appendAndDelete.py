@@ -33,21 +33,25 @@ def appendAndDelete(initString, finalString, numOperations):
             numOperations -= 1
             continue  # should count as an operation, so it skips to the next count of the loop
 
-    # once they're the same length, now we want to check up to what letters are the same
-    for i in range(0, len(initString)):
-        if initString[i] != finalString[i]:
-            break  # loop until you reach the mismatching letter
+        else:
+            break
 
-    # now we need to continue to pop off characters until they are the same
-    # should only be done once procedurally
-    while len(initString) != i+1:
-        initString.pop()
-        numOperations -= 1
+    if numOperations > 0:
+        # once they're the same length, now we want to check up to what letters are the same
+        for i in range(0, len(initString)):
+            if initString[i] != finalString[i]:
+                break  # loop until you reach the mismatching letter
 
-    # then we need to add characters so they're identical
-    if len(initString) != len(finalString):
-        initString.append(finalString[i])
-        i += 1
+        # now we need to continue to pop off characters until they are the same
+        # should only be done once procedurally
+        while len(initString) != i+1:
+            initString.pop()
+            numOperations -= 1
+
+        # then we need to add characters so they're identical
+        if len(initString) != len(finalString):
+            initString.append(finalString[i])
+            i += 1
 
     if initString == finalString:
         same = "Yes"
