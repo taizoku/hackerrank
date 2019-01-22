@@ -34,7 +34,6 @@ def appendAndDelete(initString, finalString, numOperations):
         if len(initString) > len(finalString):  # reduce first string to the same length as the second
             initString.pop()  # delete the last character until they are the same length
             numOperations -= 1
-            continue  # should count as an operation, so it skips to the next count of the loop
 
         else:
             break
@@ -60,10 +59,9 @@ def appendAndDelete(initString, finalString, numOperations):
                 numOperations -= 1
 
                 if initString == finalString:  # I need to check
-                    same = "Yes"
                     break
 
-    elif initString == finalString:
+    elif initString == finalString and numOperations == 0:
         same = "Yes"
 
     return same
