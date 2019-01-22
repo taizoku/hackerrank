@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/appendAndDelete.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="204">
+              <caret line="29" column="3" lean-forward="true" selection-start-line="27" selection-end-line="67" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -194,9 +194,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.appendAndDelete" />
+        <item itemvalue="Python.magicSquare" />
         <item itemvalue="Python.cloudJumping2" />
         <item itemvalue="Python.saveThePrisoner" />
-        <item itemvalue="Python.magicSquare" />
         <item itemvalue="Python.drawingBook" />
       </list>
     </recent_temporary>
@@ -268,8 +268,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/appendAndDelete.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="204">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="27" selection-end-line="67" selection-end-column="15" />
         </state>
       </provider>
     </entry>

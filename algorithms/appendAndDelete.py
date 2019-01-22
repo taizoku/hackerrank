@@ -29,6 +29,7 @@ def appendAndDelete(initString, finalString, numOperations):
     finalString = list(finalString)
     same = "No"
 
+    # if the first string is longer than the second one
     while numOperations > 0:
         if len(initString) > len(finalString):  # reduce first string to the same length as the second
             initString.pop()  # delete the last character until they are the same length
@@ -38,9 +39,9 @@ def appendAndDelete(initString, finalString, numOperations):
         else:
             break
 
-    if numOperations > 0:
-        # once they're the same length, now we want to check up to what letters are the same
-        for i in range(0, len(initString)):
+    if numOperations > 0 and initString != finalString:
+        # once they're the same length, now we want to check up to index the letters are the same
+        for i in range(len(initString)):  # for the length of the initial string
             if initString[i] != finalString[i]:
                 break  # loop until you reach the mismatching letter
 
@@ -57,16 +58,20 @@ def appendAndDelete(initString, finalString, numOperations):
                 initString.append(finalString[i])
                 i += 1
 
-            if initString == finalString:  # I need to check
-                same = "Yes"
-                break
+                if initString == finalString:  # I need to check
+                    same = "Yes"
+                    break
+
+    else:
+        print("go")
+        same = "Yes"
 
     return same
 
 
 # INPUT FORMAT (lines)
 # 1. string s, the initial string.
-initialString = str(input())
+initString = str(input())
 
 # 2. string t, the desired final string.
 finalString = str(input())
@@ -78,4 +83,4 @@ numOperations = int(input())
 #   - s: the initial string
 #   - t: the desired string
 #   - k: an integer that represents the number of operations
-print(appendAndDelete(initialString, finalString, numOperations))
+print(appendAndDelete(initString, finalString, numOperations))
