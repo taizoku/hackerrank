@@ -46,17 +46,25 @@ def appendAndDelete(initString, finalString, numOperations):
 
         # now we need to continue to pop off characters until they are the same
         # should only be done once procedurally
-        while len(initString) != i+1:
-            initString.pop()
-            numOperations -= 1
+        while numOperations > 0 and len(initString) != i:
+            # first get rid of the ones which aren't the same
 
-        # then we need to add characters so they're identical
-        if len(initString) != len(finalString):
-            initString.append(finalString[i])
-            i += 1
+                initString.pop()
+                numOperations -= 1
+                print(initString)
 
-    if initString == finalString:
-        same = "Yes"
+        print(numOperations)
+        while numOperations > 0:
+            # then we need to add characters so they're identical
+            if len(initString) != len(finalString):
+                initString.append(finalString[i])
+                i += 1
+
+            print(initString)
+            print(finalString)
+            if initString == finalString:
+                same = "Yes"
+                break
 
     return same
 
