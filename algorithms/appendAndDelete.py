@@ -48,26 +48,20 @@ def appendAndDelete(initString, finalString, numOperations):
         # should only be done once procedurally
         while numOperations > 0 and len(initString) != i:
             # first get rid of the ones which aren't the same
-
                 initString.pop()
                 numOperations -= 1
-                print(initString)
 
-        print(numOperations)
         while numOperations > 0:
             # then we need to add characters so they're identical
             if len(initString) != len(finalString):
                 initString.append(finalString[i])
                 i += 1
 
-            print(initString)
-            print(finalString)
-            if initString == finalString:
+            if initString == finalString:  # I need to check
                 same = "Yes"
                 break
 
     return same
-
 
 
 # INPUT FORMAT (lines)
