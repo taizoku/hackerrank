@@ -57,13 +57,13 @@ def appendAndDelete(initString, finalString, numOperations):
             if len(initString) != len(finalString):
                 initString.append(finalString[i])
                 i += 1
+                numOperations -= 1
 
                 if initString == finalString:  # I need to check
                     same = "Yes"
                     break
 
-    else:
-        print("go")
+    elif initString == finalString:
         same = "Yes"
 
     return same
