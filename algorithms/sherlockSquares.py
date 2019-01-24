@@ -22,28 +22,29 @@ def squares(lower, upper):
     numSq = 0
     # The way I'm going to tackle this is to get the higher square and subtract the lower square
     # from that then add 1 to give me the number of squares in that range
-    if lower <= 1:
-        lower += 2
 
-    while upper >= lower and (not(math.sqrt(lower).is_integer()) or not((math.sqrt(upper)).is_integer())):
-        print((math.sqrt(lower)).is_integer())
+    #if lower <= 1:
+    #    lower += 2
 
-        if not((math.sqrt(lower)).is_integer()):  # if lower is NOT a perfect square
-            lower += 1  # move forwards
-
-        print("low", lower)
-
-        if not((math.sqrt(upper)).is_integer()):  # if upper is NOT a perfect square
-            upper -= 1  # move backwards
-
-    print("u:", upper, "l:", lower)
-
-    if lower != 0 and upper > lower:
-        numSq = int(math.sqrt(upper) - math.sqrt(lower)) + 1
-
-    elif lower != 0 and upper != 1 and lower == upper and math.sqrt(upper).is_integer():
-        numSq = 1
-    return numSq
+    # while upper >= lower and (not(math.sqrt(lower).is_integer()) or not((math.sqrt(upper)).is_integer())):
+    #     print((math.sqrt(lower)).is_integer())
+    #
+    #     if not((math.sqrt(lower)).is_integer()):  # if lower is NOT a perfect square
+    #         lower += 1  # move forwards
+    #
+    #     print("low", lower)
+    #
+    #     if not((math.sqrt(upper)).is_integer()):  # if upper is NOT a perfect square
+    #         upper -= 1  # move backwards
+    #
+    # print("u:", upper, "l:", lower)
+    #
+    # if lower != 0 and upper > lower:
+    #     numSq = int(math.sqrt(upper) - math.sqrt(lower)) + 1
+    #
+    # elif lower != 0 and upper != 1 and lower == upper and math.sqrt(upper).is_integer():
+    #     numSq = 1
+    return math.floor(math.sqrt(upper)) - math.ceil(math.sqrt(lower)) + 1
 
 
 # INPUT FORMAT
