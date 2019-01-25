@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93db8a96-1bce-4bee-bcf3-a932ca9b66e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sherlockSquares.py" beforeDir="false" afterPath="$PROJECT_DIR$/sherlockSquares.py" afterDir="false" />
-    </list>
+    <list default="true" id="93db8a96-1bce-4bee-bcf3-a932ca9b66e7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/sherlockSquares.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -286,7 +284,7 @@
     <entry file="file://$PROJECT_DIR$/sherlockSquares.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
         </state>
       </provider>
     </entry>
