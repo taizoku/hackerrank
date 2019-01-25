@@ -23,7 +23,7 @@ def squares(lower, upper):
     # from that then add 1 to give me the number of squares in that range
     highestSquare = math.floor(math.sqrt(upper))
     lowestSquare = math.ceil(math.sqrt(lower))
-     
+
     return highestSquare - lowestSquare + 1
 
 

@@ -28,13 +28,13 @@
 #   - d1, m1, y1: returned date day, month and year
 #   - d2, m2, y2: due date day, month and year
 def libraryFine(returnDay, returnMonth, returnYear, dueDay, dueMonth, dueYear):
-    fine = 0 # if book returned on or before expected due date
+    fine = 0  # if book returned on or before expected due date
     if returnYear > dueYear:
-        fine = 10000 # Hackos
+        fine = 10000  # Hackos
 
     elif returnYear == dueYear:
         if returnMonth > dueMonth:
-            fine = 500
+            fine = 500 * (returnMonth - dueMonth)
 
         elif returnMonth == dueMonth:
             if returnDay > dueDay:
