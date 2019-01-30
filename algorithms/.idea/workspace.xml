@@ -10,7 +10,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appendAndDelete.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="413">
@@ -19,9 +19,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cutTheSticks.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -45,8 +49,8 @@
         <option value="$PROJECT_DIR$/cloudJumping2.py" />
         <option value="$PROJECT_DIR$/appendAndDelete.py" />
         <option value="$PROJECT_DIR$/sherlockSquares.py" />
-        <option value="$PROJECT_DIR$/cutTheSticks.py" />
         <option value="$PROJECT_DIR$/libraryFine.py" />
+        <option value="$PROJECT_DIR$/cutTheSticks.py" />
       </list>
     </option>
   </component>
@@ -288,7 +292,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cutTheSticks.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
