@@ -7,10 +7,16 @@
 # of that shortest length. When all the remaining sticks are the same length, they cannot be shortened so discard them.
 
 # Given the:
-# - lengths of  sticks
+# - lengths of 'n' sticks
 # print the number of sticks that are left before each iteration until there are none left.
 
 # EXAMPLE
-# there are  sticks of lengths .
-# The shortest stick length is , so we cut that length from the longer two and discard the pieces of length .
-# Now our lengths are . Again, the shortest stick is of length , so we cut that amount from the longer stick and discard those pieces. There is only one stick left, , so we discard that stick. Our lengths are .
+# There are 'n = 3' sticks of lengths arr = [1, 2, 3].
+# The shortest stick length is 1
+# -> so we cut that length from the longer two and discard the pieces of length 1.
+
+# Now our lengths are arr = [1, 2].
+# Again, the shortest stick is of length 1
+# -> so we cut that amount from the longer stick and discard those pieces.
+# There is only one stick left, arr = [1], so we discard that stick.
+# Our lengths are [3, 2, 1].
