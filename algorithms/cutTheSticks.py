@@ -25,17 +25,17 @@
 # FUNCTION
 def cutTheSticks(array):
     # initialisation
-    sticksLeft = len(array)
+    modifiedArray = array
+    firstSpace = ' '*(len(array))
 
     while array is not []:
-        removedCut = sorted(array[0])
+        removedCut = sorted(array)[0]
         # for each operation, print
-        print('sticks-length', '      ', 'length-of-cut', '      ', 'sticks-cut')
+        print('sticks-length' + firstSpace, 'length-of-cut', firstSpace + 'sticks-cut')
 
-        for stick in array:
-            if stick != '':
-                sticksLeft += 1
-        print(array, removedCut, sticksLeft)
+        sticksLeft = len(modifiedArray)
+
+        print(array, firstSpace, removedCut, firstSpace*2 + 4*' ', sticksLeft)
 
     return 0
 
@@ -43,7 +43,7 @@ def cutTheSticks(array):
 # INPUT
 sizeOfArray = int(input())
 
-array = map(int, input().strip().split(' '))
+array = list(map(int, input().strip().split(' ')))
 
 # OUTPUT
 cutTheSticks(array)
