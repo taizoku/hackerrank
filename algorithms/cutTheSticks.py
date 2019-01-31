@@ -37,6 +37,11 @@ def cutTheSticks(array):
 
         print(array, firstSpace, removedCut, firstSpace*2 + 4*' ', sticksLeft)
 
+        for i in range(0, len(array)-1):
+            if array[i] == removedCut:
+                del modifiedArray[i]
+                array[i] = '_'
+
     return 0
 
 
