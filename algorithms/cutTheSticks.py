@@ -20,3 +20,18 @@
 # -> so we cut that amount from the longer stick and discard those pieces.
 # There is only one stick left, arr = [1], so we discard that stick.
 # Our lengths are [3, 2, 1].
+
+
+# FUNCTION
+def cutTheSticks(array):
+    lengths = [1]
+
+    return lengths
+
+# INPUT
+sizeOfArray = int(input())
+
+array = map(int, input().strip().split(' '))
+
+# OUTPUT
+print(cutTheSticks(array))
