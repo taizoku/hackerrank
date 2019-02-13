@@ -4,7 +4,7 @@ HackerRank is a place where programmers from all over the world come together to
 * algorithms
 * machine learning
 * artificial intelligence
-* etc
+* etcs
 
 As well as to practice different programming paradigms like functional programming.
 
