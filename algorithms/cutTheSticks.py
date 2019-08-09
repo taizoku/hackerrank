@@ -22,27 +22,20 @@
 # Our lengths are [3, 2, 1].
 
 
+#import numpy as np
+
 # FUNCTION
 def cutTheSticks(array):
-    # initialisation
-    modifiedArray = array
-    firstSpace = ' '*(len(array))
+    sticks = [len(array)]
 
-    while array is not []:
-        removedCut = sorted(array)[0]
-        # for each operation, print
-        print('sticks-length' + firstSpace, 'length-of-cut', firstSpace + 'sticks-cut')
-
-        sticksLeft = len(modifiedArray)
-
-        print(array, firstSpace, removedCut, firstSpace*2 + 4*' ', sticksLeft)
-
-        for i in range(0, len(array)-1):
-            if array[i] == removedCut:
-                del modifiedArray[i]
-                array[i] = '_'
-
-    return 0
+    while len(array) > 1:
+        cut = sorted(array)[0]  # make a copy
+        for i in range(len(array)):
+            array[i] -= cut
+        # array.remove(0) # remove only removes the first instance of the argument
+        array = [item for item in array if item > 0]  # list comprehension is amazing!
+        sticks.append(len(array))  # storing the number of sticks we have all the time
+    return sticks
 
 
 # INPUT
@@ -51,4 +44,25 @@ sizeOfArray = int(input())
 array = list(map(int, input().strip().split(' ')))
 
 # OUTPUT
-print(cutTheSticks(array))
+#print(cutTheSticks(array))
+result = cutTheSticks(array)
+result = ('\n'.join(map(str, result)))
+print(result)
+
+# # initialisation
+# modifiedArray = array
+# firstSpace = ' ' * (len(array))
+#
+# while array is not []:
+#     removedCut = sorted(array)[0]
+#     # for each operation, print
+#     print('sticks-length' + firstSpace, 'length-of-cut', firstSpace + 'sticks-cut')
+#
+#     sticksLeft = len(modifiedArray)
+#
+#     print(array, firstSpace, removedCut, firstSpace * 2 + 4 * ' ', sticksLeft)
+#
+#     for i in range(0, len(array) - 1):
+#         if array[i] == removedCut:
+#             del modifiedArray[i]
+#             array[i] = '_'
