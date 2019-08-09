@@ -51,4 +51,4 @@ sizeOfArray = int(input())
 array = list(map(int, input().strip().split(' ')))
 
 # OUTPUT
-cutTheSticks(array)
+print(cutTheSticks(array))
