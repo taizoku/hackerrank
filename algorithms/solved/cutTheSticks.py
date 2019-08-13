@@ -22,8 +22,6 @@
 # Our lengths are [3, 2, 1].
 
 
-#import numpy as np
-
 # FUNCTION
 def cutTheSticks(array):
     sticks = [len(array)]
@@ -34,7 +32,8 @@ def cutTheSticks(array):
             array[i] -= cut
         # array.remove(0) # remove only removes the first instance of the argument
         array = [item for item in array if item > 0]  # list comprehension is amazing!
-        sticks.append(len(array))  # storing the number of sticks we have all the time
+        if len(array) > 0:
+            sticks.append(len(array))  # storing the number of sticks we have all the time
     return sticks
 
 
@@ -44,7 +43,6 @@ sizeOfArray = int(input())
 array = list(map(int, input().strip().split(' ')))
 
 # OUTPUT
-#print(cutTheSticks(array))
 result = cutTheSticks(array)
 result = ('\n'.join(map(str, result)))
 print(result)
