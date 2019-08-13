@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a977a654-afc1-4910-b3c6-69eebb3cc83c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/algorithms/cutTheSticks.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/solved/cutTheSticks.py" afterDir="false" />
-    </list>
+    <list default="true" id="a977a654-afc1-4910-b3c6-69eebb3cc83c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,20 +19,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/algorithms/unsolved/circularArrayRotation.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
               <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/algorithms/solved/cutTheSticks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -63,6 +52,7 @@
         <option value="$PROJECT_DIR$/algorithms/unsolved/circularArrayRotation.py" />
         <option value="$PROJECT_DIR$/30day/nestedLogic.py" />
         <option value="$PROJECT_DIR$/algorithms/cutTheSticks.py" />
+        <option value="$PROJECT_DIR$/python.py" />
       </list>
     </option>
   </component>
@@ -90,12 +80,12 @@
             <path>
               <item name="hackerrank" type="b2602c69:ProjectViewProjectNode" />
               <item name="hackerrank" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="interviews" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hackerrank" type="b2602c69:ProjectViewProjectNode" />
               <item name="hackerrank" type="462c0819:PsiDirectoryNode" />
-              <item name="interviews" type="462c0819:PsiDirectoryNode" />
+              <item name="w36" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -189,14 +179,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -218,13 +207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/unsolved/circularArrayRotation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/30day/nestedLogic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -239,6 +221,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/unsolved/circularArrayRotation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
         </state>
       </provider>
     </entry>
