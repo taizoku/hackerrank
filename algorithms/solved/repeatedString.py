@@ -23,12 +23,12 @@
 # Print a single integer denoting the number of letter a's
 # in the first n letters of the infinite string created by repeating s infinitely many times.
 
-
-def repeatedString(string, n):
-    if len(string) > 0:  # make sure its not empty
-        string *= (n // len(string))+1
-        string = string[:n]
-    return string.count('a') + string.count('A')
+# abc, 10 -> abcabcabca 10//3 + 1 = 4 = *10//3    3 + (10%3)
+def repeatedString(s, n):
+    if len(s) > 0:  # make sure its not empty
+        # string *= (n // len(string))+1
+        return (s.count('a') + s.count('A'))*(n // len(s)) + s[:n % len(s)].count('a') + s[:n % len(s)].count('A')
+    return 0  # empty string has no instances of 'a'
 
 
 string = input()
