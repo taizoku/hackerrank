@@ -35,9 +35,26 @@
 
 
 def jumpingOnClouds(n, c):
-    return 0
+    i = jumps = 0  # i keeps track of the position
+    # jumps counts the number of jumps taken
+
+    while i < n-1:  # while position not at the end of the list
+        if i + 2 < n:  # make sure we don't overextend the bounds
+            if c[i + 2] != 1:  # check to see if jumping two spaces is safe (best)
+                i += 2
+            else:  # otherwise we have to move once
+                i += 1
+        else:  # if not, we can only move one
+            i += 1
+        jumps += 1
+    return jumps
 
 
-numClouds = int(input())
-clouds = list(map(int, input().split(' ')))
-print(jumpingOnClouds(numClouds, clouds))
+print(jumpingOnClouds(7, [0, 1, 0, 0, 0, 1, 0]))
+print()
+print(jumpingOnClouds(7, [0, 0, 1, 0, 0, 1, 0]))
+print()
+print(jumpingOnClouds(6, [0, 0, 0, 0, 1, 0]))
+# numClouds = int(input())
+# clouds = list(map(int, input().split(' ')))
+# print(jumpingOnClouds(numClouds, clouds))
