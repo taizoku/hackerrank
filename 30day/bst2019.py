@@ -30,6 +30,7 @@ class Solution:
             del queue[0]  # dequeue
 
             # process tree's root
+            print(root)
             
             # enqueue child elements from next level in order
             if root.left:
