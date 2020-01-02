@@ -1,7 +1,7 @@
 """
 https://www.hackerrank.com/challenges/30-binary-trees/problem
 """
-
+#not wrog
 class Node:
     def __init__(self,data):
         self.right=self.left=None
