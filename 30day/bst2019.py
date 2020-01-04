@@ -25,26 +25,20 @@ class Solution:
         queue = []
         #Write your code here
         if root:  # root not empty
-            queue.append(root.data)  # enqueue current root
-            print(root.data)
+            queue.append(root)  # enqueue current root
 
         while queue:  # while queue is not empty
+            root = queue[0]
+            print(root.data)
             del queue[0]  # dequeue
-
-            # process tree's root
-            root = root.left
-            # go left, go back to root
-            # go right, go back to root
-            # next level (go left) and repeat
-            root = root.right
             
             # enqueue child elements from next level in order
             if root.left:
                 queue.append(root.left)
-                print(root.left.data)
-            elif root.right:
+
+            if root.right:
                 queue.append(root.right)
-                print(root.right.data)
+                
 
 #T=int(input())
 s = Solution()
