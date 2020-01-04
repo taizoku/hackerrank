@@ -1,7 +1,7 @@
 """
 https://www.hackerrank.com/challenges/30-binary-trees/problem
 """
-#not wrog
+
 class Node:
     def __init__(self,data):
         self.right=self.left=None
@@ -26,6 +26,7 @@ class Solution:
         #Write your code here
         if root:  # root not empty
             queue.append(root.data)  # enqueue current root
+            print(root.data)
 
         while queue:  # while queue is not empty
             del queue[0]  # dequeue
@@ -45,9 +46,13 @@ class Solution:
                 queue.append(root.right)
                 print(root.right.data)
 
-T=int(input())
+#T=int(input())
 s = Solution()
-for i in range(T):
-    
-    s.insert(int(input()))
-print(s)
+
+head = s.insert(None, 3)
+l = s.insert(head, 2)
+r = s.insert(head, 5)
+s.insert(l, 1)
+s.insert(r, 4)
+s.insert(r, 7)
+s.levelOrder(head)
