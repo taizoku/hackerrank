@@ -23,21 +23,21 @@ class Solution:
     def levelOrder(self,root):
         # as long as the bst is not empty
         queue = []
-        #Write your code here
+
         if root:  # root not empty
             queue.append(root)  # enqueue current root
 
         while queue:  # while queue is not empty
-            root = queue[0]
-            print(root.data)
-            del queue[0]  # dequeue
+            root = queue[0]  # set current working node (root) to top of queue
+            print(root.data, end=' ')  # print node
+            del queue[0]  # dequeue the node and mark as visited
             
-            # enqueue child elements from next level in order
-            if root.left:
-                queue.append(root.left)
+            # enqueue child elements from next level in order (bst)
+            if root.left:  # if there is a child on the left
+                queue.append(root.left)  # enqueue the node
 
-            if root.right:
-                queue.append(root.right)
+            if root.right: # if there is a child on the right
+                queue.append(root.right)  # enqueue the node
                 
 
 #T=int(input())
