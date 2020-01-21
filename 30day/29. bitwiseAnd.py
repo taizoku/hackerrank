@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 # number of test cases
 t = int(input())
 tests = {}
@@ -8,16 +10,29 @@ for _ in range(t):
     # 2. k - maximum size of number
     n, k = map(int, input().split())
     tests[n] = k
-print(sorted(tests))
-    """
-    answer = None
-    for i in range(1, n):
-        for j in range(i+1, n+1):
-            # print(i, 'AND', j, '=', i&j)
-            if i&j > answer and i&j < k:
-                answer = i&j
-    print(answer)
-    """
+
+# sorted(tests) gives the keys in numerical order
+largest = sorted(tests)[-1]  # the last one is the largest
+print(largest)  
+
+store = defaultdict(list)
+for i in range(1, largest):
+    for j in range(i+1, largest+1):
+        if i&j not in store[j]:
+            store[j].append(i&j)
+print(store)
+
+for i in tests.keys():
+    print([store[j] for j in range(2, i+1)])
+"""
+answer = None
+for i in range(1, n):
+    for j in range(i+1, n+1):
+        # print(i, 'AND', j, '=', i&j)
+        if i&j > answer and i&j < k:
+            answer = i&j
+print(answer)
+"""
 
 # instead of doing it in real-time
 # store the test numbers first
