@@ -1,18 +1,13 @@
 # HackerRank
-What is HackerRank?
-HackerRank is a place where programmers from all over the world come together to solve problems in a wide range of Computer Science domains such as:
-* algorithms
-* machine learning
-* artificial intelligence
-* etcs
+## What is HackerRank?
+HackerRank is a collection of programming challenges where developers can come to practice coding skills, prepare for interviews, and get hired.
 
-As well as to practice different programming paradigms like functional programming.
+## Why do HackerRank?
+### 1. Learning
+Whenever I learn a new language or try to develop some level of competency with a concept, HackerRank has a set of challenges for the topic or technique. So it's a great space to practise that concept by actually applying your knowledge and make you write some code. By being practical in that manner, I can get a better grasp of the idea because I'm building on my experience.
 
----
-Why I'm doing HackerRank challenges
----
-**1. Learning** <br>
-Expand your knowledge by learning new programming topics and techniques by going through our challenges and editorial solutions. We believe the best way to learn something is by doing it! Have a look at our Tutorial domains.
+### 2. For Fun
+What's more exciting than solving challenging problems? HackerRank has a nice progression system that exposes you to harder challenges as you continue to solve more and more problems. It's a nice way to make programming engaging and focused towards helping you come up with a solution.
 
-**2. For Fun** <br>
-What's more exciting than solving challenging problems? We're constantly adding helpful features to make our platform the best possible experience, such as boilerplate code and animations that display when you're running code.
+### 3. To get a job
+The end-goal for many developers is to get hired. I'm no different here. Building on my skills directly helps develop my own knowledge and understanding and consequently improves my chances on landing a job.
