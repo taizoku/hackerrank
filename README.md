@@ -1,6 +1,6 @@
 # HackerRank
 ## What is HackerRank?
-**[HackerRank]**(https://www.hackerrank.com/) is a collection of programming challenges where developers can come to practice coding skills, prepare for interviews, and get hired. Moreover, HackerRank provides opportunities for you to **[get certified on different technical skills](https://www.hackerrank.com/skills-verification)**, giving you an avenue to validate your knowledge and understanding on programming concepts.
+**[HackerRank](https://www.hackerrank.com/)** is a collection of programming challenges where developers can come to practice coding skills, prepare for interviews, and get hired. Moreover, HackerRank provides opportunities for you to **[get certified on different technical skills](https://www.hackerrank.com/skills-verification)**, giving you an avenue to validate your knowledge and understanding on programming concepts.
 
 ## Why do HackerRank?
 ### 1. Learning
